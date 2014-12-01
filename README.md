@@ -1,4 +1,1 @@
-OpenIndy.github.io
-==================
-
 Homepage

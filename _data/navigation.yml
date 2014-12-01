@@ -1,0 +1,19 @@
+# Site navigation links
+
+- title: About
+  url: /posts/about.html
+
+- title: Blog
+  url: /posts/
+
+- title: Downloads
+  url: /download/
+
+- title: Documentation
+  url: /documentation/
+
+- title: Contact
+  url: /posts/contact.html
+
+- title: sigma3D
+  url: http://sigma3d.de
