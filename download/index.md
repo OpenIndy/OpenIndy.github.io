@@ -86,6 +86,6 @@ Default Plugin
 ---------------
 You can find the default plugin under `plugins/OiDefaultPlugin`. After you've built the plugin you can embed it via the GUI (`Plugin -> load plugins`). Also you can find a template for a plugin in the folder, which you can copy and start developing your own plugin.
 
-For more infos about plugins, check our [OiPluginTemplate Tutorial](/documentation/plugins.html)
+For more infos about plugins, check our [OiPluginTemplate Tutorial](/documentation/docu-dev/plugins.html)
 
 
