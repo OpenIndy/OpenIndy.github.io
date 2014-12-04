@@ -3,6 +3,7 @@
 title:            OpenIndy
 locale:           en_US
 baseurl:          http://OpenIndy.github.io
+url:              http://OpenIndy.github.io
 #url:              http://0.0.0.0:4000/
 
 
