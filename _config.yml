@@ -1,9 +1,8 @@
 # Site wide configuration
 
 title:            OpenIndy
-locale:           en_US
-baseurl:          http://openindy.de/index.html
-url:              http://openindy.github.io/index.html
+locale:           ge_DE
+baseurl:          http://OpenIndy.github.io
 #url:              http://0.0.0.0:4000/
 
 
