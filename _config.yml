@@ -2,8 +2,9 @@
 
 title:            OpenIndy
 locale:           en_US
-#url:              https://cedmayer.github.io
-url:              http://0.0.0.0:4000/
+#baseurl:          http://OpenIndy.github.io
+url:              https://OpenIndy.github.io
+#url:              http://0.0.0.0:4000/
 
 
 # Jekyll configuration
