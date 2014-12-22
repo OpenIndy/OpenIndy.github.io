@@ -19,6 +19,19 @@ git commit -m "Initial commit"
 git push
 
 
+- git commit via QGIT:
+
+Download QGit from Ubuntu Software Center
+The first start: Menu->Actions->Setup Actions->new
+name: push 
+insert command to run: git push https://USERNAME:PASSWORD@github.com/OpenIndy/OpenIndy.github.io
+Username has to be your Username on Github and Password is its password 
+
+File->open -> go to directory of the repo 
+Edit->commit -> insert commit message and select files to commit
+Actions-> push -> push the commit
+
+
 - Create Shared Folder for VirtualBox: 
 
 VM Box Eigenschaften: Geräte->Gemeinsame Ordner -> neuen gemeinsamen Ordner "sharedFolderDesktop" anlegen
@@ -119,6 +132,9 @@ Google Analytics UA and Webmaster Tool verification tags can be entered under ow
 
 
 
+
+
+
 - Adding New Content with Octopress
 
 Install Octopress (https://github.com/octopress/octopress) gem if it isn't already
@@ -126,13 +142,17 @@ Install Octopress (https://github.com/octopress/octopress) gem if it isn't alrea
 $ gem install octopress --pre
 
 
-- Generate Sites:
-- manually:
+
+
+- Generate Sites manually:
 Create a file called "index.md" in a folder "newPage"
 cd to folder username.github.io, 
 -> The Markdown will be processed automatically into HTML in folder _site (as index.html in folder newPage)
 
-- via octopress:
+
+
+
+- Generate Sites via octopress:
 To create a new page use the following command.
 
 $ octopress new page name_of_page folder_of_page/
@@ -141,13 +161,33 @@ This will create a page at `/folder_of_page/name_of_page.md`
 
 
 
+
+
+- Syntax of a site:
+Every site has to have a "front matter". Front matter is a mini-configuration block that tells Jekyll about the page, including its title, layout, and other information. Front matter is placed inside of two sets of three dashes, like the following:
+---
+layout: default
+title: test
+tags: [test, theme, about]
+image:
+  feature: banner_oi_proto.jpg
+---
+"image:feature" is important for the layout style to show a banner for example
+
+
+
+
 - Layout:
 
 The _layouts folder contains the layout informations like header, menu, and footer. 
 
 
+
+
 - Landing Page
 Change _layouts/home.html to change the existing Homepage
+
+
 
 
 - Navigation
@@ -158,6 +198,9 @@ To set what links appear in the top navigation edit _data/navigation.yml. Use th
 
 - title: Wiki
   url: http://wikipedia.org
+
+
+
 
 
 - Change Copyright Text
@@ -172,7 +215,8 @@ For example if you wanted a red background instead of white you’d change $body
 
 
 
-- New Post
+
+- Generate New Posts
 
 Default command:
 
@@ -181,10 +225,53 @@ $ octopress new post "Post Title"
 All of your posts will be saved in one directory "_posts".
 If you want to group them into subfolders like `/posts`, `/portfolio`, etc. use this command: 
 
-$ octopress new post "New Post Title" --dir posts
+
+$ octopress new post "New Post Title" --dir newDIR
 
 By specifying the DIR it will create a new post in that folder (_posts/newDIR) and populate the `categories:` YAML with the same value.
 Change the "categories" syntax on the front matter (for example to "news")
+
+
+
+
+- Preview of a post in the post-list
+
+In the Post you have to put in the following line, where you want to end the preview:
+
+<!-- more -->
+
+This is important, so that the formatting of the preview contant is correctly represented!!
+
+
+
+
+
+- Feature Images
+The feature images live in the images/ folder. To add a feature image to a post or page just include the filename in the front matter like so. 
+
+image:
+  feature: feature-image-filename.jpg
+  thumb: thumbnail-image.jpg #keep it square 200x200 px is good
+
+
+
+
+- Post with large feature image
+
+---
+layout: post
+title: "Post with Large Feature Image and Text"
+excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: sample-image-4.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+---
+
+<<This is the heading of a sample post with a large feature image
+
 
 
 - Post Index Page
@@ -228,9 +315,14 @@ Add the following Code, where you want to show a list of posts with a preview:
     {% endfor %}
 
 
+!!
 In the Post itself you have to put in the following line, where you want to end the preview:
 
 <!-- more -->
+
+!!
+
+
 
 
 - Author Override
@@ -260,6 +352,10 @@ To assign Billy Rick as an author for the post, add the following YAML front mat
 http://www.webtipblog.com/adding-scroll-top-button-website/
 
 Style Config can be changed in _includes/_head.html 
+
+
+
+
 
 - Tables
 http://www.csstablegenerator.com/
@@ -296,6 +392,11 @@ You can take the html code out of the _site folder after jekyll generates the ma
 ( generate tables from excel: 
   http://tableizer.journalistopia.com/
 )
+
+
+
+
+
 _____________________________________
 
 Kramdown Markup Language
@@ -306,26 +407,8 @@ _____________________________________
 http://kramdown.gettalong.org/syntax.html
 
 
-- Sites:
-Every site has to have a "front matter". Front matter is a mini-configuration block that tells Jekyll about the page, including its title, layout, and other information. Front matter is placed inside of two sets of three dashes, like the following:
----
-layout: default
-title: test
-tags: [test, theme, about]
-image:
-  feature: banner_oi_proto.jpg
----
-"image:feature" is important for the layout style to show a banner for example
 
-
-
-
-- Feature Images
-The feature images live in the images/ folder. To add a feature image to a post or page just include the filename in the front matter like so. 
-
-image:
-  feature: feature-image-filename.jpg
-  thumb: thumbnail-image.jpg #keep it square 200x200 px is good
+Use <br><br> for new lines
 
 
 
@@ -351,10 +434,12 @@ To ignore a caption:
 
 
 
-
 - Sample Post with about everything you'll need to style in the theme
 
 see sample-post-with-styling.md
+
+
+
 
 
 
@@ -374,6 +459,7 @@ To modify styling and highlight colors edit `/_sass/_pygments.scss`.
 }
 {% endhighlight %}
 
+
 {% highlight html %}
 {% raw %}
 <nav class="pagination" role="navigation">
@@ -386,6 +472,7 @@ To modify styling and highlight colors edit `/_sass/_pygments.scss`.
 </nav><!-- /.pagination -->
 {% endraw %}
 {% endhighlight %}
+
 
 
 Standard Code Block:
@@ -426,21 +513,6 @@ To modify styling and highlight colors edit `/_sass/_coderay.scss`. Line numbers
 ~~~
 
 
-- Post with large feature image
-
----
-layout: post
-title: "Post with Large Feature Image and Text"
-excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
-tags: [sample post, readability, test]
-comments: true
-image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
----
-
-<<This is the heading of a sample post with a large feature image
 
 
 
@@ -454,11 +526,17 @@ image:
     These commments will not include inside the source.
 {% endcomment %}
 
+
+
+
 - Links
 
 A link that opens in a new tab:
 
 [HS Mainz](https://www.hs-mainz.de/technology/geoinformatics-and-surveying/index.html){:target="blank"}
+
+
+
 
 - Images in posts
 
@@ -478,7 +556,7 @@ Image with link to bigger image and capition middle
   <p align="middle"><i>the watch window</i></p>
 </figure>
 
-Image and caption middle without Link to bigger image:
+Image and caption middle without Link to bigger image, capition middle:
 
 <figure >
   <p align="middle"><img src="/documentation/images/usr/watchwindow.png"></a> </p>
@@ -488,7 +566,7 @@ Image and caption middle without Link to bigger image:
 
 
 
-One image with a caption (as a link to another page)
+One image with a caption and description (as a link to another page)
 
 <figure>
   <a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
@@ -523,5 +601,3 @@ Video embeds are responsive and scale with the width of the main content block w
 Adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <iframe> tags and remove allowfullscreen. Example below:
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
-
-

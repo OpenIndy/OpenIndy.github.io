@@ -51,8 +51,10 @@
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
+        <p class="byline"><i>published on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time> in the category {{ post.categories }}</i></p>
       {% else %}
         <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br><br></h2>
+        <p class="byline"><i>published on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time> in the category {{ post.categories }}</i></p>
 
         <div class="post-content-truncate">
             {% if post.content contains "<!-- more -->" %}
@@ -64,7 +66,7 @@
         <p><a href="{{ post.url }}">Read more...</a><br><br><p>
 
       {% endif %}
-    </article>
+    </article><br>
     {% endfor %}
   </div><!-- /#index -->
 </div><!-- /#main -->
