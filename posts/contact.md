@@ -16,7 +16,7 @@ perhaps you  will be part of the project soon, too!
 <br>Germany
 <br>Telefon: +49 (0) 6131 – 96 257-30
 <br>Telefax: +49 (0) 6131 – 96 257-20
-<br>E-Mail: [openindyorg@gmail.com](mailto:openindyorg@gmail.com)
+<br>E-Mail: [info@openindy.de](mailto:info@openindy.de)
 
 
 
