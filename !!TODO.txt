@@ -1,0 +1,10 @@
+1. Aktueller Post (OpenIndy auf dem Lc3d)
+2. Download bereit stellen
+3. Dokumentation
+	3.1 Entwickler Doku -> link auf eine Doxygen seite
+	3.2 User Doku
+		3.2.1 Preperation -> erwähnen das bei der aktuellen download version kein plugin geladen werden muss
+		3.2.2 Different Views löschen !
+		3.2.3 Measurment -> PseudoTracker Messung -> Punkt in Ebene
+		3.2.4 Other Functionalities löschen ?
+		
