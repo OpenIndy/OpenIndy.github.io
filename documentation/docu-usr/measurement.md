@@ -71,10 +71,11 @@ After the features are created, functions are applied and the sensor is set and 
 to measure and click on **measure** in the sensor control pad. You can find it by clicking **View > sensor control** or by clicking on the ![sensor control pad](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/standard/sensor%20control%20pad.png){: style="width: 25px"} Before you can measure you have to choose at which **actual position** the virtual sensor is pointing at.
 Click on the **move** command in the sensor control pad and choose a 3D-Position. <br>
 
-**Point**
-- 0/0/10
 
-**Plane**
+**Point** <br>
+- 0/0/10 <br>
+
+**Plane** <br>
 - 12/12/0 <br>
 - 12/14/0 <br>
 - 14/14/0 <br>
