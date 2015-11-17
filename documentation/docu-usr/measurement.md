@@ -75,13 +75,13 @@ Click on the **move** command in the sensor control pad and choose a 3D-Position
 - 0/0/10
 
 **Plane**
-- 12/12/0
-- 12/14/0
-- 14/14/0
-- 14/12/0
+- 12/12/0 <br>
+- 12/14/0 <br>
+- 14/14/0 <br>
+- 14/12/0 <br>
 
 <figure >
- <p align="middle"><a href="../images/usr/vlt/move_cmd.png"><img src="/documentation/images/usr/vlt/move_cmd.png"></a> </p>
+ <p align="middle"><a href="../images/usr/vlt/move_cmd.PNG"><img src="/documentation/images/usr/vlt/move_cmd.PNG"></a> </p>
  <p align="middle"><i>move command</i></p>
 </figure>
 
