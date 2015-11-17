@@ -26,11 +26,11 @@ image:
 <br>
 This section shows one possible way to solve an example task. There are also other ways or orders of steps to solve it.
 
-##Simulation with Virtual Laser Tracker
+##Simulation (virtual Laser-Tracker)
 
 ##Common measurement example
 
-####The measurement task
+###The measurement task
 The task is to check some features of the object vs CAD nominal data. Ten focal points of drill-holes and two small spheres have to be checked against a nominal CAD data. The coordinates of the nominal data are in the object coordinate system, so you also have to transform between the instrument
 coordinatesystem and the object coordinatesystem. The four marked drill-holes are used as checkpoints for the transformation.
 <figure >
@@ -38,7 +38,7 @@ coordinatesystem and the object coordinatesystem. The four marked drill-holes ar
 	<p align="middle"><i>the object that has to be checked</i></p>
 </figure>
 
-####Set instrument
+###Set instrument
 The first step is to set and connect an instrument. The instrument is set at the active station. On default, STATION01 is the active station and is marked in dark grey.
 Other stations, if you have some, are marked light grey. Only one station can be active, but it is possible to switch them. <br>
 To set the instrument click **Station > set instrument**.
@@ -51,7 +51,7 @@ In this dialog you first have to select your sensor type, which is totalstation 
 You also need to put in the **accuracy** and other **sensor configurations** in this dialog.
 After you set up the instrument, press Ok. The programm now asks you if you want to connect the sensor automatically, or if you want to connect to it later by hand.
 
-####Import nominal data
+###Import nominal data
 One of the first steps to solve the task is to import the nominal data (are tagged as brown rows) for the two spheres and drill-holes. To do this. click on **File > import > elements**.
 In the import dialog choose the data format which is ASCII in our example and the geometry typ. In our case there is a point and sphere file, so you have to import both of the geometry types. As third parameter you need to choose the destination coordinatesystem for the nominal geometries. In our case use the default PART coordinate system, which is the coordinate system of the not yet transformed plain.
 You can also choose other coordinate systems, if you create them via the toolbar by clicking on ![create coordinate system](/documentation/images/icons/coordinateSystem.png){: style="width: 25px"} before importing the nominal data.
@@ -76,13 +76,13 @@ p10 104.199 0.000 0.000
 	<p align="middle"><i>import nominal dialog</i></p>
 </figure>
 
-####Create features to be measured
+###Create features to be measured
 In the next step you need to create the features you want to measure. For this use the toolbar on the left or click on **view > show/hide feature toolbar**
 to get the special toolbar for creating features. The standard toolbar on the left has some more functionality, because here you can also create scalar entities
 and transformation parameters. In the toolbar on the left there is a button for each feature you can create. Clicking on one of them opens the creation dialog, where you can put in
 your settings and parameters for the features you want to create.
 
-#####Measurement config
+####Measurement config
 For each feature you create, you need to specify a measurement configuration. It includes a name, number of measurements, that should be done and averaged,
 the reading type (e.g. polar, only distance, only angle,...), two face measurement and more.
 You can specify it while creating the feature, or edit it later. To specify a complete measurement configuration the sensor must be set to display the supported
@@ -102,7 +102,7 @@ Click on **Create point** ![create point](/documentation/images/icons/point_5e8a
 </figure>
 <br>
 
-####Add functions
+###Add functions
 To solve a feature it is neccessary to add functions to it. You already set the default function in the create feature dialog. Every function has input parameters, that you have to assign to it (e.g. obervations or a plane and a
 distance). For our task we added a "Best Fit function" to the features we measure in the creation dialog. To do this manually, select a feature and click **Function > set function** or use the ![set function](/documentation/images/icons/function.png){: style="width: 20px"}
 icon. Then choose your function by clicking it. There are only functions displayed, that can be applied to the selected feature at this state.
@@ -122,7 +122,7 @@ the treeviews in the function menu.
 
 You can remove functions by doing a right click on them in the function menu and choosing **delete function**.
 
-####Measuring features
+###Measuring features
 After the features are created, functions are applied and the sensor is set and connected, we can start measuring the features. For this, select the feature you want
 to measure and click on **measure** in the sensor control pad. You can find it by clicking **View > sensor control** or by clicking on the ![sensor control pad](/documentation/images/icons/sensorcontrol.png){: style="width: 25px"} icon.
 
@@ -141,7 +141,7 @@ For this, we measure the ground plane, and move it on its own normal vector with
 "ShiftPlane".
 After this we project our drill-hole points in the plane and have the offset corrected values we want.
 
-#####Scalar entity distance
+####Scalar entity distance
 To specify the distance value for moving the ground plane you need to crate a scalar entity distance by clicking on the icon **Create Scalar Entity** ![create scalar entity](/documentation/images/icons/scalarEntities.png){: style="width: 25px"} in the feature toolbar.
 Choose a name, count is 1 and the value is the radius of the reflector. After creating you can solve the unknown offset problem.
 
@@ -152,12 +152,12 @@ the actual feature data is in the instrument coordinate system. In order to do t
 the parameter set it is displayed in its own tableview tab "transformation parameter". Here you can select it by clicking on it. You can also edit the parameters
 by hand if you choose "show properties" after right clicking the transformation parameter set.
 
-#####Apply a function to the transformation parameter
+####Apply a function to the transformation parameter
 {:.no_toc}
 After you created the transformation parameter you can set some values by hand (see paragraph above), or you can calculate parameters by applying a function
 to the transformation parameter feature. Click on **Function > set function** and click on the tab "new function". The default plugin, that we used for this measurement task, contains a 7 parameter helmert transformation. Select the transformation parameter by double clicking it and go back to the function configuration dialog, where you can apply the function to the feature.
 
-#####Apply checkpoints to the 7 parameter transformation
+####Apply checkpoints to the 7 parameter transformation
 {:.no_toc}
 After selecting the function, the input parameter have to be applied to the function. In the available elements window, we need to apply the nominal (imported at the beginning)
 and actual (measured) checkpoints, specified at the beginning of the guide (p1,p3,p5,p7). Apply the dialog and now the transformation parameter will be calculated and applied on the feature.
@@ -171,7 +171,7 @@ After this step it is important to change the "use" column of the transformation
 Now it is possible to transform between STATION01 and PART. You can do this, by switching the active coordinate system in the combobox right above the feature tableview. This combobox includes all existing coordinate systems whether instrument systems or part systems.
 
 
-####Save and load project
+###Save and load project
 After the actual values are transformed and compared with the nominal values of the features, you should save the project by clicking on **File > save as** and specify a path and folder.
 OpenIndy saves the project in an openindyXML.xml file where all features, their relations, observations, functions and other parameters are stored, so that it is possible to
 restore the complete project at a later time. To load and restore a project click **File > open project**.

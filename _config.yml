@@ -22,7 +22,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..2
   use_coderay: false
 
 
@@ -31,17 +31,17 @@ owner:
   name: OpenIndy
   avatar: oi_logo.png
   bio: "Open source software solution for industrial measurement (metrology, laser tracker, quality control)"
-  email: 
-  disqus-shortname: 
+  email:
+  disqus-shortname:
   twitter: #username
   facebook: openindy2014
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: OpenIndy
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
