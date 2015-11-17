@@ -33,9 +33,9 @@ The task is to measure a point and a plane and register the point into the plane
 	<p align="middle"><i>error model of the virtual Laser-Tracker (16 errors)</i></p>
 </figure>
 
-###Connect/Start the virtual Laser-Tracker
+###Connect the virtual Laser-Tracker
 
-The first step is to set and connect the virtual sensor. The instrument is set at the active station. On default, STATION01 is the active station and is marked in dark grey.
+The first step is to set and connect the virtual sensor. The instrument is set as the active station. As a default, STATION01 is the active station and is marked in dark grey.
 Other stations, if you have some, are marked light grey. Only one station can be active, but it is possible to switch them. <br>
 To set the instrument click **Station > set sensor**.
 The following dialog will appear:
@@ -45,20 +45,20 @@ The following dialog will appear:
 	<p align="middle"><i>set instrument dialog</i></p>
 </figure>
 
-In this dialog you first have to select your sensor type, which is laser tracker in the screenshot. After that you choose the **VirtualTracker** by selecting it in the list view and pressing set. The programm now asks you if you want to connect the sensor automatically, confirm with yes.
+In this dialog you first have to select your sensor type, which is laser tracker in the screenshot. After that you choose the **VirtualTracker** by selecting it in the list view and pressing set. The program now asks you if you want to connect the sensor automatically, confirm with yes.
 
 ###Configure the measurement task
 
-We will working in the **Station-Coordinatesystem** (original coordinate system of the selected sensor). For that use the combobox on the left side, right above the table-view. Switch from PART to STATION01.
+We will work in the **station coordinate system** (original coordinate system of the selected sensor). Therefor use the combobox on the left side, right above the table-view. Switch from PART to STATION01.
 
-In the next step you need to create the features you want to measure. For this use the toolbar on the left. There is a button for each feature you can create. Clicking on one of them opens the creation dialog, where you can put in
+In the next step you need to create the features you want to measure. Therefor use the toolbar on the left. There is a button for each feature you can create. Clicking on one of them opens the creation dialog, where you can put in
 your settings and parameters for the features you want to create.
 
-For the task you need to create a point and a plane. Click on **Create point** ![create point](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/feature/Point.png){: style="width: 25px"}, type in the name "p1". They are not common and not nominal. Leave the default function as BestFitPoint.  After clicking on create, the point will be created. Repeat the same procedure for creating a plane > **Create plane** ![create point](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/feature/Plane.png){: style="width: 25px"}
+For the task you need to create a point and a plane. Click on **create point** ![create point](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/feature/Point.png){: style="width: 25px"} and type in the name "p1".It is not common and not nominal. Leave the default function as BestFitPoint.  After clicking on create, the point will be created. Repeat the same procedure for creating a plane > **create plane** ![create point](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/feature/Plane.png){: style="width: 25px"}
 
 ###Add register Function to the point-feature
 
-For our task we need a function, which will register our point into the plane. To do this, select the point and click **Function > set function** or use the ![set function](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/standard/function.png){: style="width: 20px"}. Select the new **new function** tab and double click on **Register**. In the list view you have to choose the **Regsiter-Function** and set up all necessary parameters (here you choose the created plane).
+For our task we need a function, which will register our point into the plane. To do this, select the point and click **Function > set function** or use the ![set function](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/standard/function.png){: style="width: 20px"}. Select the **new function** tab and double click on **Register**. In the list view you have to choose the **Register-Function** and set up all necessary parameters (here you choose the created plane).
 
 <figure >
 	<p align="middle"><a href="../images/usr/vlt/configuration_of_measurement.png"><img src="/documentation/images/usr/vlt/configuration_of_measurement.png"></a> </p>
@@ -68,18 +68,18 @@ For our task we need a function, which will register our point into the plane. T
 ###Measurement
 
 After the features are created, functions are applied and the sensor is set and connected, we can start measuring the features. For this, select the feature you want
-to measure and click on **measure** in the sensor control pad. You can find it by clicking **View > sensor control** or by clicking on the ![sensor control pad](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/standard/sensor%20control%20pad.png){: style="width: 25px"} Before you can measure you have to choose at which **actual position** the virtual sensor is pointing at.
-Click on the **move** command in the sensor control pad and choose a 3D-Position. <br>
+to measure and click on **measure** in the sensor control pad. You can find it by clicking **View > sensor control** or by clicking on the ![sensor control pad](https://raw.githubusercontent.com/OpenIndy/OpenIndy/master/res/icons/toolbars/standard/sensor%20control%20pad.png){: style="width: 25px"}. Before you can measure you have to choose an **actual position** the virtual sensor is pointing at.
+Click on the **move** command in the sensor control pad and choose a 3D-Position. <br><br>
 
 
 **Point** <br>
-- 0/0/10 <br>
+0/0/10 <br>
 
 **Plane** <br>
-- 12/12/0 <br>
-- 12/14/0 <br>
-- 14/14/0 <br>
-- 14/12/0 <br>
+12/12/0 <br>
+12/14/0 <br>
+14/14/0 <br>
+14/12/0 <br>
 
 <figure >
  <p align="middle"><a href="../images/usr/vlt/move_cmd.PNG"><img src="/documentation/images/usr/vlt/move_cmd.PNG"></a> </p>

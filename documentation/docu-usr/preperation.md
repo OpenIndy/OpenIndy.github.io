@@ -13,7 +13,7 @@ image:
   </header>
 <div id="drawer" markdown="1">
 * bla
-{:toc} 
+{:toc}
 
 </div>
 </section><!-- /#table-of-contents -->
@@ -31,6 +31,6 @@ If you want to use other sensors and functions that are not implemented yet, you
 To load another plugin click on the menu **Plugin > load plugin**. After this a new window opens, where you have to select the location of your plugin. After accepting the folder dialog, OpenIndy shows you the metadata of the selected plugin and checks if it is valid. Press Ok and then ok in the window to load it. OpenIndy will then automatically copy the plugin and all its dependencies to the plugin directory, so that you can work with it.
 The next time you start OpenIndy, the plugins will be loaded automatically.
 <figure >
-	<a href="../images/usr/loadPlugin.png"><img src="/documentation/images/usr/loadPlugin.png"></a>
+	<a href="../images/usr/cme/loadPlugin.png"><img src="/documentation/images/usr/cme/loadPlugin.png"></a>
 	<p align="middle"><i>The "load plugin" dialog</i></p>
 </figure>
