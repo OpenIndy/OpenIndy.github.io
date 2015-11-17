@@ -115,7 +115,7 @@ Other stations, if you have some, are marked light grey. Only one station can be
 To set the instrument click **Station > set sensor**.
 The following dialog will appear:
 <figure >
-	<p align="middle"><a href="../images/usr/cme/setInstrument.png"><img src="/documentation/images/usr/setInstrument.png"></a> </p>
+	<p align="middle"><a href="../images/usr/cme/setInstrument.png"><img src="/documentation/images/usr/cme/setInstrument.png"></a> </p>
 	<p align="middle"><i>set instrument dialog</i></p>
 </figure>
 In this dialog you first have to select your sensor type, which is laser tracker in the screenshot. After that you choose the instrument by selecting it in the list view and pressing set. The programm now asks you if you want to connect the sensor automatically, or if you want to connect to it later by hand.
