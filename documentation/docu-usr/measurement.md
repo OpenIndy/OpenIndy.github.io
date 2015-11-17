@@ -72,10 +72,10 @@ to measure and click on **measure** in the sensor control pad. You can find it b
 Click on the **move** command in the sensor control pad and choose a 3D-Position. <br><br>
 
 
-**Point** <br>
-0/0/10 <br>
+Point <br>
+0/0/10 <br><br>
 
-**Plane** <br>
+Plane <br>
 12/12/0 <br>
 12/14/0 <br>
 14/14/0 <br>
