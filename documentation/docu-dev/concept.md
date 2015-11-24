@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concept and Architecture 
+title: Concept and Architecture
 excerpt: "Developer documentation for OpenIndy - Concept and Architecture"
 author: dev
 image:
@@ -14,7 +14,7 @@ image:
   </header>
 <div id="drawer" markdown="1">
 * bla
-{:toc} 
+{:toc}
 
 </div>
 </section><!-- /#table-of-contents -->
@@ -22,12 +22,12 @@ image:
 ---
 
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/plugins.html" class="btn">Plugins</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/gui.html" class="btn">Model View Control</a>
+<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 ##  Concept
 The following section explains the concept and special features of OpenIndy.
 
-> "Metrology is the science of measurement. Metrology includes all theoretical and practical aspects of measurement. The word comes from Greek μέτρον (metron), "measure" + "λόγος" (logos), amongst others meaning "speech, oration, discourse, quote, study, calculation, reason". In Ancient Greek the term μετρολογία (metrologia) meant "theory of ratios"." 
+> "Metrology is the science of measurement. Metrology includes all theoretical and practical aspects of measurement. The word comes from Greek μέτρον (metron), "measure" + "λόγος" (logos), amongst others meaning "speech, oration, discourse, quote, study, calculation, reason". In Ancient Greek the term μετρολογία (metrologia) meant "theory of ratios"."
 [(wikipedia)](http://en.wikipedia.org/wiki/Metrology){:target="blank"}
 
 Requirements for OpenIndy:
@@ -36,7 +36,7 @@ Requirements for OpenIndy:
 * Open data exchange format (openindyXML.xml)
 * Various algorithms to fit, construct and manipulate geometries [(plugins)](/documentation/docu-dev/plugins.html)
 * Algorithms for the measurement analysis are easy to add or change [(plugins)](/documentation/docu-dev/plugins.html)
-* Easy to use development framework for students 
+* Easy to use development framework for students
 * Easy to use GUI, which provides a deep insight into the measurement data.
 
 ### OpenIndy architecture
@@ -148,7 +148,7 @@ public:
 ### FeatureWrapper
 {:.no_toc}
 
-All features are stored as [featureWrapper](https://github.com/OpenIndy/OpenIndy/blob/master/src/featurewrapper.h)  in one list in the [controller class](https://github.com/OpenIndy/OpenIndy/blob/master/controller/controller.h). To avoid type conversions (downcast), the [featureWrapper](https://github.com/OpenIndy/OpenIndy/blob/master/src/featurewrapper.h) has a pointer for each feature type. 
+All features are stored as [featureWrapper](https://github.com/OpenIndy/OpenIndy/blob/master/src/featurewrapper.h)  in one list in the [controller class](https://github.com/OpenIndy/OpenIndy/blob/master/controller/controller.h). To avoid type conversions (downcast), the [featureWrapper](https://github.com/OpenIndy/OpenIndy/blob/master/src/featurewrapper.h) has a pointer for each feature type.
 
 {% highlight c++ %}
 void FeatureWrapper::setPoint(Point *p){
@@ -214,10 +214,10 @@ While object transformations can only be assigned to a feature that was previous
 
 ![concept example](/documentation/images/dev/functionConceptExample.png)
 
-In OpenIndy you can for example create a point feature which you then can measure with a sensor of your choice. This results in n observations and precision values for each of those observations. When you now add the function "Best Fit" to the point feature you get the adjusted coordinates of the point. 
-Therefor the function "Best Fit" uses the n observations and their precision values. Besides the adjusted coordinates this function also calculates the covariance matrix &sum;<sub>XX</sub> with the accuracy of the parameters of the point (X,Y,Z) and their correlation. 
+In OpenIndy you can for example create a point feature which you then can measure with a sensor of your choice. This results in n observations and precision values for each of those observations. When you now add the function "Best Fit" to the point feature you get the adjusted coordinates of the point.
+Therefor the function "Best Fit" uses the n observations and their precision values. Besides the adjusted coordinates this function also calculates the covariance matrix &sum;<sub>XX</sub> with the accuracy of the parameters of the point (X,Y,Z) and their correlation.
 
-Now let us assume that you want to shift the adjusted point along the normal vector of a plane by a specified amount. So you add another function "Translate by Plane" to the point. This function needs a plane and a distance to be executed, so you have to input a plane and a distance which may both have been solved by a chain of functions before. 
+Now let us assume that you want to shift the adjusted point along the normal vector of a plane by a specified amount. So you add another function "Translate by Plane" to the point. This function needs a plane and a distance to be executed, so you have to input a plane and a distance which may both have been solved by a chain of functions before.
 In summary the function "Translate by Plane" gets the adjusted point with its covariance matrix, a plane with a covariance matrix and a distance with its accuracy as input. Because this function knows its functional relationship it is able do variance propagation. As the result you get the covariance matrix of the shifted point and, of course, the coordinates of the shifted point itself.  
 
 OpenIndy allows you to implement you own functions. Therefor you have to write a plugin (or extend an existing one). How this works is described [here](/documentation/docu-dev/plugins.html#oiplugintemplate-tutorial).
@@ -236,7 +236,7 @@ sensor
 
 ![linear algebra](/documentation/images/dev/openIndyLib_linearAlgebra.png)
 
-There are two classes [OiVec](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oivec.h) and [OiMat](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oimat.h). This classes have methods to do vector and matrix algebra and to access the elements of a vector and a matrix respectively. It is recommended to use this classes in your plugins for all calculations. Furthermore there is an interface [LinearAlgebra](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/linearalgebra.h) where all methods for vector and matrix algebra are defined. 
+There are two classes [OiVec](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oivec.h) and [OiMat](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oimat.h). This classes have methods to do vector and matrix algebra and to access the elements of a vector and a matrix respectively. It is recommended to use this classes in your plugins for all calculations. Furthermore there is an interface [LinearAlgebra](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/linearalgebra.h) where all methods for vector and matrix algebra are defined.
 
 The implementations of the classes [OiVec](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oivec.h) and [OiMat](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oimat.h) use one implementation of that interface. The interface is defined as follows:
 {% highlight c++ %}
