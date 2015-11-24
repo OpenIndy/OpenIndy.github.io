@@ -26,9 +26,8 @@ image:
 
 ###Load plugins in OpenIndy
 
-After starting OpenIndy, only the default plugin and its containing sensor functionalities (sensor + totalstation + lasertracker) is implemented.<br>
-If you want to use other sensors and functions that are not implemented yet, you need to load the corresponding plugin in OpenIndy.<br>
-To load another plugin click on the menu **Plugin > load plugin**. After this a new window opens, where you have to select the location of your plugin. After accepting the folder dialog, OpenIndy shows you the metadata of the selected plugin and checks if it is valid. Press Ok and then ok in the window to load it. OpenIndy will then automatically copy the plugin and all its dependencies to the plugin directory, so that you can work with it.
+The current download version of [OpenIndy](/download) includes the pre-installed [OpenIndy-DefaultPlugin](https://github.com/OpenIndy/OpenIndy-DefaultPlugin), which includes a bunch of functionalities.<br><br>
+To load another plugin click on the menu **Plugin > load plugins**. After this a new window opens, where you have to select the location of your plugin. After accepting the folder dialog, OpenIndy shows you the metadata of the selected plugin and checks if it is valid. Press Ok and then ok in the window to load it. OpenIndy will then automatically copy the plugin and all its dependencies to the plugin directory, so that you can work with it.
 The next time you start OpenIndy, the plugins will be loaded automatically.
 <figure >
 	<a href="../images/usr/cme/loadPlugin.png"><img src="/documentation/images/usr/cme/loadPlugin.png"></a>

@@ -15,7 +15,7 @@ OpenIndy is a metrology software solution that can be extended by [plugins](http
 *OpenIndy is ...*{::}
 
 * Open Source - easy customization and expansion
-* User friendly - clear graphical user interface and table view
+* User friendly - clear graphical user interface
 * Honestly - all analysis processes are transparent and their results fully visible
 * Accurately - consistent implementation of variance propagation
 * Compatibility - a multiplatform software for Windows, Mac and Linux
@@ -24,22 +24,19 @@ OpenIndy is a metrology software solution that can be extended by [plugins](http
 
 * Research - an easily expandable software solution for 3D object detection and analysis
 * Eduaction - attracting students to jointly develop and learn to gain knowledge in the areas of software engineering and industrial surveying
-* Praxis - designed for industrial use
+* Practical use. - designed for industrial use
 
 ####The next Steps
 
 * [Download the executable program or fork the project on GitHub](/download)
 * [For users: Read the application documentation of OpenIndy](/documentation/docu-usr.html)
 * [For developer: Inform yourself to get to know the architecture of OpenIndy](/documentation/docu-dev.html)
-* [Write and run your first own plugin using OpenIndy as a template](/documentation/plugins.html)
 * [Get in touch with the OpenIndy team](http://sigma3d.de/unternehmen/service/kontakt.html)
 
 <br>
 <a markdown="0" href="https://github.com/OpenIndy/OpenIndy" class="btn">Join & Fork The Project On GitHub</a>
 
-{% comment %} 
-    FRAGE: Aktuell öffnen sich (fast alle) Links im gleichen Fenster. 
+{% comment %}
+    FRAGE: Aktuell öffnen sich (fast alle) Links im gleichen Fenster.
     Sollen die Links in einem blank Fenster geöffnet werden?? (name)[url]{:target="blank"}
 {% endcomment %}
-
-
