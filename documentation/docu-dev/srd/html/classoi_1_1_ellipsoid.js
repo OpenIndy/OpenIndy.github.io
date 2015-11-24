@@ -1,0 +1,38 @@
+var classoi_1_1_ellipsoid =
+[
+    [ "EllipsoidUnknowns", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504d", [
+      [ "unknownCenterX", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504daab1546ec47394c2843a76b9579ee3166", null ],
+      [ "unknownCenterY", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da25341e8724df533c989067879d744131", null ],
+      [ "unknownCenterZ", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da3a41d23ff2930041c83a1088080a657d", null ],
+      [ "unknownMajorAxisI", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504daed90fbe937925d1600b8fd6cf9d5e808", null ],
+      [ "unknownMajorAxisJ", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da0ca1f5a3074e1bbe3c25e545312727e0", null ],
+      [ "unknownMajorAxisK", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da79018f619d84321e85cc9e31e6a37689", null ],
+      [ "unknownA", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da7dbbd3399d2b230eb86a8cfcb55428a7", null ],
+      [ "unknownB", "classoi_1_1_ellipsoid.html#ac27c4a36af163295baa7ced97cf0504da0d83bdb15205d83fa4cef7c0c5b7e5d0", null ]
+    ] ],
+    [ "Ellipsoid", "classoi_1_1_ellipsoid.html#a6fd54ba21847b5f53c624534007c0f4b", null ],
+    [ "Ellipsoid", "classoi_1_1_ellipsoid.html#a479b1db2fff2f8b79f83cd30c76d3c27", null ],
+    [ "Ellipsoid", "classoi_1_1_ellipsoid.html#a412c6d84ba60d910fe13bfac67823e95", null ],
+    [ "~Ellipsoid", "classoi_1_1_ellipsoid.html#af8c89a1e19470c4e14e923240371a7a3", null ],
+    [ "fromOpenIndyXML", "classoi_1_1_ellipsoid.html#a754f5fc8d390a3204852d2cc357e5c96", null ],
+    [ "getA", "classoi_1_1_ellipsoid.html#a4db37910436f16e812903d12d5a2c16a", null ],
+    [ "getB", "classoi_1_1_ellipsoid.html#a8e71352d906942d3368e4b83bc71a733", null ],
+    [ "getDirection", "classoi_1_1_ellipsoid.html#a47c336a366238ff8beebd966761bebff", null ],
+    [ "getDisplayA", "classoi_1_1_ellipsoid.html#ae9fc8c38906d4a7f9a3f1fd386caf754", null ],
+    [ "getDisplayB", "classoi_1_1_ellipsoid.html#ac9e4d086b127b27f12a377cfbc6aecf3", null ],
+    [ "getDisplayPrimaryI", "classoi_1_1_ellipsoid.html#a2f2452d5a9eea7257f6f4f743bf4b3f7", null ],
+    [ "getDisplayPrimaryJ", "classoi_1_1_ellipsoid.html#ae62d377fbadc24f35439c61d339f39e4", null ],
+    [ "getDisplayPrimaryK", "classoi_1_1_ellipsoid.html#afc4ae52cbdc1df8fdb0a2a3d0e5765d3", null ],
+    [ "getDisplayX", "classoi_1_1_ellipsoid.html#afaf7a10e6104148e391657c146447726", null ],
+    [ "getDisplayY", "classoi_1_1_ellipsoid.html#a014f027ff153c043fe91c1663921d850", null ],
+    [ "getDisplayZ", "classoi_1_1_ellipsoid.html#aefa423a6177501ef44068adbfe44ceef", null ],
+    [ "getPosition", "classoi_1_1_ellipsoid.html#ae3919155650f3b12bd700b9666c88280", null ],
+    [ "getUnknownParameters", "classoi_1_1_ellipsoid.html#a0716df2ae104611575a8f22956794aee", null ],
+    [ "hasDirection", "classoi_1_1_ellipsoid.html#a7edaceb53eef34210c213290e8f40028", null ],
+    [ "hasPosition", "classoi_1_1_ellipsoid.html#ad0c0484dd170c7e5c4c613ed82390e96", null ],
+    [ "operator=", "classoi_1_1_ellipsoid.html#a40b308ebf3f83e9259d7b2b93e102134", null ],
+    [ "recalc", "classoi_1_1_ellipsoid.html#a9cc668e8af38240b1161ec4d3a3b9b73", null ],
+    [ "setEllipsoid", "classoi_1_1_ellipsoid.html#ad32dbbd371d9020de398b80a0020aa0d", null ],
+    [ "setUnknownParameters", "classoi_1_1_ellipsoid.html#a801700d076091d6b4df269e9c1620e56", null ],
+    [ "toOpenIndyXML", "classoi_1_1_ellipsoid.html#af5e3cc7aa237d1e48ba082461a171a08", null ]
+];
