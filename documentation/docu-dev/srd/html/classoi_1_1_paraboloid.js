@@ -1,0 +1,35 @@
+var classoi_1_1_paraboloid =
+[
+    [ "ParaboloidUnknowns", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1a", [
+      [ "unknownApexX", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa4a737acda5df924b0e7d7a26c51bae94", null ],
+      [ "unknownApexY", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa672902137c8ac3d46a7130f1d906bd52", null ],
+      [ "unknownApexZ", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa75c64f2f591c2b4a1fae5382b1aa4c15", null ],
+      [ "unknownAxisI", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa14cd3a54ef53ff33367024d88c8332df", null ],
+      [ "unknownAxisJ", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa8660cb4b190abb82551b255881d25b22", null ],
+      [ "unknownAxisK", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aaf6854dd77b4c5cd7499f68e3efcf8084", null ],
+      [ "unknownA", "classoi_1_1_paraboloid.html#a4fc6f036104bb999c344598f89012c1aa33e4e7d06c51302129f292aa3d142e2f", null ]
+    ] ],
+    [ "Paraboloid", "classoi_1_1_paraboloid.html#ab9d1cdd857fe0a8d7bc6762c0f274b5e", null ],
+    [ "Paraboloid", "classoi_1_1_paraboloid.html#ab658f79db9dff9797bd74f37c4d63d1e", null ],
+    [ "Paraboloid", "classoi_1_1_paraboloid.html#a043bf20bdd003c38d5fea303bf24f039", null ],
+    [ "~Paraboloid", "classoi_1_1_paraboloid.html#a0f9d4893d74b20e08aa7ada1e241f2c0", null ],
+    [ "fromOpenIndyXML", "classoi_1_1_paraboloid.html#ac12d0ec673566e52ad0e2d576c66405a", null ],
+    [ "getA", "classoi_1_1_paraboloid.html#a39e5492b8787cb44a698e3d4e777ee2c", null ],
+    [ "getDirection", "classoi_1_1_paraboloid.html#a1d68e501ac36792da8465d5f3bb81bc7", null ],
+    [ "getDisplayA", "classoi_1_1_paraboloid.html#a7c1e23c2fe119c2fdbbf56b1e04f50bc", null ],
+    [ "getDisplayPrimaryI", "classoi_1_1_paraboloid.html#ad3d79e8f1f62021e626cc571b0a50d52", null ],
+    [ "getDisplayPrimaryJ", "classoi_1_1_paraboloid.html#a6e62c4b1d65d5fe29372d21fca3f337e", null ],
+    [ "getDisplayPrimaryK", "classoi_1_1_paraboloid.html#a42f89cc812875fa5b82842397b04f4c1", null ],
+    [ "getDisplayX", "classoi_1_1_paraboloid.html#a0d2301b1bf6171f5dea9b5a7b8601e52", null ],
+    [ "getDisplayY", "classoi_1_1_paraboloid.html#a7a9e8c69daf7569d86d292e30c9ca490", null ],
+    [ "getDisplayZ", "classoi_1_1_paraboloid.html#acf5e80a0c356b6168786918a08976596", null ],
+    [ "getPosition", "classoi_1_1_paraboloid.html#a7035330373f3330edd76c2b23d2bfea0", null ],
+    [ "getUnknownParameters", "classoi_1_1_paraboloid.html#a3586a6ce9fd6c71dae4e21370dd06419", null ],
+    [ "hasDirection", "classoi_1_1_paraboloid.html#ac12da9815432d9291d947a92f1987b3d", null ],
+    [ "hasPosition", "classoi_1_1_paraboloid.html#ac9d3b1f53852e6b31b54a74caf271bdf", null ],
+    [ "operator=", "classoi_1_1_paraboloid.html#a5889248351b6470204a7bd525acc8f17", null ],
+    [ "recalc", "classoi_1_1_paraboloid.html#adb9b561c00da65b524c0766a29c5b703", null ],
+    [ "setParaboloid", "classoi_1_1_paraboloid.html#ab595b190e6f69b18391f345aa0f7d19b", null ],
+    [ "setUnknownParameters", "classoi_1_1_paraboloid.html#a384de46bec0444ecd0200a69ec40a02e", null ],
+    [ "toOpenIndyXML", "classoi_1_1_paraboloid.html#a4939f3ffb7933da2ba88e883d43a3bc0", null ]
+];

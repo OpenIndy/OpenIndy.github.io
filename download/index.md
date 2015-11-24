@@ -6,10 +6,10 @@ comments: true
 image:
   feature: banner/b_nacht.jpg
 ---
-<b>Version 0.1 Posted on December XXth, 2014</b>
-<br>On this section you can download the latest executable version of OpenIndy.
+<b>Version 0.2.0.43 Posted on November 24th, 2015</b>
+<br>Here you can download the latest version of OpenIndy. The version 0.2.0.43 comes with the pre-installed [OpenIndy-DefaultPlugin](https://github.com/OpenIndy/OpenIndy-DefaultPlugin). It allows you to connect a virtual laser tracker. A real physical sensor (leica totalstation) is currently under development.
 <br><br>
-<a markdown="0" href="" class="btn btn-success">Download Version 0.1</a>
+<a markdown="0" href="" class="btn btn-success">Download Version 0.2.0.43</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>
@@ -33,59 +33,9 @@ To configure Qt Creator you may follow the instructions at the [Qt documentation
 Dependencies
 ------------
 
-- [openIndyLib](https://github.com/OpenIndy/OpenIndy/wiki/openIndy-lib-(linear-algebra))
+- [OpenIndy-Math](https://github.com/OpenIndy/OpenIndy-Math)
+- [OpenIndy-Core](https://github.com/OpenIndy/OpenIndy-Core)
 - [amadillo c++ linear algebra library](http://arma.sourceforge.net)
 - [BLAS/LAPACK](http://www.netlib.org/lapack/)
 - [Qt](http://qt-project.org)
 - [sqlite](https://sqlite.org)
-
-Build
------
-The easiest way to build OpenIndy is to use the Qt Creator. You can build OpenIndy in `debug` or `release` mode.  
-
-First you have to build the openIndyLib. It includes basic mathematic functionalities such as linear algebra algorithms.
-
-* Qt Creator ----> `lib/openIndyLib/openIndyLib.pro`
-
-Then build OpenIndy and copy the dependencies. 
-
-* Qt Creator ----> `openindy.pro`
-* Copy the openIndyLib (`lib/openIndyLib/bin/debug` || `lib/openIndyLib/bin/release`) 
-and the oisystemdb.sqlite (`db/`) to `bin/debug` || `bin/release`. 
-On Mac OS, you can find the binaries under `openindy/contents/MacOs`
-* Include LAPACK/BLAS
-
-
-BLAS and LAPACK
-----------------
-
-If using Linux:
-
-* Use the Terminal (command line): `sudo apt-get install liblapack-dev`
-
-If using Windows:
-
-* Copy all dll's from `lib/armadillo-3.910.0/examples/lib_win64` 
-to `bin/debug` || `bin/release`
-
-If using Mac OS:
-
-* Copy `lib/armadillo-3.910.0/examples/framework_mac/Accelerate.framework` to the Mac OS Library `/Library/Frameworks`
-
-OpenGL and GLU
-----------------
-
-If using Linux:
-
-* Use the Terminal (command line): 
-    * `sudo apt-get install build-essential`
-    * `sudo apt-get install libx11-xcb-dev libglu1-mesa-dev libxrender-dev`
-     
-
-Default Plugin
----------------
-You can find the default plugin under `plugins/OiDefaultPlugin`. After you've built the plugin you can embed it via the GUI (`Plugin -> load plugins`). Also you can find a template for a plugin in the folder, which you can copy and start developing your own plugin.
-
-For more infos about plugins, check our [OiPluginTemplate Tutorial](/documentation/docu-dev/plugins.html)
-
-

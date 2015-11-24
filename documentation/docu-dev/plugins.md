@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Plugins / OiPluginTemplate 
+title: Plugins / OiPluginTemplate
 modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "This tutorial supports you to learn how to write and run your own plugins using this project as a template."
 author: dev
@@ -15,15 +15,14 @@ image:
   </header>
 <div id="drawer" markdown="1">
 * bla
-{:toc} 
+{:toc}
 
 </div>
 </section><!-- /#table-of-contents -->
 
 ---
 
-
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/plugins.html" class="btn btn-success">Plugins</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/gui.html" class="btn">Model View Control</a>
+<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 ## Plugin loader
 
@@ -40,20 +39,20 @@ OiPluginTemplate is a predefined Qt project which we recommend you to use if you
 
 First you need to get a copy of the Qt-project "OiTemplatePlugin" on your local machine. Therefor you have two options available:  
 
-On the one hand you might fork this repository (OiPluginTemplate) and get a copy of it on your local machine. If you are new to GitHub you may want to follow the guidance at [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo). 
+On the one hand you might fork this repository (OiPluginTemplate) and get a copy of it on your local machine. If you are new to GitHub you may want to follow the guidance at [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo).
 On the other hand you might also fork and clone the OpenIndy repository. That repository contains a folder `plugins` which may look like this:
 
-![oiPluginFolders](/documentation/images/dev/oiPluginFolders.png) 
+![oiPluginFolders](/documentation/images/dev/oiPluginFolders.png)
 
 To get your own plugin you have to copy the folder `OiPluginTemplate` and paste it again next to it. You may choose any name for your new folder.
 
 No matter which option you choose you get one Qt-project for your own plugin. Every Qt-project is represented by a `*.pro`-file. In your case it is the file `OiTemplatePlugin.pro`. If you choose the first option the folder structure of the Qt-project will look like this:
 
-![oiPluginFolders](/documentation/images/dev/pluginTemplateFolderStructure.png) 
+![oiPluginFolders](/documentation/images/dev/pluginTemplateFolderStructure.png)
 
 However if you choose the second option the folder structure will look as follows:
 
-![oiPluginFolders](/documentation/images/dev/OiPluginTemplateFolderStructure.png) 
+![oiPluginFolders](/documentation/images/dev/OiPluginTemplateFolderStructure.png)
 
 How to work on your own plugin and what you have to take in account is explained in the next chapters.
 
@@ -407,8 +406,8 @@ After you have completed the [Get Started](#get-started) chapter you have got a 
   </tbody>
 </table>
 
-Before you open the plugin-project you should open and compile the "openIndyLib"-project. That project contains the classes for linear algebra. If you have forked the [OiPluginTemplate](https://github.com/OpenIndy/OiPluginTemplate) repository you can find the `openIndyLib.pro`-file under `/lib/openIndyLib`. In contrast if you have forked the [OpenIndy](https://github.com/OpenIndy/OpenIndy) repository you can find the `openIndyLib.pro`-file under `../../lib/openIndyLib`. 
-In both cases it is assumed that you navigate to the `openIndyLib`-folder starting at the folder which is shown in the images above respectively. 
+Before you open the plugin-project you should open and compile the "openIndyLib"-project. That project contains the classes for linear algebra. If you have forked the [OiPluginTemplate](https://github.com/OpenIndy/OiPluginTemplate) repository you can find the `openIndyLib.pro`-file under `/lib/openIndyLib`. In contrast if you have forked the [OpenIndy](https://github.com/OpenIndy/OpenIndy) repository you can find the `openIndyLib.pro`-file under `../../lib/openIndyLib`.
+In both cases it is assumed that you navigate to the `openIndyLib`-folder starting at the folder which is shown in the images above respectively.
 
 You can open Qt projects (in Qt Creator) by clicking "File" > "Open File or Project..." and selecting your `*.pro`-file. To compile a project select "Build" > "Run qmake" and afterwards "Build" > "Rebuild Project xy".  
 <br>
@@ -550,7 +549,7 @@ QList<Configuration::FeatureTypes> PointFit::applicableFor(){
 }
 {% endhighlight %}
 
-Now you have a minimum implementation of a function. The name and the description you have defined in the method `getMetaData` are important, because they appear later when using your function in OpenIndy. That description tells the users of your function how this function works and what it does. In the method `getNeededElements` it is determined what elements your function needs to be able to calculate something. As your function calculates the center of n observations, of course, you need some observations. This is defined in the parameter `typeOfElement`. 
+Now you have a minimum implementation of a function. The name and the description you have defined in the method `getMetaData` are important, because they appear later when using your function in OpenIndy. That description tells the users of your function how this function works and what it does. In the method `getNeededElements` it is determined what elements your function needs to be able to calculate something. As your function calculates the center of n observations, of course, you need some observations. This is defined in the parameter `typeOfElement`.
 
 Again there is a description parameter which will also appear later in OpenIndy. That description tells the user of your function what the element (observation) is used for in the function. The parameter `infinite` determines that the user of your function might add as many observations to the function as he wants. At last there is the method `applicableFor` which tells OpenIndy that your function can only be assigned to a point feature.  
 
@@ -612,7 +611,7 @@ bool PointFit::exec(Point &p){
     return false;
 }
 {% endhighlight %}
-The attribute `featureOrder` is a map, defined in the function class, which contains the id's of all elements that were assigned to your function by the user of OpenIndy in a special order. In this case that map has only got the key "0", because you only defined one needed element (observations) in the method `getNeededElements`. You get a list of objects, which hold the id's of the observations, by accessing the value of the map with the key "0". 
+The attribute `featureOrder` is a map, defined in the function class, which contains the id's of all elements that were assigned to your function by the user of OpenIndy in a special order. In this case that map has only got the key "0", because you only defined one needed element (observations) in the method `getNeededElements`. You get a list of objects, which hold the id's of the observations, by accessing the value of the map with the key "0".
 
 To get a list with the actual observations you have to iterate through a loop and call the method `getObservation` each time with the id of the observation you are searching for. The result is a pointer to an observation object. You should check for NULL and you should also check wether that observation is valid or not. An observation is valid if it is available in the current coordinate system. If an observation is not valid the method `setUseState` is called to tell OpenIndy that your function won't include that observation in its calculations. To not overfill the `exec` method please define a private method in the header file `pointFit.h` as follows:
 {% highlight c++ %}
@@ -722,7 +721,7 @@ Again please replace the `//TODO` by the following lines:
         return false;
     }
 {% endhighlight %}
-In the above code snippet the actual algorithm is implemented. The `x` vector holds the coordinates of the central point and the matrix `qxx` is the cofactor matrix of that central point. As the point feature `p`, which your function shall calculate, is passed as a reference you can easily set the results to the reference. Furthermore the point `p` has got an attribute `myStatistic` which you can assign your statistical results to. Not only the point, but also the function itself has got an attribute `myStatistic`. 
+In the above code snippet the actual algorithm is implemented. The `x` vector holds the coordinates of the central point and the matrix `qxx` is the cofactor matrix of that central point. As the point feature `p`, which your function shall calculate, is passed as a reference you can easily set the results to the reference. Furthermore the point `p` has got an attribute `myStatistic` which you can assign your statistical results to. Not only the point, but also the function itself has got an attribute `myStatistic`.
 
 After you have set the points statistic you have to assign that statistic object to the statistic object of your function, too. This is because the statistic of the point might later be changed by another function that is assigned to the point. The statistic of a function is only modified by the function itself (and no other functions) and can be reviewed via special dialogs in OpenIndy.  
 

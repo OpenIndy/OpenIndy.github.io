@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OpenIndy Server Interface
-excerpt: "Developer documentation for OpenIndy - OI Server Interface"
+excerpt: "Developer documentation for OpenIndy Server Interface"
 author: dev
 image:
   feature: banner/b_tracker2.jpg
@@ -14,345 +14,215 @@ image:
   </header>
 <div id="drawer" markdown="1">
 * bla
-{:toc} 
+{:toc}
 
 </div>
 </section><!-- /#table-of-contents -->
 
 ---
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/plugins.html" class="btn">Plugins</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn btn-success">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/gui.html" class="btn">Model View Control</a>
+<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
-
-
-## OpenIndy XML schema
-
-While OpenIndy is running it is possible for a client to connect to OpenIndy via a TCP connection. A client which knows the IP and the port OpenIndy listens to it can send XML based requests to OpenIndy. Then OpenIndy itself will work off the requested tasks and will send a XML based response message back to the client. There are various possible request types and their corresponding XML formats which are presented here.
+While OpenIndy is running it is possible for a client to connect to OpenIndy via a TCP connection. A client which knows the IP and the port OpenIndy listens to, can send XML based requests to OpenIndy. OpenIndy will then perform the requested tasks and will send a XML based response message back to the client. There are various possible request types and their corresponding XML formats which are presented here.
 
 ## Request types
 For a list of possible request types look at the following table.
 
-<div class="CSSTableGenerator" >
-<table>
-    <tr>
-      <td style="text-align: left">request type</td>
-      <td style="text-align: left">ID</td>
-      <td style="text-align: left">description</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GetProject</td>
-      <td style="text-align: left">0</td>
-      <td style="text-align: left">Get the whole OpenIndy project</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SetProject</td>
-      <td style="text-align: left">1</td>
-      <td style="text-align: left">Restore the given OpenIndy project</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GetActiveFeature</td>
-      <td style="text-align: left">2</td>
-      <td style="text-align: left">Get the currently selected feature</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SetActiveFeature</td>
-      <td style="text-align: left">3</td>
-      <td style="text-align: left">Set the active feature</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GetActiveStation</td>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">Get the active station</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SetActiveStation</td>
-      <td style="text-align: left">5</td>
-      <td style="text-align: left">Set the active station</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GetActiveCoordinateSystem</td>
-      <td style="text-align: left">6</td>
-      <td style="text-align: left">Get the currently selected display coordinate system</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SetActiveCoordinateSystem</td>
-      <td style="text-align: left">7</td>
-      <td style="text-align: left">Set the display coordinate system</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Aim</td>
-      <td style="text-align: left">8</td>
-      <td style="text-align: left">Aim the active feature with the active sensor</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Move</td>
-      <td style="text-align: left">9</td>
-      <td style="text-align: left">Move the active sensor by the given amount</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Measure</td>
-      <td style="text-align: left">10</td>
-      <td style="text-align: left">Measure the active feature with the active sensor</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">StartWatchWindow</td>
-      <td style="text-align: left">11</td>
-      <td style="text-align: left">Start a watch window stream</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">StopWatchWindow</td>
-      <td style="text-align: left">12</td>
-      <td style="text-align: left">Stop the watch window stream</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">StartStakeOut</td>
-      <td style="text-align: left">13</td>
-      <td style="text-align: left">Start the stake out mode</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">StopStakeOut</td>
-      <td style="text-align: left">14</td>
-      <td style="text-align: left">Stop the stake out mode</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GetNextGeometry</td>
-      <td style="text-align: left">15</td>
-      <td style="text-align: left">In stake out mode get the next geometry to measure</td>
-    </tr>
-</table>
-</div>
+| request type | ID | description |
+| :------------- | :------------- | :----------- |
+| GetProject | 0 | Get the whole OpenIndy project |
+| GetActiveFeature | 1 | Get the currently selected feature |
+| SetActiveFeature | 2 | Set the active feature |
+| GetActiveStation | 3 | Get the active station |
+| SetActiveStation | 4 | Set the active station |
+| GetActiveCoordinateSystem | 5 | Get the currently selected display coordinate system |
+| SetActiveCoordinateSystem | 6 | Set the display coordinate system |
+| Aim | 7 | Aim the active feature with the active sensor |
+| Measure | 8 | Measure the active feature with the active sensor |
+| StartWatchWindow | 9 | Start a watch window stream |
+| StopWatchWindow | 10 | Stop the watch window stream |
+| OiToolRequest | 11 | A special OiTool request |
+| GetFeatures | 12 | Get a list of all features |
+| AddFeatures | 13 | Add features to OpenIndy |
+| GetObservations | 14 | Get a list of observations of a geometry |
+| RemoveObservations | 15 | Remove one or more observations of a geometry |
+| GetParameters | 16 | Get the parameters of a feature |
+| GetMeasurementConfigs | 17 | Get a list of all available measurement configs |
+| GetMeasurementConfig | 18 | Get the measurement config of a geometry |
+| SetMeasurementConfig | 19 | Set the measurement config of a geometry |
+
+Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
+
+| event type | ID | description |
+| :------------- | :------------- | :----------- |
+| SensorActionStarted | 1001 | Informs about a started sensor action |
+| SensorActionFinished | 1002 | Informs about a finished sensor action |
+| MessageBox | 1003 | Sends messages that shall be displayed as a message box |
+| RealTimeReading | 1004 | Get real time position information from the sensor (watch window) |
+| ActiveFeatureChanged | 1005 | Informs about a new active feature |
+| ActiveStationChanged | 1006 | Informs about a new active station |
+| ActiveCoordinateSystemChanged | 1007 | Informs about a new active coordinate system |
+| FeatureSetChanged | 1008 | Informs about added or removed features |
+| FeatureAttributesChanged | 1009 | Informs about feature changes |
 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
-{% highlight XML %}
+```xml
 <OiRequest id="">
 </OiRequest>
-{% endhighlight %}
-{% highlight XML %}
+```
+```xml
 <OiResponse ref="" errorCode="">
 </OiResponse>
-{% endhighlight %}
+```
 Each request comes with an id that defines the request type (see the table above). The attribute "ref" of the response tag equals the id of the corresponding request. If the "errorCode" is "0" then no error occured. The XML formats for the request and response messages to the tasks of the table above are shown below.
 
-###GetProject
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
+#### GetProject
+###### Request
+```xml
 <OiRequest id="0"/>
-{% endhighlight %}
+```
+###### Response
+Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28openIndyXML%29) for a description of the OpenIndy XML schema.
 
-#### Response
-{:.no_toc}
+#### GetActiveFeature
+###### Request
+```xml
+<OiRequest id="1"/>
+```
+###### Response
+```xml
+<OiResponse ref="1" errorCode="0">
+    <activeFeature ref=""/>
+</OiResponse>
+```
+The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
-The OpenIndy XML schema is descriped [here](https://github.com/OpenIndy/OpenIndy/blob/master/schema/openIndySchema.xsd)
-
-### GetActiveFeature
-{:.no_toc}
-
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="2"/>
-{% endhighlight %}
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
+#### SetActiveFeature
+###### Request
+```xml
+<OiRequest id="2">
+    <activeFeature ref=""/>
+</OiRequest>
+```
+The attribute "ref" of the "activeFeature" tag represents the id of the feature that shall be activated.
+###### Response
+```xml
 <OiResponse ref="2" errorCode="0">
     <activeFeature ref=""/>
 </OiResponse>
-{% endhighlight %}
+```
 The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
-### SetActiveFeature
-{:.no_toc}
-
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="3">
-    <activeFeature ref=""/>
-</OiRequest>
-{% endhighlight %}
-The attribute "ref" of the "activeFeature" tag represents the id of the feature that shall be activated.
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
+#### GetActiveStation
+###### Request
+```xml
+<OiRequest id="3"/>
+```
+###### Response
+```xml
 <OiResponse ref="3" errorCode="0">
-    <activeFeature ref=""/>
+    <activeStation ref=""/>
 </OiResponse>
-{% endhighlight %}
-The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
+```
+The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
-### GetActiveStation
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="4"/>
-{% endhighlight %}
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
+#### SetActiveStation
+###### Request
+```xml
+<OiRequest id="4">
+    <activeStation ref=""/>
+</OiRequest>
+```
+The attribute "ref" of the "activeStation" tag represents the id of the station that shall be activated.
+###### Response
+```xml
 <OiResponse ref="4" errorCode="0">
     <activeStation ref=""/>
 </OiResponse>
-{% endhighlight %}
+```
 The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
-### SetActiveStation
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="5">
-    <activeStation ref=""/>
-</OiRequest>
-{% endhighlight %}
-The attribute "ref" of the "activeStation" tag represents the id of the station that shall be activated.
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
+#### GetActiveCoordinateSystem
+###### Request
+```xml
+<OiRequest id="5"/>
+```
+###### Response
+```xml
 <OiResponse ref="5" errorCode="0">
-    <activeStation ref=""/>
+    <activeCoordinateSystem ref=""/>
 </OiResponse>
-{% endhighlight %}
-The attribute "ref" of the "activeStation" tag represents the id of the active station.
+```
+The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
-### GetActiveCoordinateSystem
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="6"/>
-{% endhighlight %}
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
+#### SetActiveCoordinateSystem
+###### Request
+```xml
+<OiRequest id="6">
+    <activeCoordinateSystem ref=""/>
+</OiRequest>
+```
+The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the coordinate system that shall be activated.
+###### Response
+```xml
 <OiResponse ref="6" errorCode="0">
     <activeCoordinateSystem ref=""/>
 </OiResponse>
-{% endhighlight %}
+```
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
-### SetActiveCoordinateSystem
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
+#### Aim
+###### Request
+```xml
 <OiRequest id="7">
-    <activeCoordinateSystem ref=""/>
+    <feature ref=""/>
 </OiRequest>
-{% endhighlight %}
-The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the coordinate system that shall be activated.
+```
+###### Response
+```xml
+<OiResponse ref="7" errorCode="0"/>
+```
 
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="7" errorCode="0">
-    <activeCoordinateSystem ref=""/>
-</OiResponse>
-{% endhighlight %}
-The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
-
-### Measure
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="10"/>
-{% endhighlight %}
-Cann be called to measure the active feature. Previously you have to set the active feature to the geometry you want to be measured.
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="10" errorCode="0"/>
-{% endhighlight %}
-
-### StartWatchWindow
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="11">
-    <readingType type=""/> <!-- value between 0 and 5 -->
+#### Measure
+###### Request
+```xml
+<OiRequest id="8">
+    <feature ref=""/>
 </OiRequest>
-{% endhighlight %}
+```
+###### Response
+```xml
+<OiResponse ref="8" errorCode="0"/>
+```
+
+#### StartWatchWindow
+###### Request
+```xml
+<OiRequest id="9">
+    <readingType type=""/> <!-- value between 0 and 6 -->
+</OiRequest>
+```
 The attribute "type" of the "readingType" tag represents the type of reading (cartesian, polar etc.) that shall be returned. See the table below for a list of possible values for the attribute "type".
 
-<div class="CSSTableGenerator" >
-<table>
-    <tr>
-      <td style="text-align: left">reading type</td>
-      <td style="text-align: left">description</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0</td>
-      <td style="text-align: left">Returns a distance value.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">1</td>
-      <td style="text-align: left">Returns cartesian coordinates (x, y, z).</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">2</td>
-      <td style="text-align: left">Returns polar coordinates (azimuth, zenith, distance).</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">3</td>
-      <td style="text-align: left">Returns azimuth and zenith.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">Returns a temperature.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">5</td>
-      <td style="text-align: left">Returns a level measurement (RX, RY, RZ).</td>
-    </tr>
-</table>
-</div>
-
-#### Response
-{:.no_toc}
-
+| reading type | description |
+| :----------- | :---------- |
+| 0 | Returns a distance value. |
+| 1 | Returns cartesian coordinates (x, y, z). |
+| 2 | Returns polar coordinates (azimuth, zenith, distance). |
+| 3 | Returns azimuth and zenith. |
+| 4 | Returns a temperature. |
+| 5 | Returns a level measurement (RX, RY, RZ). |
+| 6 | Returns cross and distance values. |
+###### Response
 The response message to a "StartWatchWindow" task is shown below.
-{% highlight XML %}
-<OiResponse ref="11" errorCode="0"/>
-{% endhighlight %}
+```xml
+<OiResponse ref="9" errorCode="0"/>
+```
 Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a message of the below format. Depending on the reading type that was requested one of the shown sub tags ("cartesian", "polar", etc.) will be included.
-{% highlight XML %}
-<OiResponse ref="11" errorCode="0">
+```xml
+<OiResponse ref="9" errorCode="0">
+    <geometry id="" name="" />
     <cartesian x="" y="" z=""/>
     <polar azimuth="" zenith="" d=""/>
     <distance d=""/>
@@ -360,172 +230,302 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <temperature t=""/>
     <level RX="" RY="" RZ=""/>
 </OiResponse>
-{% endhighlight %}
+```
 
-### StopWatchWindow
-{:.no_toc}
+#### StopWatchWindow
+###### Request
+```xml
+<OiRequest id="10"/>
+```
+###### Response
+```xml
+<OiResponse ref="10" errorCode="0"/>
+```
 
-#### Request
-{:.no_toc}
+#### OiToolRequest
+###### Request
+```xml
+<OiRequest id="11">
+    <tool iid="" />
+    <!-- dynamic content which depends on the OiTool-plugin -->
+</OiRequest>
+```
+###### Response
+```xml
+<OiResponse ref="11" errorCode="0">
+    <tool iid="" />
+    <!-- dynamic content which depends on the OiTool-plugin -->
+</OiResponse>
+```
 
-{% highlight XML %}
+#### GetFeatures
+###### Request
+```xml
 <OiRequest id="12"/>
-{% endhighlight %}
+```
+###### Response
+```xml
+<OiResponse ref="12" errorCode="0">
+    <feature> <!-- can contain 0 to n features -->
+        <feature type=""> <!-- type: see table below for available feature types -->
+             <id></id>
+             <name></name>
+             <group></group>
+             <isSolved></isSolved>
+             <isNominal></isNominal> <!-- only included for geometries -->
+        </feature>
+    </feature>
+</OiResponse>
+```
+| type | feature |
+| :----------- | :---------- |
+| 0 | circle |
+| 1 | cone |
+| 2 | cylinder |
+| 3 | ellipse |
+| 4 | ellipsoid |
+| 5 | hyperboloid |
+| 6 | line |
+| 7 | nurbs |
+| 8 | paraboloid |
+| 9 | plane |
+| 10 | point |
+| 11 | point cloud |
+| 12 | angle (scalar entity) |
+| 13 | distance (scalar entity) |
+| 14 | measurement series (scalar entity) |
+| 15 | temperature (scalar entity) |
+| 16 | slotted hole |
+| 17 | sphere |
+| 18 | torus |
+| 19 | coordinate system |
+| 20 | station |
+| 21 | transformation parameter |
 
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="12" errorCode="0"/>
-{% endhighlight %}
-
-### StartStakeOut
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
+#### AddFeatures
+###### Request
+```xml
 <OiRequest id="13">
-    <mode value=""/>
-    <allGeometries value=""/>
-    <groups>
-        <group name=""/>
-    </groups>
-    <geometries>
-        <geometry ref=""/>
-    </geometries>
+    <type></type>
+    <name></name>
+    <group></group>
+    <count></count>
+    <isActual></isActual> <!-- only for geometries (0=false, 1=true) -->
+    <isNominal></isNominal> <!-- only for geometries (0=false, 1=true) -->
+    <nominalSystem></nominalSystem> <!-- only for geometries -->
+    <measurementConfig></measurementConfig> <!-- only for geometries -->
 </OiRequest>
-{% endhighlight %}
+```
+###### Response
+```xml
+<OiResponse ref="13" errorCode="0"/>
+```
 
-Starts a stake out task. Possible values for the attribute "value" of the tag "mode" are "sequence" and nearest", where only "nearest" is implemented in OpenIndy at the moment. Set the attribute "value" of the "allGeometries" tag to "1" if you want to include all geometries in the stake out, or "0" if only geometries of special groups or selected geometries shall be included. The tags "groups" and "geometries" are both optional. If only geometries of special feature groups shall be included in the stake out then you have to add their name.
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="13" errorCode="0">
-    <stakeOutId id=""/>
-</OiResponse>
-{% endhighlight %}
-The response to a "StartStakeOut" task is a unique id that identifies your stake out.
-
-### StopStakeOut
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
+#### GetObservations
+###### Request
+```xml
 <OiRequest id="14">
-    <stakeOutId id=""/>
+    <id></id> <!-- id of the geometry whose observations shall be delivered -->
 </OiRequest>
-{% endhighlight %}
-
-To stop a stake out you have to supply the corresponding stake out id.
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="14" errorCode="0"/>
-{% endhighlight %}
-
-### GetNextGeometry
-{:.no_toc}
-
-#### Request
-{:.no_toc}
-
-{% highlight XML %}
-<OiRequest id="15">
-    <stakeOutId id=""/>
-</OiRequest>
-{% endhighlight %}
-
-This task delivers the next geometry (which is the spatially closest one to the previous geometry)
-
-#### Response
-{:.no_toc}
-
-{% highlight XML %}
-<OiResponse ref="15" errorCode="0">
-    <geometry ref=""/>
+```
+###### Response
+```xml
+<OiResponse ref="14" errorCode="0">
+    <id></id> <!-- geometry id -->
+    <observations> <!-- can contain 0 to n observations -->
+        <observation>
+            <id></id>
+            <x></x>
+            <y></x>
+            <z></x>
+            <vx></vx>
+            <vy></vx>
+            <vz></vx>
+            <v></v>
+            <isUsed></isUsed>
+            <isValid></isValid>
+        </observation>
+    </observations>
 </OiResponse>
-{% endhighlight %}
+```
 
-The value "ref" of the "geometry" tag represents the id of the next geometry.
+#### RemoveObservations
+###### Request
+```xml
+<OiRequest id="15">
+    <id></id> <!-- geometry id -->
+    <observations> <!-- can contain 0 to n observations -->
+        <observation id=""/>
+    </observations>
+</OiRequest>
+```
+###### Response
+```xml
+<OiResponse ref="15" errorCode="0"/>
+```
+
+#### GetParameters
+###### Request
+```xml
+<OiRequest id="16">
+    <id></id> <!-- id of the feature whose parameters shall be delivered -->
+</OiRequest>
+```
+###### Response
+```xml
+<OiResponse ref="16" errorCode="0">
+    <id></id> <!-- feature id -->
+    <stdev></stdev>
+    <parameters>
+        <parameter name="" value=""/>
+    </parameters>
+</OiResponse>
+```
+Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3", "j 3", "k 3", "radius", "radius 2", "aperture", "a", "b", "c", "angle", "distance", "measurement series", "temperature", "length", "tx", "ty", "tz", "rx", "ry", "rz", "sx", "sy", "sz"
+
+#### GetMeasurementConfigs
+###### Request
+```xml
+<OiRequest id="17"/>
+```
+###### Response
+```xml
+<OiResponse ref="17" errorCode="0">
+    <measurementConfigs>
+        <measurementConfig>
+            <name></name>
+            <isSaved></isSaved>
+            <count></count>
+            <iterations></iterations>
+            <measureTwoSides></measureTwoSides>
+            <timeDependent></timeDependent>
+            <distanceDependent></distanceDependent>
+            <timeInterval></timeInterval>
+            <distanceInterval></distanceInterval>
+            <typeOfReading></typeOfReading>
+        </measurementConfig>
+    </measurementConfigs>
+</OiResponse>
+```
+
+#### GetMeasurementConfig
+###### Request
+```xml
+<OiRequest id="18">
+    <id></id> <!-- id of the geometry whose measurement config shall be delivered -->
+</OiRequest>
+```
+###### Response
+```xml
+<OiResponse ref="18" errorCode="0">
+    <id></id> <!-- geometry id -->
+    <measurementConfig>
+        <name></name>
+        <isSaved></isSaved>
+        <count></count>
+        <iterations></iterations>
+        <measureTwoSides></measureTwoSides>
+        <timeDependent></timeDependent>
+        <distanceDependent></distanceDependent>
+        <timeInterval></timeInterval>
+        <distanceInterval></distanceInterval>
+        <typeOfReading></typeOfReading>
+    </measurementConfig>
+</OiResponse>
+```
+
+#### SetMeasurementConfig
+###### Request
+```xml
+<OiRequest id="19">
+    <id></id> <!-- geometry id -->
+    <measurementConfig></measurementConfig> <!-- name of the measurement config -->
+    <isSaved></isSaved> <!-- 0=project config, 1=saved config -->
+</OiRequest>
+```
+###### Response
+```xml
+<OiResponse ref="19" errorCode="0"/>
+```
+
+## Event format
+All event messages are XML based. They all have the following format:
+```xml
+<OiResponse ref="" errorCode="">
+</OiResponse>
+```
+Each event comes with an id that defines the event type (see the table above). If the "errorCode" is "0" then no error occured. The XML formats for the events are shown below.
+
+#### SensorActionStarted
+```xml
+<OiResponse ref="1001" errorCode="0">
+    <action name=""/>
+</OiResponse>
+```
+
+#### SensorActionFinished
+```xml
+<OiResponse ref="1002" errorCode="0">
+    <action success="1" message=""/> <!-- success: 1=true, 0=false -->
+</OiResponse>
+```
+
+#### MessageBox
+```xml
+<OiResponse ref="1003" errorCode="0">
+    <message text="" type="0"/> <!-- type: 0=information, 1=warning, 2=error, 3=critical -->
+</OiResponse>
+```
+
+#### RealTimeReading
+```xml
+<OiResponse ref="1004" errorCode="0">
+    <measurement name="" value=""/> <!-- name=x|y|z|azimuth|zenith|distance -->
+</OiResponse>
+```
+
+#### ActiveFeatureChanged
+```xml
+<OiResponse ref="1005" errorCode="0"/>
+```
+
+#### ActiveStationChanged
+```xml
+<OiResponse ref="1006" errorCode="0"/>
+```
+
+#### ActiveCoordinateSystemChanged
+```xml
+<OiResponse ref="1007" errorCode="0"/>
+```
+
+#### FeatureSetChanged
+```xml
+<OiResponse ref="1008" errorCode="0"/>
+```
+
+#### FeatureAttributesChanged
+```xml
+<OiResponse ref="1009" errorCode="0"/>
+```
 
 ## Error codes
-
-<div class="CSSTableGenerator" >
-<table>
-    <tr>
-      <td style="text-align: left">error code</td>
-      <td style="text-align: left">description</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">0</td>
-      <td style="text-align: left">No error occured.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">1</td>
-      <td style="text-align: left">No, or wrong, xml format.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">2</td>
-      <td style="text-align: left">The request id does not exist.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">3</td>
-      <td style="text-align: left">There is no active feature. (e.g. measure)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">There is no active station.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">5</td>
-      <td style="text-align: left">There is no active coordinate system.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">6</td>
-      <td style="text-align: left">The requested feature id does not exist.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">7</td>
-      <td style="text-align: left">No transformation parameters are available. (e.g. aim)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">8</td>
-      <td style="text-align: left">The task is already in process. (e.g. watch window)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">9</td>
-      <td style="text-align: left">There is no task that could be stopped. (e.g. watch window)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">10</td>
-      <td style="text-align: left">No sensor is available. (e.g. watch window)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">11</td>
-      <td style="text-align: left">The task id does not exist. (e.g. stake out)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">12</td>
-      <td style="text-align: left">Stake out is finished.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">13</td>
-      <td style="text-align: left">You cannot measure a nominal geometry.</td>
-    </tr>
-</table>
-</div>
-<br>
-
----
-
-## Data import (oiDataExchanger)
-
-data import 
+| error code | description |
+| :------------- | :----------- |
+| 0 | No error occured. |
+| 1 | No OpenIndy job available. |
+| 2 | No, or wrong, xml format. |
+| 3 | The request id does not exist. |
+| 4 | There is no active feature. (e.g. measure) |
+| 5 | There is no active station. |
+| 6 | There is no active coordinate system. |
+| 7 | The requested feature id does not exist. |
+| 8 | No transformation parameters are available. (e.g. aim) |
+| 9 | The task is already in process. (e.g. watch window) |
+| 10 | There is no task that could be stopped. (e.g. watch window) |
+| 11 | No sensor is available. (e.g. watch window) |
+| 12 | The task id does not exist. |
+| 13 | You cannot measure a nominal geometry. |
+| 13 | Measurement error. |
+| 13 | No sensor is connected. |
+| 13 | The feature is not solved. |

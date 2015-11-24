@@ -1,0 +1,36 @@
+var classoi_1_1_circle =
+[
+    [ "CircleUnknowns", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673c", [
+      [ "unknownCenterX", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673caf2b87a1326e48206e9e6b9598af02c94", null ],
+      [ "unknownCenterY", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673ca3c0ba07506853645181cddb6912a727a", null ],
+      [ "unknownCenterZ", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673ca451ffd219ae8845c62cc0d60fed3d288", null ],
+      [ "unknownNormalI", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673ca8bf725e12c72db705db6b0eb98be918e", null ],
+      [ "unknownNormalJ", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673cac3bbf9979fcff9ec0185609890bcee9c", null ],
+      [ "unknownNormalK", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673caacedfd42b17441d036f3574bb6516638", null ],
+      [ "unknownRadius", "classoi_1_1_circle.html#a3feb96965b6020e4c70dcf12c282673ca47ce9a5f14df50ca22dab38d46370904", null ]
+    ] ],
+    [ "Circle", "classoi_1_1_circle.html#aeef40714ae2ed7b6cf31d4df487c8ba9", null ],
+    [ "Circle", "classoi_1_1_circle.html#ab86c802ae291666b193f060b18c5440e", null ],
+    [ "Circle", "classoi_1_1_circle.html#afd141c830f7534065a9e85d91d3c95f5", null ],
+    [ "~Circle", "classoi_1_1_circle.html#ae3f30436e645d73e368e8ee55f8d1650", null ],
+    [ "fromOpenIndyXML", "classoi_1_1_circle.html#a830ecde5b27614db1f70b6b884e79b94", null ],
+    [ "getDirection", "classoi_1_1_circle.html#ab3de27109fd4a3fb028d78694170c2a5", null ],
+    [ "getDisplayPrimaryI", "classoi_1_1_circle.html#aaec98de3aba96dab6425b3cbab535dd6", null ],
+    [ "getDisplayPrimaryJ", "classoi_1_1_circle.html#a1ee49b6c8c0b0021a841df3ee784494c", null ],
+    [ "getDisplayPrimaryK", "classoi_1_1_circle.html#a1ae4df54537d056f735c206928f8bfe7", null ],
+    [ "getDisplayRadiusA", "classoi_1_1_circle.html#a15806353e1ea3f149aae4fa3c1641d56", null ],
+    [ "getDisplayX", "classoi_1_1_circle.html#ab5dc5027b20af625fe03cf63dc16b608", null ],
+    [ "getDisplayY", "classoi_1_1_circle.html#a379f2ca30b03732e60d66446613511d6", null ],
+    [ "getDisplayZ", "classoi_1_1_circle.html#ac8817b5b9979818ba65d107f02d5940c", null ],
+    [ "getPosition", "classoi_1_1_circle.html#a1303b6eb5cccb7a771abeebbfddcd894", null ],
+    [ "getRadius", "classoi_1_1_circle.html#a1b0106440a38756196c52e516bbe9622", null ],
+    [ "getUnknownParameters", "classoi_1_1_circle.html#ad138251b408642882d9eca381ea05d4d", null ],
+    [ "hasDirection", "classoi_1_1_circle.html#a616ea63a21c8323e0bc760b437fa29b6", null ],
+    [ "hasPosition", "classoi_1_1_circle.html#ad4382186fc254527de58cf793b410e44", null ],
+    [ "hasRadius", "classoi_1_1_circle.html#a2494b40467f7fbc4f17015765e7aa523", null ],
+    [ "operator=", "classoi_1_1_circle.html#aef39a8fceeddd82536c0011a4183a334", null ],
+    [ "recalc", "classoi_1_1_circle.html#a74ad608d434a1a7d8cdce08381ded844", null ],
+    [ "setCircle", "classoi_1_1_circle.html#a818a33a72864b5c0360d0d117cb213af", null ],
+    [ "setUnknownParameters", "classoi_1_1_circle.html#abb0f31cb41b916434c48ba282c60ea4c", null ],
+    [ "toOpenIndyXML", "classoi_1_1_circle.html#afd92b9e547905a2bb31d6a69703c63b5", null ]
+];
