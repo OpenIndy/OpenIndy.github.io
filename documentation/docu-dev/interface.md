@@ -69,6 +69,85 @@ Each of the above request types is a somehow synchronous task. The client sends 
 | FeatureAttributesChanged | 1009 | Informs about feature changes |
 {: class="CSSTableGenerator"} 
 
+
+Following the source code for a simple website that connects with OpenIndy. <br>
+
+{% highlight javascript %}
+
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>WebSocket Test</title>
+
+<script language="javascript" type="text/javascript">
+
+  var wsUri = "ws://127.0.0.1:1235";
+  var output;
+
+  function init()
+  {
+    output = document.getElementById("output");
+    testWebSocket();
+  }
+
+  function testWebSocket()
+  {
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+  }
+
+  function onOpen(evt)
+  {
+    writeToScreen("CONNECTED");
+  }
+
+  function onClose(evt)
+  {
+    writeToScreen("DISCONNECTED");
+  }
+
+  function onMessage(evt)
+  {
+    writeToScreen('<span style="color: blue;">RESPONSE: ' + '<xmp>' + evt.data + '</xmp>' + '</span>');
+  }
+
+  function onError(evt)
+  {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend()
+  {
+    input = document.getElementById("input");
+    message = input.value;
+    writeToScreen('SENT: ');
+    writeToScreen('<xmp>' + message + '</xmp>'); 
+    websocket.send(message);
+  }
+
+  function writeToScreen(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    output.appendChild(pre);
+  }
+
+  window.addEventListener("load", init, false);
+
+</script>
+
+<h2>WebSocket Test</h2>
+
+<div id="output">
+</div>
+
+<input id="input"></input><br>
+<button id="request" onclick="doSend()">request</button>
+{% endhighlight %}
+
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
 
