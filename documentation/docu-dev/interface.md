@@ -70,8 +70,6 @@ Each of the above request types is a somehow synchronous task. The client sends 
 {: class="CSSTableGenerator"} 
 
 
-Following the source code for a simple website that connects with OpenIndy. <br>
-
 {% highlight html %}
 
 <!DOCTYPE html>
@@ -147,6 +145,8 @@ Following the source code for a simple website that connects with OpenIndy. <br>
 <input id="input"></input><br>
 <button id="request" onclick="doSend()">request</button>
 {% endhighlight %}
+
+Above you can see the source code for a simple website that demonstrates how to communicate with OpenIndy via WebSockets. <br>
 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
