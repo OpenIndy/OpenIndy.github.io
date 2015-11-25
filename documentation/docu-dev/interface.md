@@ -71,7 +71,7 @@ For a list of possible request types look at the following table.
 |----------------------+----+------------------------------------------|
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
 |----------------------+----+------------------------------------------|
-{: class="CSSTableGenerator"} <br>
+{: class="CSSTableGenerator"} 
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
 
@@ -86,7 +86,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 | ActiveCoordinateSystemChanged | 1007 | Informs about a new active coordinate system |
 | FeatureSetChanged | 1008 | Informs about added or removed features |
 | FeatureAttributesChanged | 1009 | Informs about feature changes |
-{: class="CSSTableGenerator"} <br>
+{: class="CSSTableGenerator"} 
 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
@@ -117,6 +117,7 @@ Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28ope
 {% highlight xml %} 
 <OiRequest id="1"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %} 
 <OiResponse ref="1" errorCode="0">
@@ -134,6 +135,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 </OiRequest>
 {% endhighlight %}
 The attribute "ref" of the "activeFeature" tag represents the id of the feature that shall be activated.
+
 ###### Response
 {% highlight xml %} 
 <OiResponse ref="2" errorCode="0">
@@ -148,6 +150,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 {% highlight xml %}
 <OiRequest id="3"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="3" errorCode="0">
@@ -165,6 +168,7 @@ The attribute "ref" of the "activeStation" tag represents the id of the active s
 </OiRequest>
 {% endhighlight %}
 The attribute "ref" of the "activeStation" tag represents the id of the station that shall be activated.
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="4" errorCode="0">
@@ -179,6 +183,7 @@ The attribute "ref" of the "activeStation" tag represents the id of the active s
 {% highlight xml %}
 <OiRequest id="5"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="5" errorCode="0">
@@ -196,6 +201,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
 </OiRequest>
 {% endhighlight %}
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the coordinate system that shall be activated.
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="6" errorCode="0">
@@ -212,6 +218,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
     <feature ref=""/>
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="7" errorCode="0"/>
@@ -225,6 +232,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
     <feature ref=""/>
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="8" errorCode="0"/>
@@ -249,7 +257,7 @@ The attribute "type" of the "readingType" tag represents the type of reading (ca
 | 4 | Returns a temperature. |
 | 5 | Returns a level measurement (RX, RY, RZ). |
 | 6 | Returns cross and distance values. |
-{: class="CSSTableGenerator"} <br>
+{: class="CSSTableGenerator"} 
 
 ###### Response
 The response message to a "StartWatchWindow" task is shown below.
@@ -275,6 +283,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% highlight xml %}
 <OiRequest id="10"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="10" errorCode="0"/>
@@ -289,6 +298,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <!-- dynamic content which depends on the OiTool-plugin -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="11" errorCode="0">
@@ -303,6 +313,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% highlight xml %}
 <OiRequest id="12"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="12" errorCode="0">
@@ -342,7 +353,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 | 19 | coordinate system |
 | 20 | station |
 | 21 | transformation parameter |
-{: class="CSSTableGenerator"} <br>
+{: class="CSSTableGenerator"} 
 
 #### AddFeatures
 
@@ -359,6 +370,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <measurementConfig></measurementConfig> <!-- only for geometries -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 
 {% highlight xml %}
@@ -373,6 +385,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <id></id> <!-- id of the geometry whose observations shall be delivered -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="14" errorCode="0">
@@ -405,6 +418,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     </observations>
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="15" errorCode="0"/>
@@ -418,6 +432,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <id></id> <!-- id of the feature whose parameters shall be delivered -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="16" errorCode="0">
@@ -436,6 +451,7 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
 {% highlight xml %}
 <OiRequest id="17"/>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="17" errorCode="0">
@@ -464,6 +480,7 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
     <id></id> <!-- id of the geometry whose measurement config shall be delivered -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="18" errorCode="0">
@@ -493,6 +510,7 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
     <isSaved></isSaved> <!-- 0=project config, 1=saved config -->
 </OiRequest>
 {% endhighlight %}
+
 ###### Response
 {% highlight xml %}
 <OiResponse ref="19" errorCode="0"/>
