@@ -71,7 +71,7 @@ For a list of possible request types look at the following table.
 |----------------------+----+------------------------------------------|
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
 |----------------------+----+------------------------------------------|
-{: class="CSSTableGenerator"}
+{: class="CSSTableGenerator"} <br>
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
 
@@ -86,6 +86,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 | ActiveCoordinateSystemChanged | 1007 | Informs about a new active coordinate system |
 | FeatureSetChanged | 1008 | Informs about added or removed features |
 | FeatureAttributesChanged | 1009 | Informs about feature changes |
+{: class="CSSTableGenerator"} <br>
 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
@@ -111,7 +112,8 @@ Each request comes with an id that defines the request type (see the table above
 Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28openIndyXML%29) for a description of the OpenIndy XML schema.
 
 #### GetActiveFeature
-###### Request
+
+######Request
 {% highlight xml %} 
 <OiRequest id="1"/>
 {% endhighlight %}
@@ -124,7 +126,8 @@ Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28ope
 The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
 #### SetActiveFeature
-###### Request
+
+######Request
 {% highlight xml %} 
 <OiRequest id="2">
     <activeFeature ref=""/>
@@ -140,7 +143,8 @@ The attribute "ref" of the "activeFeature" tag represents the id of the feature 
 The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
 #### GetActiveStation
-###### Request
+
+######Request
 {% highlight xml %}
 <OiRequest id="3"/>
 {% endhighlight %}
@@ -153,7 +157,8 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
 #### SetActiveStation
-###### Request
+
+######Request
 {% highlight xml %}
 <OiRequest id="4">
     <activeStation ref=""/>
@@ -169,7 +174,8 @@ The attribute "ref" of the "activeStation" tag represents the id of the station 
 The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
 #### GetActiveCoordinateSystem
-###### Request
+
+######Request
 {% highlight xml %}
 <OiRequest id="5"/>
 {% endhighlight %}
@@ -182,7 +188,8 @@ The attribute "ref" of the "activeStation" tag represents the id of the active s
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
 #### SetActiveCoordinateSystem
-###### Request
+
+######Request
 {% highlight xml %}
 <OiRequest id="6">
     <activeCoordinateSystem ref=""/>
@@ -198,6 +205,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
 #### Aim
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="7">
@@ -210,6 +218,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
 {% endhighlight %}
 
 #### Measure
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="8">
@@ -222,6 +231,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
 {% endhighlight %}
 
 #### StartWatchWindow
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="9">
@@ -239,6 +249,8 @@ The attribute "type" of the "readingType" tag represents the type of reading (ca
 | 4 | Returns a temperature. |
 | 5 | Returns a level measurement (RX, RY, RZ). |
 | 6 | Returns cross and distance values. |
+{: class="CSSTableGenerator"} <br>
+
 ###### Response
 The response message to a "StartWatchWindow" task is shown below.
 {% highlight xml %}
@@ -258,6 +270,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% endhighlight %}
 
 #### StopWatchWindow
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="10"/>
@@ -268,6 +281,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% endhighlight %}
 
 #### OiToolRequest
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="11">
@@ -284,6 +298,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% endhighlight %}
 
 #### GetFeatures
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="12"/>
@@ -302,6 +317,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     </feature>
 </OiResponse>
 {% endhighlight %}
+
 | type | feature |
 | :----------- | :---------- |
 | 0 | circle |
@@ -326,8 +342,10 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 | 19 | coordinate system |
 | 20 | station |
 | 21 | transformation parameter |
+{: class="CSSTableGenerator"} <br>
 
 #### AddFeatures
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="13">
@@ -342,11 +360,13 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 </OiRequest>
 {% endhighlight %}
 ###### Response
+
 {% highlight xml %}
 <OiResponse ref="13" errorCode="0"/>
 {% endhighlight %}
 
 #### GetObservations
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="14">
@@ -375,6 +395,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% endhighlight %}
 
 #### RemoveObservations
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="15">
@@ -390,6 +411,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 {% endhighlight %}
 
 #### GetParameters
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="16">
@@ -409,6 +431,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3", "j 3", "k 3", "radius", "radius 2", "aperture", "a", "b", "c", "angle", "distance", "measurement series", "temperature", "length", "tx", "ty", "tz", "rx", "ry", "rz", "sx", "sy", "sz"
 
 #### GetMeasurementConfigs
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="17"/>
@@ -434,6 +457,7 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
 {% endhighlight %}
 
 #### GetMeasurementConfig
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="18">
@@ -460,6 +484,7 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
 {% endhighlight %}
 
 #### SetMeasurementConfig
+
 ###### Request
 {% highlight xml %}
 <OiRequest id="19">
@@ -554,3 +579,4 @@ Each event comes with an id that defines the event type (see the table above). I
 | 13 | Measurement error. |
 | 13 | No sensor is connected. |
 | 13 | The feature is not solved. |
+{: class="CSSTableGenerator"} <br>
