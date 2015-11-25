@@ -557,8 +557,9 @@ Each event comes with an id that defines the event type (see the table above). I
 {% endhighlight %}
 
 ## Error codes
+
 | error code | description |
-| :------------- | :----------- |
+| ------------- | ----------- |
 | 0 | No error occured. |
 | 1 | No OpenIndy job available. |
 | 2 | No, or wrong, xml format. |
