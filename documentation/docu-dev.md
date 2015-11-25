@@ -9,7 +9,7 @@ image:
 
 ---
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
+<a href="/documentation/docu-dev.html" class="btn btn-success">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 <br>
 The development guide is structured in the following sections:

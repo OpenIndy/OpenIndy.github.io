@@ -21,35 +21,56 @@ image:
 
 ---
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
+<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn btn-success">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 While OpenIndy is running it is possible for a client to connect to OpenIndy via a TCP connection. A client which knows the IP and the port OpenIndy listens to, can send XML based requests to OpenIndy. OpenIndy will then perform the requested tasks and will send a XML based response message back to the client. There are various possible request types and their corresponding XML formats which are presented here.
 
 ## Request types
 For a list of possible request types look at the following table.
 
+|--------------+----+----------------|
 | request type | ID | description |
-| :------------- | :------------- | :----------- |
+| :----------- | :-- | :----------|
 | GetProject | 0 | Get the whole OpenIndy project |
+|------------+---+--------------------------------|
 | GetActiveFeature | 1 | Get the currently selected feature |
+|------------------+---+------------------------------------|
 | SetActiveFeature | 2 | Set the active feature |
+|------------------+---+------------------------|
 | GetActiveStation | 3 | Get the active station |
+|------------------+---+------------------------|
 | SetActiveStation | 4 | Set the active station |
+|------------------+---+------------------------|
 | GetActiveCoordinateSystem | 5 | Get the currently selected display coordinate system |
+|---------------------------+---+------------------------------------------------------|
 | SetActiveCoordinateSystem | 6 | Set the display coordinate system |
+|---------------------------+---+-----------------------------------|
 | Aim | 7 | Aim the active feature with the active sensor |
+|-----+---+-----------------------------------------------|
 | Measure | 8 | Measure the active feature with the active sensor |
+|---------+---+---------------------------------------------------|
 | StartWatchWindow | 9 | Start a watch window stream |
+|------------------+---+-----------------------------|
 | StopWatchWindow | 10 | Stop the watch window stream |
+|-----------------+----+------------------------------|
 | OiToolRequest | 11 | A special OiTool request |
+|---------------+----+--------------------------|
 | GetFeatures | 12 | Get a list of all features |
+|-------------+----+----------------------------|
 | AddFeatures | 13 | Add features to OpenIndy |
+|-------------+----+--------------------------|
 | GetObservations | 14 | Get a list of observations of a geometry |
+|-----------------+----+------------------------------------------|
 | RemoveObservations | 15 | Remove one or more observations of a geometry |
+|--------------------+----+-----------------------------------------------|
 | GetParameters | 16 | Get the parameters of a feature |
+|---------------+----+---------------------------------|
 | GetMeasurementConfigs | 17 | Get a list of all available measurement configs |
+|-----------------------+----+-------------------------------------------------|
 | GetMeasurementConfig | 18 | Get the measurement config of a geometry |
+|----------------------+----+------------------------------------------|
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
+|----------------------+----+------------------------------------------|
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
 
@@ -67,14 +88,17 @@ Each of the above request types is a somehow synchronous task. The client sends 
 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
-```xml
+
+~~~~~~~~
 <OiRequest id="">
 </OiRequest>
-```
-```xml
+~~~~~~~~
+
+{% highlight xml %} 
 <OiResponse ref="" errorCode="">
 </OiResponse>
-```
+{% endhighlight %}
+
 Each request comes with an id that defines the request type (see the table above). The attribute "ref" of the response tag equals the id of the corresponding request. If the "errorCode" is "0" then no error occured. The XML formats for the request and response messages to the tasks of the table above are shown below.
 
 #### GetProject
