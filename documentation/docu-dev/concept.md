@@ -22,7 +22,7 @@ image:
 ---
 
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/plugins.html" class="btn">Plugins</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/gui.html" class="btn">Model View Control</a>
+<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn btn-success">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 ##  Concept
 The following section explains the concept and special features of OpenIndy.
@@ -134,7 +134,4 @@ There are two classes [OiVec](https://github.com/OpenIndy/OpenIndy-Math/blob/mas
 
 The implementations of the classes [OiVec](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oivec.h) and [OiMat](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/oimat.h) use one implementation of that interface.
 
-{% endhighlight %}
 This interface may be realized by many different implementations. The great advantage of this is that OpenIndy is not dependent on one special linear algebra library. There is always the possibility to switch the used linear algebra implementation. To switch the current implementation there is the static class [ChooseLALib](https://github.com/OpenIndy/OpenIndy/blob/master/lib/openIndyLib/include/chooselalib.h). Via the method `setLinearAlgebra` the current linear algebra library can be changed. Currently there is only one implementation `LAArmadillo` which uses the open source library [Armadillo](http://arma.sourceforge.net/).
-
----
