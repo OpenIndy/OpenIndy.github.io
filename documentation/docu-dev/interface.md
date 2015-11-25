@@ -30,7 +30,7 @@ For a list of possible request types look at the following table.
 
 | request type | ID | description |
 | :----------- | :-- | :----------|
-|||
+||||
 | GetProject | 0 | Get the whole OpenIndy project |
 | GetActiveFeature | 1 | Get the currently selected feature |
 | SetActiveFeature | 2 | Set the active feature |
@@ -57,7 +57,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 
 | event type | ID | description |
 | :------------- | :------------- | :----------- |
-|||
+||||
 | SensorActionStarted | 1001 | Informs about a started sensor action |
 | SensorActionFinished | 1002 | Informs about a finished sensor action |
 | MessageBox | 1003 | Sends messages that shall be displayed as a message box |
