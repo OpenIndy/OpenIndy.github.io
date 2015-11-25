@@ -28,49 +28,28 @@ While OpenIndy is running it is possible for a client to connect to OpenIndy via
 ## Request types
 For a list of possible request types look at the following table.
 
-|--------------+----+----------------|
 | request type | ID | description |
 | :----------- | :-- | :----------|
 | GetProject | 0 | Get the whole OpenIndy project |
-|------------+---+--------------------------------|
 | GetActiveFeature | 1 | Get the currently selected feature |
-|------------------+---+------------------------------------|
 | SetActiveFeature | 2 | Set the active feature |
-|------------------+---+------------------------|
 | GetActiveStation | 3 | Get the active station |
-|------------------+---+------------------------|
 | SetActiveStation | 4 | Set the active station |
-|------------------+---+------------------------|
 | GetActiveCoordinateSystem | 5 | Get the currently selected display coordinate system |
-|---------------------------+---+------------------------------------------------------|
 | SetActiveCoordinateSystem | 6 | Set the display coordinate system |
-|---------------------------+---+-----------------------------------|
 | Aim | 7 | Aim the active feature with the active sensor |
-|-----+---+-----------------------------------------------|
 | Measure | 8 | Measure the active feature with the active sensor |
-|---------+---+---------------------------------------------------|
 | StartWatchWindow | 9 | Start a watch window stream |
-|------------------+---+-----------------------------|
 | StopWatchWindow | 10 | Stop the watch window stream |
-|-----------------+----+------------------------------|
 | OiToolRequest | 11 | A special OiTool request |
-|---------------+----+--------------------------|
 | GetFeatures | 12 | Get a list of all features |
-|-------------+----+----------------------------|
 | AddFeatures | 13 | Add features to OpenIndy |
-|-------------+----+--------------------------|
 | GetObservations | 14 | Get a list of observations of a geometry |
-|-----------------+----+------------------------------------------|
 | RemoveObservations | 15 | Remove one or more observations of a geometry |
-|--------------------+----+-----------------------------------------------|
 | GetParameters | 16 | Get the parameters of a feature |
-|---------------+----+---------------------------------|
 | GetMeasurementConfigs | 17 | Get a list of all available measurement configs |
-|-----------------------+----+-------------------------------------------------|
 | GetMeasurementConfig | 18 | Get the measurement config of a geometry |
-|----------------------+----+------------------------------------------|
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
-|----------------------+----+------------------------------------------|
 {: class="CSSTableGenerator"} 
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
@@ -597,4 +576,4 @@ Each event comes with an id that defines the event type (see the table above). I
 | 13 | Measurement error. |
 | 13 | No sensor is connected. |
 | 13 | The feature is not solved. |
-{: class="CSSTableGenerator"} <br>
+{: class="CSSTableGenerator"}
