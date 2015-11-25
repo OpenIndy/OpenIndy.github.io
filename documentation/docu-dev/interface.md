@@ -72,7 +72,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 
 Following the source code for a simple website that connects with OpenIndy. <br>
 
-{% highlight javascript %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <meta charset="utf-8" />
