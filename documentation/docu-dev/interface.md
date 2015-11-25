@@ -89,10 +89,10 @@ Each of the above request types is a somehow synchronous task. The client sends 
 ## Request/Response format
 All request and response messages are XML based. They all have the following format:
 
-~~~~~~~~
+{% highlight xml %}
 <OiRequest id="">
 </OiRequest>
-~~~~~~~~
+{% endhighlight %}
 
 {% highlight xml %} 
 <OiResponse ref="" errorCode="">
@@ -102,131 +102,131 @@ All request and response messages are XML based. They all have the following for
 Each request comes with an id that defines the request type (see the table above). The attribute "ref" of the response tag equals the id of the corresponding request. If the "errorCode" is "0" then no error occured. The XML formats for the request and response messages to the tasks of the table above are shown below.
 
 #### GetProject
-###### Request
-```xml
+{% highlight xml %} 
 <OiRequest id="0"/>
-```
+{% endhighlight %}
+
 ###### Response
 Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28openIndyXML%29) for a description of the OpenIndy XML schema.
 
 #### GetActiveFeature
 ###### Request
-```xml
+{% highlight xml %} 
 <OiRequest id="1"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %} 
 <OiResponse ref="1" errorCode="0">
     <activeFeature ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
 #### SetActiveFeature
 ###### Request
-```xml
+{% highlight xml %} 
 <OiRequest id="2">
     <activeFeature ref=""/>
 </OiRequest>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeFeature" tag represents the id of the feature that shall be activated.
 ###### Response
-```xml
+{% highlight xml %} 
 <OiResponse ref="2" errorCode="0">
     <activeFeature ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeFeature" tag represents the id of the active feature.
 
 #### GetActiveStation
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="3"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="3" errorCode="0">
     <activeStation ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
 #### SetActiveStation
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="4">
     <activeStation ref=""/>
 </OiRequest>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeStation" tag represents the id of the station that shall be activated.
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="4" errorCode="0">
     <activeStation ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeStation" tag represents the id of the active station.
 
 #### GetActiveCoordinateSystem
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="5"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="5" errorCode="0">
     <activeCoordinateSystem ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
 #### SetActiveCoordinateSystem
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="6">
     <activeCoordinateSystem ref=""/>
 </OiRequest>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the coordinate system that shall be activated.
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="6" errorCode="0">
     <activeCoordinateSystem ref=""/>
 </OiResponse>
-```
+{% endhighlight %}
 The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the active coordinate system.
 
 #### Aim
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="7">
     <feature ref=""/>
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="7" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### Measure
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="8">
     <feature ref=""/>
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="8" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### StartWatchWindow
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="9">
     <readingType type=""/> <!-- value between 0 and 6 -->
 </OiRequest>
-```
+{% endhighlight %}
 The attribute "type" of the "readingType" tag represents the type of reading (cartesian, polar etc.) that shall be returned. See the table below for a list of possible values for the attribute "type".
 
 | reading type | description |
@@ -240,11 +240,11 @@ The attribute "type" of the "readingType" tag represents the type of reading (ca
 | 6 | Returns cross and distance values. |
 ###### Response
 The response message to a "StartWatchWindow" task is shown below.
-```xml
+{% highlight xml %}
 <OiResponse ref="9" errorCode="0"/>
-```
+{% endhighlight %}
 Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a message of the below format. Depending on the reading type that was requested one of the shown sub tags ("cartesian", "polar", etc.) will be included.
-```xml
+{% highlight xml %}
 <OiResponse ref="9" errorCode="0">
     <geometry id="" name="" />
     <cartesian x="" y="" z=""/>
@@ -254,41 +254,41 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <temperature t=""/>
     <level RX="" RY="" RZ=""/>
 </OiResponse>
-```
+{% endhighlight %}
 
 #### StopWatchWindow
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="10"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="10" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### OiToolRequest
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="11">
     <tool iid="" />
     <!-- dynamic content which depends on the OiTool-plugin -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="11" errorCode="0">
     <tool iid="" />
     <!-- dynamic content which depends on the OiTool-plugin -->
 </OiResponse>
-```
+{% endhighlight %}
 
 #### GetFeatures
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="12"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="12" errorCode="0">
     <feature> <!-- can contain 0 to n features -->
         <feature type=""> <!-- type: see table below for available feature types -->
@@ -300,7 +300,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
         </feature>
     </feature>
 </OiResponse>
-```
+{% endhighlight %}
 | type | feature |
 | :----------- | :---------- |
 | 0 | circle |
@@ -328,7 +328,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 
 #### AddFeatures
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="13">
     <type></type>
     <name></name>
@@ -339,21 +339,21 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
     <nominalSystem></nominalSystem> <!-- only for geometries -->
     <measurementConfig></measurementConfig> <!-- only for geometries -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="13" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### GetObservations
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="14">
     <id></id> <!-- id of the geometry whose observations shall be delivered -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="14" errorCode="0">
     <id></id> <!-- geometry id -->
     <observations> <!-- can contain 0 to n observations -->
@@ -371,32 +371,32 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
         </observation>
     </observations>
 </OiResponse>
-```
+{% endhighlight %}
 
 #### RemoveObservations
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="15">
     <id></id> <!-- geometry id -->
     <observations> <!-- can contain 0 to n observations -->
         <observation id=""/>
     </observations>
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="15" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### GetParameters
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="16">
     <id></id> <!-- id of the feature whose parameters shall be delivered -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="16" errorCode="0">
     <id></id> <!-- feature id -->
     <stdev></stdev>
@@ -404,16 +404,16 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
         <parameter name="" value=""/>
     </parameters>
 </OiResponse>
-```
+{% endhighlight %}
 Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3", "j 3", "k 3", "radius", "radius 2", "aperture", "a", "b", "c", "angle", "distance", "measurement series", "temperature", "length", "tx", "ty", "tz", "rx", "ry", "rz", "sx", "sy", "sz"
 
 #### GetMeasurementConfigs
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="17"/>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="17" errorCode="0">
     <measurementConfigs>
         <measurementConfig>
@@ -430,17 +430,17 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
         </measurementConfig>
     </measurementConfigs>
 </OiResponse>
-```
+{% endhighlight %}
 
 #### GetMeasurementConfig
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="18">
     <id></id> <!-- id of the geometry whose measurement config shall be delivered -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="18" errorCode="0">
     <id></id> <!-- geometry id -->
     <measurementConfig>
@@ -456,82 +456,82 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
         <typeOfReading></typeOfReading>
     </measurementConfig>
 </OiResponse>
-```
+{% endhighlight %}
 
 #### SetMeasurementConfig
 ###### Request
-```xml
+{% highlight xml %}
 <OiRequest id="19">
     <id></id> <!-- geometry id -->
     <measurementConfig></measurementConfig> <!-- name of the measurement config -->
     <isSaved></isSaved> <!-- 0=project config, 1=saved config -->
 </OiRequest>
-```
+{% endhighlight %}
 ###### Response
-```xml
+{% highlight xml %}
 <OiResponse ref="19" errorCode="0"/>
-```
+{% endhighlight %}
 
 ## Event format
 All event messages are XML based. They all have the following format:
-```xml
+{% highlight xml %}
 <OiResponse ref="" errorCode="">
 </OiResponse>
-```
+{% endhighlight %}
 Each event comes with an id that defines the event type (see the table above). If the "errorCode" is "0" then no error occured. The XML formats for the events are shown below.
 
 #### SensorActionStarted
-```xml
+{% highlight xml %}
 <OiResponse ref="1001" errorCode="0">
     <action name=""/>
 </OiResponse>
-```
+{% endhighlight %}
 
 #### SensorActionFinished
-```xml
+{% highlight xml %}
 <OiResponse ref="1002" errorCode="0">
     <action success="1" message=""/> <!-- success: 1=true, 0=false -->
 </OiResponse>
-```
+{% endhighlight %}
 
 #### MessageBox
-```xml
+{% highlight xml %}
 <OiResponse ref="1003" errorCode="0">
     <message text="" type="0"/> <!-- type: 0=information, 1=warning, 2=error, 3=critical -->
 </OiResponse>
-```
+{% endhighlight %}
 
 #### RealTimeReading
-```xml
+{% highlight xml %}
 <OiResponse ref="1004" errorCode="0">
     <measurement name="" value=""/> <!-- name=x|y|z|azimuth|zenith|distance -->
 </OiResponse>
-```
+{% endhighlight %}
 
 #### ActiveFeatureChanged
-```xml
+{% highlight xml %}
 <OiResponse ref="1005" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### ActiveStationChanged
-```xml
+{% highlight xml %}
 <OiResponse ref="1006" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### ActiveCoordinateSystemChanged
-```xml
+{% highlight xml %}
 <OiResponse ref="1007" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### FeatureSetChanged
-```xml
+{% highlight xml %}
 <OiResponse ref="1008" errorCode="0"/>
-```
+{% endhighlight %}
 
 #### FeatureAttributesChanged
-```xml
+{% highlight xml %}
 <OiResponse ref="1009" errorCode="0"/>
-```
+{% endhighlight %}
 
 ## Error codes
 | error code | description |
