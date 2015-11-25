@@ -30,6 +30,7 @@ For a list of possible request types look at the following table.
 
 | request type | ID | description |
 | :----------- | :-- | :----------|
+|||
 | GetProject | 0 | Get the whole OpenIndy project |
 | GetActiveFeature | 1 | Get the currently selected feature |
 | SetActiveFeature | 2 | Set the active feature |
@@ -56,6 +57,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 
 | event type | ID | description |
 | :------------- | :------------- | :----------- |
+|||
 | SensorActionStarted | 1001 | Informs about a started sensor action |
 | SensorActionFinished | 1002 | Informs about a finished sensor action |
 | MessageBox | 1003 | Sends messages that shall be displayed as a message box |
@@ -229,6 +231,7 @@ The attribute "type" of the "readingType" tag represents the type of reading (ca
 
 | reading type | description |
 | :----------- | :---------- |
+|||
 | 0 | Returns a distance value. |
 | 1 | Returns cartesian coordinates (x, y, z). |
 | 2 | Returns polar coordinates (azimuth, zenith, distance). |
@@ -310,6 +313,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 
 | type | feature |
 | :----------- | :---------- |
+|||
 | 0 | circle |
 | 1 | cone |
 | 2 | cylinder |
@@ -560,6 +564,7 @@ Each event comes with an id that defines the event type (see the table above). I
 
 | error code | description |
 | ------------- | ----------- |
+|||
 | 0 | No error occured. |
 | 1 | No OpenIndy job available. |
 | 2 | No, or wrong, xml format. |
