@@ -71,6 +71,7 @@ For a list of possible request types look at the following table.
 |----------------------+----+------------------------------------------|
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
 |----------------------+----+------------------------------------------|
+{: class="CSSTableGenerator"}
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
 
