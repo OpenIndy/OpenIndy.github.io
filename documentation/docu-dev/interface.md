@@ -4,7 +4,7 @@ title: OpenIndy Server Interface
 excerpt: "Developer documentation for OpenIndy Server Interface"
 author: dev
 image:
-  feature: banner/b_tracker2.jpg
+  feature: banner/dev_banner.png
 ---
 
 

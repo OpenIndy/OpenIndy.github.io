@@ -4,7 +4,7 @@ title: Model View Control
 excerpt: "Developer documentation for OpenIndy - Model View Control"
 author: dev
 image:
-  feature: banner/b_tracker2.jpg
+  feature: banner/dev_banner.png
 ---
 
 

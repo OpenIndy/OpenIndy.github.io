@@ -5,7 +5,7 @@ modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "This tutorial supports you to learn how to write and run your own plugins using this project as a template."
 author: dev
 image:
-  feature: banner/b_tracker2.jpg
+  feature: banner/dev_banner.png
 ---
 
 

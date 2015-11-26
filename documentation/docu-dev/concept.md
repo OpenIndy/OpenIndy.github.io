@@ -4,7 +4,7 @@ title: Concept and Architecture
 excerpt: "Developer documentation for OpenIndy - Concept and Architecture"
 author: dev
 image:
-  feature: banner/b_tracker2.jpg
+  feature: banner/dev_banner.png
 ---
 
 

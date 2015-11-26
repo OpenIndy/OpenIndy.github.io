@@ -4,7 +4,7 @@ title: OpenIndy Developer Documentation
 excerpt: "Developer documentation for OpenIndy."
 author: dev
 image:
-  feature: banner/b_tracker2.jpg
+  feature: banner/dev_banner.png
 ---
 
 ---
