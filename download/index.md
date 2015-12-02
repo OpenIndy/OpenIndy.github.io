@@ -7,7 +7,7 @@ image:
   feature: banner/b_nacht.jpg
 ---
 <b>Version 0.2.1 Posted on December 1st, 2015</b>
-<br>Here you can download the latest version of OpenIndy. The version 0.2.1 comes with the pre-installed [OpenIndy-DefaultPlugin](https://github.com/OpenIndy/OpenIndy-DefaultPlugin). It allows you to connect a virtual laser tracker. A real physical sensor (leica totalstation) is currently under development.
+<br>Here you can download the latest version of OpenIndy. The version 0.2.1 comes with the pre-installed [OpenIndy-DefaultPlugin](https://github.com/OpenIndy/OpenIndy-DefaultPlugin). It allows you to connect a [virtual laser tracker](https://openindy.github.io/documentation/docu-usr/measurement.html). A real physical sensor (leica totalstation) is currently under development.
 <br><br>
 <a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.2.1</a>
 <h1>Sourcecode</h1>
