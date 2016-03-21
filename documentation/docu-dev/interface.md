@@ -21,7 +21,7 @@ image:
 
 ---
 
-<a href="/documentation/docu-dev.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept.html" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface.html" class="btn btn-success">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
+<a href="/documentation/docu-dev" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/concept" class="btn">Concept and Architecture</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/interface" class="btn btn-success">Server Interface</a>&nbsp;&nbsp;<a href="/documentation/docu-dev/srd/html/index.html" class="btn">Software Reference Documentation</a>
 
 While OpenIndy is running it is possible for a client to connect to OpenIndy via a TCP connection. A client which knows the IP and the port OpenIndy listens to, can send XML based requests to OpenIndy. OpenIndy will then perform the requested tasks and will send a XML based response message back to the client. There are various possible request types and their corresponding XML formats which are presented here.
 
@@ -173,7 +173,7 @@ Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28ope
 
 #### GetActiveFeature
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="1"/>
 {% endhighlight %}
@@ -188,7 +188,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 
 #### SetActiveFeature
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="2">
     <activeFeature ref=""/>
@@ -206,7 +206,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 
 #### GetActiveStation
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="3"/>
 {% endhighlight %}
@@ -221,7 +221,7 @@ The attribute "ref" of the "activeStation" tag represents the id of the active s
 
 #### SetActiveStation
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="4">
     <activeStation ref=""/>
@@ -239,7 +239,7 @@ The attribute "ref" of the "activeStation" tag represents the id of the active s
 
 #### GetActiveCoordinateSystem
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="5"/>
 {% endhighlight %}
@@ -254,7 +254,7 @@ The attribute "ref" of the "activeCoordinateSystem" tag represents the id of the
 
 #### SetActiveCoordinateSystem
 
-######Request
+###### Request
 {% highlight xml %}
 <OiRequest id="6">
     <activeCoordinateSystem ref=""/>
