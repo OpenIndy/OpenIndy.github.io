@@ -10,21 +10,21 @@ image:
 
 ---
 
-<a href="/documentation/docu-usr.html" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-usr/preperation.html" class="btn">Preperation</a>&nbsp;&nbsp;<a href="/documentation/docu-usr/measurement.html" class="btn">Measurement</a>&nbsp;&nbsp;
+<a href="/documentation/docu-usr" class="btn">Overview</a>&nbsp;&nbsp;<a href="/documentation/docu-usr/preperation" class="btn">Preperation</a>&nbsp;&nbsp;<a href="/documentation/docu-usr/measurement" class="btn">Measurement</a>&nbsp;&nbsp;
 
 
-##Getting started
+## Getting started
 {:.no_toc}
 This user documentation shows some functionalities of OpenIndy and the way it works.
 To show this, we have some measurement tasks.
-It is described in detail in the [measurement](/documentation/docu-usr/measurement.html) section.
+It is described in detail in the [measurement](/documentation/docu-usr/measurement) section.
 <br><br>
 The guide is structured in the following sections:
 
-###[Preperation](/documentation/docu-usr/preperation.html)
+### [Preperation](/documentation/docu-usr/preperation)
 
 This section describes all steps you have to do for preparing your OpenIndy software, before you can solve the task.
 
-###[Measurement](/documentation/docu-usr/measurement.html)
+### [Measurement](/documentation/docu-usr/measurement)
 
 All neccessary steps for solving the tasks are described in detail in this section. It also shows all the settings you have to do for this job.
