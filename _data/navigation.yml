@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: About
-  url: /posts/about.html
+  url: /posts/about
 
 - title: Blog
   url: /posts/
@@ -13,7 +13,7 @@
   url: /documentation/
 
 - title: Contact
-  url: /posts/contact.html
+  url: /posts/contact
 
 - title: sigma3D
   url: http://sigma3d.de
