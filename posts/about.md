@@ -35,8 +35,3 @@ OpenIndy is a metrology software solution that can be extended by [plugins](http
 
 <br>
 <a markdown="0" href="https://github.com/OpenIndy/OpenIndy" class="btn">Join & Fork The Project On GitHub</a>
-
-{% comment %}
-    FRAGE: Aktuell öffnen sich (fast alle) Links im gleichen Fenster.
-    Sollen die Links in einem blank Fenster geöffnet werden?? (name)[url]{:target="blank"}
-{% endcomment %}
