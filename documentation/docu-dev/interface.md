@@ -51,7 +51,7 @@ For a list of possible request types look at the following table.
 | GetMeasurementConfigs | 17 | Get a list of all available measurement configs |
 | GetMeasurementConfig | 18 | Get the measurement config of a geometry |
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
-{: class="CSSTableGenerator"} 
+{: class="CSSTableGenerator"}
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
 
@@ -67,7 +67,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
 | ActiveCoordinateSystemChanged | 1007 | Informs about a new active coordinate system |
 | FeatureSetChanged | 1008 | Informs about added or removed features |
 | FeatureAttributesChanged | 1009 | Informs about feature changes |
-{: class="CSSTableGenerator"} 
+{: class="CSSTableGenerator"}
 
 
 {% highlight html %}
@@ -121,7 +121,7 @@ Each of the above request types is a somehow synchronous task. The client sends 
     input = document.getElementById("input");
     message = input.value;
     writeToScreen('SENT: ');
-    writeToScreen('<xmp>' + message + '</xmp>'); 
+    writeToScreen('<xmp>' + message + '</xmp>');
     websocket.send(message);
   }
 
@@ -156,7 +156,7 @@ All request and response messages are XML based. They all have the following for
 </OiRequest>
 {% endhighlight %}
 
-{% highlight xml %} 
+{% highlight xml %}
 <OiResponse ref="" errorCode="">
 </OiResponse>
 {% endhighlight %}
@@ -164,7 +164,7 @@ All request and response messages are XML based. They all have the following for
 Each request comes with an id that defines the request type (see the table above). The attribute "ref" of the response tag equals the id of the corresponding request. If the "errorCode" is "0" then no error occured. The XML formats for the request and response messages to the tasks of the table above are shown below.
 
 #### GetProject
-{% highlight xml %} 
+{% highlight xml %}
 <OiRequest id="0"/>
 {% endhighlight %}
 
@@ -174,12 +174,12 @@ Look [here](https://github.com/OpenIndy/OpenIndy/wiki/OpenIndy-XML-Schema-%28ope
 #### GetActiveFeature
 
 ######Request
-{% highlight xml %} 
+{% highlight xml %}
 <OiRequest id="1"/>
 {% endhighlight %}
 
 ###### Response
-{% highlight xml %} 
+{% highlight xml %}
 <OiResponse ref="1" errorCode="0">
     <activeFeature ref=""/>
 </OiResponse>
@@ -189,7 +189,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 #### SetActiveFeature
 
 ######Request
-{% highlight xml %} 
+{% highlight xml %}
 <OiRequest id="2">
     <activeFeature ref=""/>
 </OiRequest>
@@ -197,7 +197,7 @@ The attribute "ref" of the "activeFeature" tag represents the id of the active f
 The attribute "ref" of the "activeFeature" tag represents the id of the feature that shall be activated.
 
 ###### Response
-{% highlight xml %} 
+{% highlight xml %}
 <OiResponse ref="2" errorCode="0">
     <activeFeature ref=""/>
 </OiResponse>
@@ -318,7 +318,7 @@ The attribute "type" of the "readingType" tag represents the type of reading (ca
 | 4 | Returns a temperature. |
 | 5 | Returns a level measurement (RX, RY, RZ). |
 | 6 | Returns cross and distance values. |
-{: class="CSSTableGenerator"} 
+{: class="CSSTableGenerator"}
 
 ###### Response
 The response message to a "StartWatchWindow" task is shown below.
@@ -415,7 +415,7 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 | 19 | coordinate system |
 | 20 | station |
 | 21 | transformation parameter |
-{: class="CSSTableGenerator"} 
+{: class="CSSTableGenerator"}
 
 #### AddFeatures
 
@@ -500,6 +500,11 @@ Until you call the "StopWatchWindow" task in regular intervals OpenIndy sends a 
 <OiResponse ref="16" errorCode="0">
     <id></id> <!-- feature id -->
     <stdev></stdev>
+    <name></name>
+    <group></group>
+    <type></type>
+    <isSolved></isSolved>
+    <isNominal></isNominal>
     <parameters>
         <parameter name="" value=""/>
     </parameters>
