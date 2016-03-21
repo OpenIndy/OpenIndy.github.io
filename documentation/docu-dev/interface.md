@@ -51,6 +51,7 @@ For a list of possible request types look at the following table.
 | GetMeasurementConfigs | 17 | Get a list of all available measurement configs |
 | GetMeasurementConfig | 18 | Get the measurement config of a geometry |
 | SetMeasurementConfig | 19 | Set the measurement config of a geometry |
+| GetCoordinateSystems | 19 | Get a list of all coordinate systems |
 {: class="CSSTableGenerator"}
 
 Each of the above request types is a somehow synchronous task. The client sends a request and OpenIndy will send a response back to the client. In addition to that, OpenIndy also sends messages to its clients asynchronously. Those messages (events) are not triggered by a client request, but are sent whenever a specific event occurs in OpenIndy. All possibile event types are listed below.
@@ -581,6 +582,26 @@ Possible parameters are: "x", "y", "z", "i", "j", "k", "i 2", "j 2", "k 2", "i 3
 ###### Response
 {% highlight xml %}
 <OiResponse ref="19" errorCode="0"/>
+{% endhighlight %}
+
+#### GetCoordinateSystems
+
+###### Request
+{% highlight xml %}
+<OiRequest id="20"/>
+{% endhighlight %}
+
+###### Response
+{% highlight xml %}
+<OiResponse ref="20" errorCode="0">
+    <systems> <!-- can contain 0 to n systems -->
+        <system>
+            <id></id>
+            <name></name>
+            <group></group>
+        </system>
+    </systems>
+</OiResponse>
 {% endhighlight %}
 
 ## Event format
