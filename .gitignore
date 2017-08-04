@@ -1,3 +1,4 @@
 _site/
 .sass-cache/
 /oi_builds/*
+.DS_Store

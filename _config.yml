@@ -4,7 +4,7 @@ title:            OpenIndy
 locale:           en_US
 baseurl:          /OpenIndy.github.io
 url:              https://OpenIndy.github.io
-#url:              http://0.0.0.0:4000/
+#url:              http://0.0.0.0:4000
 
 
 # Jekyll configuration
@@ -33,7 +33,7 @@ owner:
   bio: "Open source software solution for industrial measurement (metrology, laser tracker, quality control)"
   email:
   disqus-shortname:
-  twitter: #username
+  twitter: OpenIndyProject
   facebook: openindy2014
   google:
     plus: #username

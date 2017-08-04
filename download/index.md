@@ -4,12 +4,12 @@ title: Latest Version
 tags: [download, OpenIndy, QT, GitHub]
 comments: true
 image:
-  feature: banner/b_nacht.jpg
+  feature: banner/b_tracker2.jpg
 ---
-<b>Version 0.2.1 Posted on December 1st, 2015</b>
-<br>Here you can download the latest version of OpenIndy. The version 0.2.1 comes with the pre-installed [OpenIndy-DefaultPlugin](https://github.com/OpenIndy/OpenIndy-DefaultPlugin). It allows you to connect a [virtual laser tracker](https://openindy.github.io/documentation/docu-usr/measurement.html). A real physical sensor (leica totalstation) is currently under development.
+<b>Version 0.5.0-13 Posted on August 4th, 2017</b>
+<br>Here you can download the latest version of OpenIndy. The version 0.5.0-13 comes with an implementation of laser tracker interfaces of all common manufaturer. OpenIndy also provides an amount of functionality to calculate basic geometries and to make three-dimensional analyses with the gathered geometries. To get a good quick start check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 <br><br>
-<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.2.1</a>
+<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.5.0-13</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>

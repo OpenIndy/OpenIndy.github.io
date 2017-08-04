@@ -18,7 +18,6 @@ OpenIndy is a metrology software solution that can be extended by [plugins](http
 * User friendly - clear graphical user interface
 * Honestly - all analysis processes are transparent and their results fully visible
 * Accurately - consistent implementation of variance propagation
-* Compatibility - a multiplatform software for Windows, Mac and Linux
 
 #### For whom is it intended
 
