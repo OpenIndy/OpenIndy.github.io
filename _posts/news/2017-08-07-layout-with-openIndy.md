@@ -29,13 +29,13 @@ For additional information read the [user guide](http://openindy.github.io/docum
 In general the setup looks like this:
 
 <figure>
-	<p align="middle"><a href="../images/layout_overview.jpg"><img src="../images/layout_overview.jpg"></a> </p>
+	<p align="middle"><a href="/images/news/layout_overview.jpg"><img src="/images/news/layout_overview.jpg"></a> </p>
 	<p align="middle"><i>overview of a layout</i></p>
 </figure>
 
 After you defined your system just import the points and mark them on the ground using the "watch window" and "aim" command of the software.
 
 <figure>
-	<p align="middle"><a href="../images/openindy_layout.PNG"><img src="../images/openindy_layout.PNG"></a> </p>
+	<p align="middle"><a href="/images/news/openindy_layout.PNG"><img src="/images/news/openindy_layout.PNG"></a> </p>
 	<p align="middle"><i>layout with OpenIndy</i></p>
 </figure>
