@@ -129,5 +129,6 @@ Moving back to the feature tablew view and changing to the "PART" coordiante sys
 <a href="/files/bundle/2017 08 23 bundle guide.xml">Download the OpenIndy job</a>
 <br>
 <div style="margin-top: 10px">
-If you have reference points for your superordinate coordinate system, check the [user guide](http://openindy.github.io/documentation/docu-usr/measurement/#common-measurement-example) on how to import nominal points.
+If you have reference points for your superordinate coordinate system, check the on how to import nominal points.
+[user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 </div>
