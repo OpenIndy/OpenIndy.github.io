@@ -10,7 +10,7 @@ image:
 <br>With an open-source bundle adjustment, OpenIndy version 0.6.0-14 is now released and online on github.
 Now you can combine multiple tracker stations in one bundle system, just by measuring some common points and running the bundle adjustment. You will get transformation parameters for all combinations and also you can transform all your station measurements, that are bundled, in an superordinate coordinate system of your working part (e.g. a automobile - system).
 
-Some more details in how to use and run the bundle adjustment, you can read our blog entry about [bundle adjustment](/_posts/news/2017-08-23-bundle-adjustment).
+Some more details in how to use and run the bundle adjustment, you can read our blog entry about [bundle adjustment](https://openindy.github.io/news/bundle-adjustment/).
 To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 
 <br><br>
