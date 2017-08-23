@@ -15,12 +15,11 @@ An open-source bundle adjustment is now implemented in the current version of Op
 Here you can download [OpenIndy version 0.6.0-14](https://openindy.github.io/download/).
 
 The following blog will guide you through OpenIndy and how to use the bundle adjustment.
-As an example job, we will check if a tube is in level.
-
+To demonstrate a use-case where the bundle adjustment is useful, we will check if a tube is leveled.
 
 <h1>Preparation</h1>
 
-To check if the tube is in level, we will measure a circle on both sides of the tube. To do so, we need to link our two tracker stations, one on each side. We solve this step by sticking 4 drift points around our tube. We measure them from both stations and run a bundle adjustment to link our stations and all the measured data.
+To check if the tube is leveled, we will measure a circle on both sides of the tube. To do so, we need to link our two tracker stations, one on each side. We solve this step by sticking 4 drift points around our tube. We measure them from both stations and run a bundle adjustment to link our stations and all the measured data.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/overview compoints and tube.jpg"><img src="/images/news/bundle/overview compoints and tube.jpg"></a> </p>
@@ -36,6 +35,7 @@ If you chose "set", you will connect to the sensor.
 </figure>
 
 Last step is to pre define all geometries that you need. First we start to define our common points. Choose "Features -> create point" and specify a name (e.g. "com01"), a group (com) and set the count to 4. It is important that you choose "common" and "actual". Common means, that this geometry is used for to link the different stations with the bundle adjustment. As function we choose "BestFitPoint", so all observations for this feature will be bestfitted to one point, and fast point as measurement config.
+Alternative you can create and configure the features in the toolbar on the left side of the screen.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/05_create com point.png"><img src="/images/news/bundle/05_create com point.png"></a> </p>
@@ -90,14 +90,14 @@ In the input tab you can see all stations and geometries that are used to solve 
 	<p align="middle"><i>bundle input</i></p>
 </figure>
 
-Press "run bundle" to calculate the bundle and create one superordinate coorcinate system called "bundle". The output is transformation parameters from all included stations to the bundle coordinate system. Now all observations from all stations can be used to fit the geometries.
+Press "run bundle" to calculate the bundle and create one superordinate coordinate system called "bundle". The output is transformation parameters from all included stations to the bundle coordinate system. Now all observations from all stations can be used to fit the geometries.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/18_bundle_trafos.png"><img src="/images/news/bundle/18_bundle_trafos.png"></a> </p>
 	<p align="middle"><i>bundle result</i></p>
 </figure>
 
-Inasmuch as we only measured three common points in this moment and we bundled our stations with this three points, we can now "aim (ALT + A)" the forth common point and measure. Afterwards, go back to the bundle tab and press "run bundle". The bundle will be recalculated with all input geometries (including the new forth point) and the transformation parameters will change slightly.
+With our successful bundled stations, we are now able to "aim (Alt +A)" our other geometries that have been measured from a previous station and measure them again. Afterwards, go back to the bundle tab and press "run bundle". The bundle will be recalculated with all input geometries (including the new forth point) and the transformation parameters will change slightly.
 
 <br>Until this step we have all our observations and measured data in one bundle coordinate system. To compare the two flanges in dependancy to our level plane, we have to construct another transformation from our observations (bundle system) to the superordinate coordinate system "PART".
 To solve this, we use our circles and the plane to construct the coordinate axis and the origin.
@@ -119,7 +119,7 @@ Specify the axis in the first interface and then assign the geometries to the fu
 
 After you calculated the transformation parameter between "bundle system" and "PART", check that the "use" attribute in the end of the tablew view is set by a checkbox. Otherwise the software will not apply this transformation to the features.
 
-Moving back to the feature tablew view and changing to the "PART" coordiante system, you will see that the first flange circle has an x, y and z value of 0.00, because its center point is used as origin of the coordinate system. The second circle flange should have an y and z value of 0.00 and an x value of the length of the tube. As we see it hast deviations in all three coordinate axis. This means the two flanges are not exactly parallel to each other.
+Moving back to the feature tablew view and changing to the "PART" coordiante system, you will see that the first flange circle has an x, y and z value of 0.00, because its center point is used as origin of the coordinate system. The second circle flange should have an y and z value of 0.00 and an x value of the length of the tube. The z value is the deviation to our level plane and the y value is a deviation in position.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/36_result.png"><img src="/images/news/bundle/36_result.png"></a> </p>
