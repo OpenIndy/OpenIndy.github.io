@@ -6,10 +6,15 @@ comments: true
 image:
   feature: banner/b_tracker2.jpg
 ---
-<b>Version 0.5.0-13 Posted on August 4th, 2017</b>
-<br>Here you can download the latest version of OpenIndy. The version 0.5.0-13 comes with an implementation of laser tracker interfaces of all common manufaturer (for Leica Lasertrackers, only AT401 /AT402 are supported). OpenIndy also provides an amount of functionality to calculate basic geometries and to make three-dimensional analyses with the gathered geometries. To get a good quick start check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
+<b>Version 0.6.0-14 Posted on August 23rd, 2017</b>
+<br>With an open-source bundle adjustment, OpenIndy version 0.6.0-14 is now released and online on github.
+Now you can combine multiple tracker stations in one bundle system, just by measuring some common points and running the bundle adjustment. You will get transformation parameters for all combinations and also you can transform all your station measurements, that are bundled, in an superordinate coordinate system of your working part (e.g. a automobile - system).
+
+Some more details in how to use and run the bundle adjustment, you can read our blog entry about [bundle adjustment](/_posts/news/2017-08-23-bundle-adjustment).
+To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
+
 <br><br>
-<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.5.0-13</a>
+<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.6.0-14</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>
