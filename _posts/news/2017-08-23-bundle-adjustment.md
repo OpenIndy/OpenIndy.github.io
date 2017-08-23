@@ -125,9 +125,10 @@ Moving back to the feature tablew view and changing to the "PART" coordiante sys
 	<p align="middle"><a href="/images/news/bundle/36_result.png"><img src="/images/news/bundle/36_result.png"></a> </p>
 	<p align="middle"><i>result</i></p>
 </figure>
-<br>
-<a style="margin-top: 10px" href="/files/bundle/2017 08 23 bundle guide.xml">Download the OpenIndy job</a>
-<br>
+
+<div style="margin: 10px">
+	<a href="/files/bundle/2017 08 23 bundle guide.xml">Download the OpenIndy job</a>
+</div>
 
 If you have reference points for your superordinate coordinate system, check the on how to import nominal points.
 [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
