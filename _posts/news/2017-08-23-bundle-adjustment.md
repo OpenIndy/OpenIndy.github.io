@@ -50,8 +50,8 @@ By measuring this plane the tracker will get his reference to the level, that yo
 
 Before you start measure you should open the "sensor control pad" and run an compensation / initialization.
 <figure>
-	<p align="middle"><a href="/images/news/bundle/03_sensor control pad.png"><img src="/images/news/bundle/03_sensor control pad"></a> </p>
-	<p align="middle"><i>create common points</i></p>
+	<p align="middle"><a href="/images/news/bundle/03_sensor_control_pad.png"><img src="/images/news/bundle/03_sensor_control_pad.png"></a> </p>
+	<p align="middle"><i>sensor control pad</i></p>
 </figure>
 
 Afterwards, measure your common points.
@@ -113,8 +113,8 @@ Select the new transformation parameter and go to the menu "Function -> set func
 Specify the axis in the first interface and then assign the geometries to the function.
 
 <figure>
-	<p align="middle"><a href="/images/news/bundle/32_select_function_features"><img src="/images/news/bundle/32_select_function_features"></a> </p>
-	<p align="middle"><i>create transformation parameter</i></p>
+	<p align="middle"><a href="/images/news/bundle/32_select_function_features.png"><img src="/images/news/bundle/32_select_function_features.png"></a> </p>
+	<p align="middle"><i>set function</i></p>
 </figure>
 
 After you calculated the transformation parameter between "bundle system" and "PART", check that the "use" attribute in the end of the tablew view is set by a checkbox. Otherwise the software will not apply this transformation to the features.
@@ -122,7 +122,7 @@ After you calculated the transformation parameter between "bundle system" and "P
 Moving back to the feature tablew view and changing to the "PART" coordiante system, you will see that the first flange circle has an x, y and z value of 0.00, because its center point is used as origin of the coordinate system. The second circle flange should have an y and z value of 0.00 and an x value of the length of the tube. As we see it hast deviations in all three coordinate axis. This means the two flanges are not exactly parallel to each other.
 
 <figure>
-	<p align="middle"><a href="/images/news/bundle/36_result"><img src="/images/news/bundle/36_result"></a> </p>
+	<p align="middle"><a href="/images/news/bundle/36_result.png"><img src="/images/news/bundle/36_result.png"></a> </p>
 	<p align="middle"><i>result</i></p>
 </figure>
 <br>
