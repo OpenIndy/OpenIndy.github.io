@@ -1,96 +1,96 @@
-<oiProjectData version="0.6.0" idCount="118" name="2017 08 23 bundle guide.xml" date="2017-08-23T10:39:35">
+<oiProjectData name="2017 08 23 bundle guide.xml" idCount="119" date="2017-08-24T11:11:49" version="0.6.0">
     <activeCoordinateSystem ref="6"/>
     <activeStation ref="81"/>
     <stations>
-        <station activeStation="0" comment="" name="STATION01" id="5" group="" solved="0" activeFeature="0">
+        <station group="" comment="" id="5" name="STATION01" solved="0" activeFeature="1" activeStation="0">
             <usedSensors>
-                <sensor name="LeicaLaserTracker" plugin="OiSigma3D"/>
-                <sensor name="LeicaLaserTracker" plugin="OiSigma3D"/>
-                <sensor name="LeicaLaserTracker" plugin="OiSigma3D"/>
+                <sensor plugin="OiSigma3D" name="LeicaLaserTracker"/>
+                <sensor plugin="OiSigma3D" name="LeicaLaserTracker"/>
+                <sensor plugin="OiSigma3D" name="LeicaLaserTracker"/>
             </usedSensors>
-            <activeSensor name="" plugin=""/>
+            <activeSensor plugin="" name=""/>
             <position ref="3"/>
             <coordinateSystem ref="4"/>
         </station>
-        <station activeStation="1" comment="" name="STATION02" id="81" group="" solved="0" activeFeature="0">
-            <activeSensor name="LeicaLaserTracker" plugin="OiSigma3D"/>
+        <station group="" comment="" id="81" name="STATION02" solved="0" activeFeature="0" activeStation="1">
+            <activeSensor plugin="OiSigma3D" name="LeicaLaserTracker"/>
             <position ref="79"/>
             <coordinateSystem ref="80"/>
         </station>
     </stations>
     <coordinateSystems>
-        <coordinateSystem activeSystem="1" comment="" name="PART" id="6" group="" solved="0" activeFeature="0" isBundleSystem="0">
-            <coordinates x="0" z="0" y="0"/>
-            <xAxis k="0" i="0" j="0"/>
-            <yAxis k="0" i="0" j="0"/>
-            <zAxis k="0" i="0" j="0"/>
+        <coordinateSystem group="" comment="" isBundleSystem="0" id="6" name="PART" solved="0" activeSystem="1" activeFeature="0">
+            <coordinates z="0" y="0" x="0"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
             <transformationParameters>
                 <transformationParameter ref="111"/>
             </transformationParameters>
-            <expansionOrigin x="0" z="0" y="0"/>
-            <bundleTemplate name="" levelStation="" maxIterations="">
+            <expansionOrigin z="0" y="0" x="0"/>
+            <bundleTemplate maxIterations="" name="" levelStation="">
                 <parameters/>
-                <plugin/>
+                <plugin name="" pluginName=""/>
             </bundleTemplate>
         </coordinateSystem>
-        <coordinateSystem activeSystem="0" comment="" name="Bundle01" id="88" group="" solved="0" activeFeature="0" isBundleSystem="1">
-            <coordinates x="1.742581412484583" z="0.1311562607676718" y="0.04731749699794652"/>
-            <xAxis k="0" i="0" j="0"/>
-            <yAxis k="0" i="0" j="0"/>
-            <zAxis k="0" i="0" j="0"/>
+        <coordinateSystem group="" comment="" isBundleSystem="1" id="88" name="Bundle01" solved="0" activeSystem="0" activeFeature="0">
+            <coordinates z="0.1311562607676718" y="0.04731749699794652" x="1.742581412484583"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
             <transformationParameters>
                 <transformationParameter ref="93"/>
                 <transformationParameter ref="94"/>
                 <transformationParameter ref="111"/>
             </transformationParameters>
-            <expansionOrigin x="0" z="0" y="0"/>
-            <bundleTemplate name="BasicBundleWithScale" levelStation="" maxIterations="">
-                <parameters tx="" ty="" m="" rx="" ry="" tz="" rz=""/>
+            <expansionOrigin z="0" y="0" x="0"/>
+            <bundleTemplate maxIterations="" name="BasicBundleWithScale" levelStation="">
+                <parameters/>
                 <plugin name="Bundle" pluginName="OiSigma3D"/>
             </bundleTemplate>
-            <bundle type="de.openIndy.plugin.bundleAdjustment.v120" name="Bundle" plugin="OiSigma3D">
+            <bundle plugin="OiSigma3D" name="Bundle" type="de.openIndy.plugin.bundleAdjustment.v120">
                 <bundleStations>
-                    <bundleStation tx="1" ty="1" m="1" rx="1" ry="1" id="5" tz="1" rz="1">
+                    <bundleStation rx="1" tz="1" ty="1" id="5" ry="1" m="1" tx="1" rz="1">
                         <bundleGeometries>
-                            <bundleGeometry x="2.315904137928685" z="-0.4419468310108939" id="7" y="0.2005868929326353"/>
-                            <bundleGeometry x="1.554441752761545" z="-0.4427576545559428" id="8" y="-0.05678280982711241"/>
-                            <bundleGeometry x="1.181067001311886" z="-0.4419253072045737" id="9" y="1.018055394117018"/>
-                            <bundleGeometry x="1.976904217660884" z="-0.4412187116072771" id="10" y="1.297278538903538"/>
+                            <bundleGeometry z="-0.4419468310108939" id="7" y="0.2005868929326353" x="2.315904137928685"/>
+                            <bundleGeometry z="-0.4427576545559428" id="8" y="-0.05678280982711241" x="1.554441752761545"/>
+                            <bundleGeometry z="-0.4419253072045737" id="9" y="1.018055394117018" x="1.181067001311886"/>
+                            <bundleGeometry z="-0.4412187116072771" id="10" y="1.297278538903538" x="1.976904217660884"/>
                         </bundleGeometries>
                     </bundleStation>
-                    <bundleStation tx="1" ty="1" m="1" rx="1" ry="1" id="81" tz="1" rz="1">
+                    <bundleStation rx="1" tz="1" ty="1" id="81" ry="1" m="1" tx="1" rz="1">
                         <bundleGeometries>
-                            <bundleGeometry x="-1.787205477160935" z="-0.444805418078129" id="7" y="1.297313902671907"/>
-                            <bundleGeometry x="-2.29730978035487" z="-0.4456427152302458" id="8" y="1.918488220324179"/>
-                            <bundleGeometry x="-1.424048340987101" z="-0.4447930173446757" id="9" y="2.647956530442627"/>
-                            <bundleGeometry x="-0.8813303257963362" z="-0.4441100286981782" id="10" y="2.002344830023923"/>
+                            <bundleGeometry z="-0.444805418078129" id="7" y="1.297313902671907" x="-1.787205477160935"/>
+                            <bundleGeometry z="-0.4456427152302458" id="8" y="1.918488220324179" x="-2.29730978035487"/>
+                            <bundleGeometry z="-0.4447930173446757" id="9" y="2.647956530442627" x="-1.424048340987101"/>
+                            <bundleGeometry z="-0.4441100286981782" id="10" y="2.002344830023923" x="-0.8813303257963362"/>
                         </bundleGeometries>
                     </bundleStation>
                 </bundleStations>
                 <bundleGeometries>
-                    <bundleGeom x="2.315899732641865" z="-0.4419404497032859" id="7" y="0.200588218989067"/>
-                    <bundleGeom x="1.554442828355091" z="-0.4427640902009939" id="8" y="-0.05678447991012468"/>
-                    <bundleGeom x="1.181066597488655" z="-0.4419191749912214" id="9" y="1.018052463243795"/>
-                    <bundleGeom x="1.976907951177389" z="-0.4412247894831862" id="10" y="1.297281813803342"/>
+                    <bundleGeom z="-0.4419404497032859" id="7" y="0.200588218989067" x="2.315899732641865"/>
+                    <bundleGeom z="-0.4427640902009939" id="8" y="-0.05678447991012468" x="1.554442828355091"/>
+                    <bundleGeom z="-0.4419191749912214" id="9" y="1.018052463243795" x="1.181066597488655"/>
+                    <bundleGeom z="-0.4412247894831862" id="10" y="1.297281813803342" x="1.976907951177389"/>
                 </bundleGeometries>
                 <bundleCoordinateSystem ref="88"/>
                 <bundleTransformations>
-                    <bundleTransformation sz="0.999999999891551" tx="1.905535729207486e-010" ty="6.66728894316293e-011" sx="0.999999999891551" rx="0" ry="0" id="5" tz="-4.793038188566356e-011" sy="0.999999999891551" rz="0"/>
-                    <bundleTransformation sz="1.000010382906313" tx="-2.794087276396674" ty="3.392526060322926" sx="1.000010382906313" rx="6.149777838666255e-006" ry="3.170363589678542e-006" id="81" tz="-0.002872869712994941" sy="1.000010382906313" rz="1.209216150393198"/>
+                    <bundleTransformation rx="0" tz="-4.793038188566356e-011" ty="6.66728894316293e-011" id="5" ry="0" tx="1.905535729207486e-010" sz="0.999999999891551" sy="0.999999999891551" rz="0" sx="0.999999999891551"/>
+                    <bundleTransformation rx="6.149777838666255e-006" tz="-0.002872869712994941" ty="3.392526060322926" id="81" ry="3.170363589678542e-006" tx="-2.794087276396674" sz="1.000010382906313" sy="1.000010382906313" rz="1.209216150393198" sx="1.000010382906313"/>
                 </bundleTransformations>
                 <baseSystem ref="5"/>
                 <integerParameters>
-                    <parameter value="100" name="maxIterations"/>
+                    <parameter name="maxIterations" value="100"/>
                 </integerParameters>
                 <doubleParameters/>
                 <stringParameters/>
             </bundle>
         </coordinateSystem>
-        <coordinateSystem activeSystem="0" comment="" name="STATION01" id="4" group="" solved="1" activeFeature="0" isBundleSystem="0">
-            <coordinates x="1.742581412686374" z="0.1311562608156022" y="0.04731749700399305"/>
-            <xAxis k="0" i="0" j="0"/>
-            <yAxis k="0" i="0" j="0"/>
-            <zAxis k="0" i="0" j="0"/>
+        <coordinateSystem group="" comment="" isBundleSystem="0" id="4" name="STATION01" solved="1" activeSystem="0" activeFeature="0">
+            <coordinates z="0.1311562608156022" y="0.04731749700399305" x="1.742581412686374"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
             <transformationParameters>
                 <transformationParameter ref="93"/>
             </transformationParameters>
@@ -113,17 +113,17 @@
                 <observation ref="71"/>
                 <observation ref="73"/>
             </observations>
-            <expansionOrigin x="0" z="0" y="0"/>
-            <bundleTemplate name="" levelStation="" maxIterations="">
+            <expansionOrigin z="0" y="0" x="0"/>
+            <bundleTemplate maxIterations="" name="" levelStation="">
                 <parameters/>
-                <plugin/>
+                <plugin name="" pluginName=""/>
             </bundleTemplate>
         </coordinateSystem>
-        <coordinateSystem activeSystem="0" comment="" name="STATION02" id="80" group="" solved="1" activeFeature="0" isBundleSystem="0">
-            <coordinates x="-2.65144046700229" z="0.1340245984875905" y="-0.0439371855397438"/>
-            <xAxis k="0" i="0" j="0"/>
-            <yAxis k="0" i="0" j="0"/>
-            <zAxis k="0" i="0" j="0"/>
+        <coordinateSystem group="" comment="" isBundleSystem="0" id="80" name="STATION02" solved="1" activeSystem="0" activeFeature="0">
+            <coordinates z="0.1340245984875906" y="-0.04393718553974424" x="-2.651440467002294"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
             <transformationParameters>
                 <transformationParameter ref="94"/>
             </transformationParameters>
@@ -141,41 +141,41 @@
                 <observation ref="107"/>
                 <observation ref="109"/>
             </observations>
-            <expansionOrigin x="0" z="0" y="0"/>
-            <bundleTemplate name="" levelStation="" maxIterations="">
+            <expansionOrigin z="0" y="0" x="0"/>
+            <bundleTemplate maxIterations="" name="" levelStation="">
                 <parameters/>
-                <plugin/>
+                <plugin name="" pluginName=""/>
             </bundleTemplate>
         </coordinateSystem>
     </coordinateSystems>
     <transformationParameters>
-        <transformationParameter tx="1.905535729207486e-010" ty="6.66728894316293e-011" comment="" mx="0.999999999891551" datumtrafo="1" name="Bundle01_1" rx="0" ry="0" mz="0.999999999891551" id="93" tz="-4.793038188566356e-011" rz="0" my="0.999999999891551" use="1" group="" solved="1" activeFeature="0">
+        <transformationParameter rx="0" group="" comment="" tz="-4.793038188566356e-011" ty="6.66728894316293e-011" id="93" ry="0" name="Bundle01_1" mx="0.999999999891551" solved="1" tx="1.905535729207486e-010" mz="0.999999999891551" use="1" rz="0" activeFeature="0" datumtrafo="1" my="0.999999999891551">
             <from ref="88"/>
             <to ref="4"/>
         </transformationParameter>
-        <transformationParameter tx="-2.794087276396674" ty="3.392526060322926" comment="" mx="1.000010382906313" datumtrafo="1" name="Bundle01_2" rx="6.149777838666255e-006" ry="3.170363589678542e-006" mz="1.000010382906313" id="94" tz="-0.002872869712994941" rz="1.209216150393198" my="1.000010382906313" use="1" group="" solved="1" activeFeature="0">
+        <transformationParameter rx="6.149777838666255e-006" group="" comment="" tz="-0.002872869712994941" ty="3.392526060322926" id="94" ry="3.170363589678542e-006" name="Bundle01_2" mx="1.000010382906313" solved="1" tx="-2.794087276396674" mz="1.000010382906313" use="1" rz="1.209216150393198" activeFeature="0" datumtrafo="1" my="1.000010382906313">
             <from ref="88"/>
             <to ref="80"/>
         </transformationParameter>
-        <transformationParameter tx="1.742581412484583" ty="0.04731749699794652" comment="" mx="1" datumtrafo="0" name="trafoBundle_Part" rx="-0" ry="0" mz="1" id="111" tz="0.1311562607676718" rz="-2.834970823952705" my="1" use="1" group="" solved="1" activeFeature="0">
+        <transformationParameter rx="-0" group="" comment="" tz="0.1311562607676718" ty="0.04731749699794652" id="111" ry="0" name="trafoBundle_Part" mx="1" solved="1" tx="1.742581412484583" mz="1" use="1" rz="-2.834970823952705" activeFeature="0" datumtrafo="0" my="1">
             <functions>
-                <function type="de.openIndy.plugin.function.systemTransformation.v120" executionIndex="0" name="OriginVectorVector" plugin="OiSigma3D">
+                <function plugin="OiSigma3D" name="OriginVectorVector" type="de.openIndy.plugin.function.systemTransformation.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="20" shouldBeUsed="1" ref="15" isUsed="1">
+                        <element shouldBeUsed="1" ref="15" type="0" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="1" type="19" shouldBeUsed="1" ref="19" isUsed="1">
+                        <element shouldBeUsed="1" ref="19" type="9" isUsed="1" index="1">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="2" type="19" shouldBeUsed="1" ref="15" isUsed="1">
+                        <element shouldBeUsed="1" ref="15" type="0" isUsed="1" index="2">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
                     <integerParameters/>
                     <doubleParameters/>
                     <stringParameters>
-                        <parameter value="Z" name="primary axis"/>
-                        <parameter value="X" name="secondary axis"/>
+                        <parameter name="primary axis" value="Z"/>
+                        <parameter name="secondary axis" value="X"/>
                     </stringParameters>
                 </function>
             </functions>
@@ -188,14 +188,14 @@
         </transformationParameter>
     </transformationParameters>
     <geometries>
-        <geometry nominal="0" type="point" comment="" name="com01" common="1" id="7" group="com" solved="1" activeFeature="0">
+        <geometry group="com" comment="" id="7" name="com01" solved="1" nominal="0" common="1" type="point" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitPoint" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitPoint" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="21" isUsed="1">
+                        <element shouldBeUsed="1" ref="21" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="82" isUsed="1">
+                        <element shouldBeUsed="1" ref="82" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -204,8 +204,8 @@
                     <stringParameters/>
                 </function>
             </functions>
-            <coordinates x="-0.5258471848992879" z="-0.3107841890018703" y="0.5551155907569152"/>
-            <standardDeviation value="1.112523549139168e-005"/>
+            <coordinates z="-0.3107841890018702" y="0.555115590756915" x="-0.5258471848992894"/>
+            <standardDeviation value="1.112523549102831e-005"/>
             <observations>
                 <observation ref="21"/>
                 <observation ref="82"/>
@@ -213,14 +213,14 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="point" comment="" name="com02" common="1" id="8" group="com" solved="1" activeFeature="0">
+        <geometry group="com" comment="" id="8" name="com02" solved="1" nominal="0" common="1" type="point" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitPoint" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitPoint" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="23" isUsed="1">
+                        <element shouldBeUsed="1" ref="23" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="84" isUsed="1">
+                        <element shouldBeUsed="1" ref="84" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -229,8 +229,8 @@
                     <stringParameters/>
                 </function>
             </functions>
-            <coordinates x="0.2777796725377124" z="-0.3116078293665018" y="0.5706461187980224"/>
-            <standardDeviation value="9.524963713767842e-006"/>
+            <coordinates z="-0.3116078293665023" y="0.5706461187980225" x="0.2777796725377114"/>
+            <standardDeviation value="9.524963714157713e-006"/>
             <observations>
                 <observation ref="23"/>
                 <observation ref="84"/>
@@ -238,14 +238,14 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="point" comment="" name="com03" common="1" id="9" group="com" solved="1" activeFeature="0">
+        <geometry group="com" comment="" id="9" name="com03" solved="1" nominal="0" common="1" type="point" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitPoint" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitPoint" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="25" isUsed="1">
+                        <element shouldBeUsed="1" ref="25" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="86" isUsed="1">
+                        <element shouldBeUsed="1" ref="86" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -254,8 +254,8 @@
                     <stringParameters/>
                 </function>
             </functions>
-            <coordinates x="0.3093126192819119" z="-0.3107629142872194" y="-0.5667587947797188"/>
-            <standardDeviation value="9.628746011825955e-006"/>
+            <coordinates z="-0.3107629142872195" y="-0.5667587947797192" x="0.3093126192819106"/>
+            <standardDeviation value="9.628746011237575e-006"/>
             <observations>
                 <observation ref="25"/>
                 <observation ref="86"/>
@@ -263,14 +263,14 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="point" comment="" name="com04" common="1" id="10" group="com" solved="1" activeFeature="1">
+        <geometry group="com" comment="" id="10" name="com04" solved="1" nominal="0" common="1" type="point" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitPoint" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitPoint" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="27" isUsed="1">
+                        <element shouldBeUsed="1" ref="27" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="91" isUsed="1">
+                        <element shouldBeUsed="1" ref="91" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -279,8 +279,8 @@
                     <stringParameters/>
                 </function>
             </functions>
-            <coordinates x="-0.5336921575587256" z="-0.3100685286524086" y="-0.5927479574159507"/>
-            <standardDeviation value="1.109979717980561e-005"/>
+            <coordinates z="-0.310068528652409" y="-0.5927479574159508" x="-0.533692157558727"/>
+            <standardDeviation value="1.109979718177431e-005"/>
             <observations>
                 <observation ref="27"/>
                 <observation ref="91"/>
@@ -288,44 +288,44 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="circle" comment="" name="Origin" common="0" id="15" group="ref" solved="1" activeFeature="0">
+        <geometry group="ref" comment="" id="15" name="flange_first" solved="1" nominal="0" common="0" type="circle" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitCircleInPlane" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitCircleInPlane" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="49" isUsed="1">
+                        <element shouldBeUsed="1" ref="49" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="51" isUsed="1">
+                        <element shouldBeUsed="1" ref="51" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="0" ref="53" isUsed="0">
+                        <element shouldBeUsed="0" ref="53" type="25" isUsed="0" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="55" isUsed="1">
+                        <element shouldBeUsed="1" ref="55" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="57" isUsed="1">
+                        <element shouldBeUsed="1" ref="57" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="59" isUsed="1">
+                        <element shouldBeUsed="1" ref="59" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="61" isUsed="1">
+                        <element shouldBeUsed="1" ref="61" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="63" isUsed="1">
+                        <element shouldBeUsed="1" ref="63" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="65" isUsed="1">
+                        <element shouldBeUsed="1" ref="65" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="67" isUsed="1">
+                        <element shouldBeUsed="1" ref="67" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="69" isUsed="1">
+                        <element shouldBeUsed="1" ref="69" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="0" ref="71" isUsed="0">
+                        <element shouldBeUsed="0" ref="71" type="25" isUsed="0" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -337,10 +337,10 @@
             <usedFor>
                 <feature ref="111"/>
             </usedFor>
-            <coordinates x="5.505773634124536e-016" z="-2.147221934548646e-018" y="-1.767082615472333e-016"/>
-            <spatialDirection k="0.01800577805400069" i="0.9998378828373479" j="-2.320468413879164e-016"/>
-            <radius value="0.1878780164770343"/>
-            <standardDeviation value="0.0008598094299796903"/>
+            <coordinates z="-2.085525216369038e-016" y="5.730738827592909e-016" x="1.31929235198265e-016"/>
+            <spatialDirection j="-1.400274682278952e-015" i="0.9998378828373479" k="0.01800577805400105"/>
+            <radius value="0.1878780164770342"/>
+            <standardDeviation value="0.0008598094299799119"/>
             <observations>
                 <observation ref="49"/>
                 <observation ref="51"/>
@@ -358,32 +358,32 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="circle" comment="" name="Circle_check" common="0" id="17" group="adjustment" solved="1" activeFeature="0">
+        <geometry group="adjustment" comment="" id="17" name="flange_second" solved="1" nominal="0" common="0" type="circle" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="BestFitCircleInPlane" plugin="OpenIndy Default Plugin">
+                <function plugin="OpenIndy Default Plugin" name="BestFitCircleInPlane" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="95" isUsed="1">
+                        <element shouldBeUsed="1" ref="95" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="97" isUsed="1">
+                        <element shouldBeUsed="1" ref="97" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="0" ref="99" isUsed="0">
+                        <element shouldBeUsed="0" ref="99" type="25" isUsed="0" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="101" isUsed="1">
+                        <element shouldBeUsed="1" ref="101" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="103" isUsed="1">
+                        <element shouldBeUsed="1" ref="103" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="0" ref="105" isUsed="0">
+                        <element shouldBeUsed="0" ref="105" type="25" isUsed="0" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="107" isUsed="1">
+                        <element shouldBeUsed="1" ref="107" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
-                        <element index="0" type="25" shouldBeUsed="1" ref="109" isUsed="1">
+                        <element shouldBeUsed="1" ref="109" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -392,10 +392,10 @@
                     <stringParameters/>
                 </function>
             </functions>
-            <coordinates x="-0.5475749553613528" z="-0.007860336744763686" y="0.0005938188724863296"/>
-            <spatialDirection k="-0.01554959353659225" i="-0.999878597596122" j="-0.001000105024102863"/>
-            <radius value="0.1891653676787967"/>
-            <standardDeviation value="0.001232494258888032"/>
+            <coordinates z="-0.007860336744763621" y="0.0005938188724861501" x="-0.5475749553613555"/>
+            <spatialDirection j="-0.001000105024103424" i="-0.999878597596122" k="-0.01554959353659429"/>
+            <radius value="0.1891653676787966"/>
+            <standardDeviation value="0.001232494258887655"/>
             <observations>
                 <observation ref="95"/>
                 <observation ref="97"/>
@@ -409,11 +409,11 @@
             <nominalGeometries/>
             <measurementConfig name="FastPoint"/>
         </geometry>
-        <geometry nominal="0" type="plane" comment="" name="level" common="0" id="19" group="ref" solved="1" activeFeature="0">
+        <geometry group="ref" comment="" id="19" name="level" solved="1" nominal="0" common="0" type="plane" activeFeature="0">
             <functions>
-                <function type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0" name="FitLevel" plugin="OiSigma3D">
+                <function plugin="OiSigma3D" name="FitLevel" type="de.openIndy.plugin.function.fitFunction.v120" executionIndex="0">
                     <inputElements>
-                        <element index="0" type="25" shouldBeUsed="1" ref="73" isUsed="1">
+                        <element shouldBeUsed="1" ref="73" type="25" isUsed="1" index="0">
                             <ignoredDestinationParams/>
                         </element>
                     </inputElements>
@@ -425,8 +425,8 @@
             <usedFor>
                 <feature ref="111"/>
             </usedFor>
-            <coordinates x="1.742581412686374" z="0.1311562608156022" y="0.04731749700399305"/>
-            <spatialDirection k="1" i="0" j="0"/>
+            <coordinates z="0.1311562608156022" y="0.04731749700399305" x="1.742581412686374"/>
+            <spatialDirection j="0" i="0" k="1"/>
             <standardDeviation value="-1.#IND"/>
             <observations>
                 <observation ref="73"/>
@@ -434,318 +434,318 @@
             <nominalGeometries/>
             <measurementConfig name="level"/>
         </geometry>
-        <geometry nominal="0" type="point" comment="" name="" common="0" id="3" group="" solved="1" activeFeature="0">
-            <coordinates x="1.742581412686374" z="0.1311562608156022" y="0.04731749700399305"/>
+        <geometry group="" comment="" id="3" name="" solved="1" nominal="0" common="0" type="point" activeFeature="0">
+            <coordinates z="0.1311562608156022" y="0.04731749700399305" x="1.742581412686374"/>
             <standardDeviation value="0"/>
             <nominalGeometries/>
             <measurementConfig name=""/>
         </geometry>
-        <geometry nominal="0" type="point" comment="" name="" common="0" id="79" group="" solved="1" activeFeature="0">
-            <coordinates x="-2.65144046700229" z="0.1340245984875905" y="-0.0439371855397438"/>
+        <geometry group="" comment="" id="79" name="" solved="1" nominal="0" common="0" type="point" activeFeature="0">
+            <coordinates z="0.1340245984875906" y="-0.04393718553974424" x="-2.651440467002294"/>
             <standardDeviation value="0"/>
             <nominalGeometries/>
             <measurementConfig name=""/>
         </geometry>
     </geometries>
     <observations>
-        <observation sigmaX="1.742556803796477" x="-0.5258509844659065" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3107905702432204" k="0" i="0" id="21" sigmaY="0.04732087348427146" y="0.5551181846892026" j="0" sigmaZ="0.1311621872188438" sigmaK="0">
+        <observation z="-0.31079057024322" id="21" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.5551181846892036" isSolved="1" x="-0.5258509844659072" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="22">
+            <reading time="" id="22" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.08639716536115533" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.758673553194266" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.366213024884308" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.08639716536115534"/>
+                    <measurement sigma="0" type="zenith" value="1.758673553194266"/>
+                    <measurement sigma="0" type="distance" value="2.366213024884308"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.7425577119711" x="0.2777801939042193" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3116013937883573" k="0" i="0" id="23" sigmaY="0.04732228027069072" y="0.5706442020357038" j="0" sigmaZ="0.1311635276841039" sigmaK="0">
+        <observation z="-0.3116013937883575" id="23" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.5706442020357043" isSolved="1" x="0.2777801939042195" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="24">
+            <reading time="" id="24" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="-0.03651315528776682" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.848106211434998" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.617265528875244" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="-0.03651315528776682"/>
+                    <measurement sigma="0" type="zenith" value="1.848106211434998"/>
+                    <measurement sigma="0" type="distance" value="1.617265528875244"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742559195014538" x="0.3093113496990065" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3107690464368979" k="0" i="0" id="25" sigmaY="0.04730793775399358" y="-0.5667614670960262" j="0" sigmaZ="0.1311635039700805" sigmaK="0">
+        <observation z="-0.310769046436898" id="25" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.5667614670960258" isSolved="1" x="0.3093113496990056" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="26">
+            <reading time="" id="26" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.7114077273517178" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.846970005453728" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.620695537177315" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.7114077273517178"/>
+                    <measurement sigma="0" type="zenith" value="1.846970005453728"/>
+                    <measurement sigma="0" type="distance" value="1.620695537177315"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742557542631498" x="-0.5336876097757097" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3100624508395246" k="0" i="0" id="27" sigmaY="0.04731053623194832" y="-0.5927459622696142" j="0" sigmaZ="0.1311621608918927" sigmaK="0">
+        <observation z="-0.3100624508395241" id="27" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.5927459622696133" isSolved="1" x="-0.5336876097757104" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="28">
+            <reading time="" id="28" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.5807334227479101" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.755272357874256" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.405359816072738" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.5807334227479101"/>
+                    <measurement sigma="0" type="zenith" value="1.755272357874256"/>
+                    <measurement sigma="0" type="distance" value="2.405359816072738"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556292769595" x="-0.003828278383533945" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1889432715793667" k="0" i="0" id="49" sigmaY="0.04731658269573719" y="0.01028315137716988" j="0" sigmaZ="0.131159125155301" sigmaK="0">
+        <observation z="0.1889432715793668" id="49" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.01028315137717065" isSolved="1" x="-0.003828278383534167" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="50">
+            <reading time="" id="50" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.3278246412907879" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.537726789777499" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.747757903649518" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.3278246412907879"/>
+                    <measurement sigma="0" type="zenith" value="1.537726789777499"/>
+                    <measurement sigma="0" type="distance" value="1.747757903649518"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556574825947" x="-7.869103288316026e-006" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.01319739213753134" k="0" i="0" id="51" sigmaY="0.0473139003998854" y="-0.1874253932931937" j="0" sigmaZ="0.1311594889722126" sigmaK="0">
+        <observation z="0.01319739213753057" id="51" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.187425393293193" isSolved="1" x="-7.86910328898216e-006" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="52">
+            <reading time="" id="52" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.4405249978960715" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.637781727467779" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.762281454132538" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.4405249978960715"/>
+                    <measurement sigma="0" type="zenith" value="1.637781727467779"/>
+                    <measurement sigma="0" type="distance" value="1.762281454132538"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-1.#IND" x="-1.#IND" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-1.#IND" k="0" i="0" id="53" sigmaY="-1.#IND" y="-1.#IND" j="0" sigmaZ="-1.#IND" sigmaK="0">
+        <observation z="0.1311562608156022" id="53" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.04731749700399305" isSolved="1" x="1.742581412686374" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="54">
+            <reading time="" id="54" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="-1.#IND" sigma="1.57e-006"/>
-                    <measurement type="distance" value="0" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0"/>
+                    <measurement sigma="0" type="zenith" value="-1.#IND"/>
+                    <measurement sigma="0" type="distance" value="0"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556681557331" x="0.003137142726731712" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.1877241269209115" k="0" i="0" id="55" sigmaY="0.04731662015003096" y="0.01282541371820215" j="0" sigmaZ="0.1311615309978789" sigmaK="0">
+        <observation z="-0.1877241269209118" id="55" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.01282541371820287" isSolved="1" x="0.003137142726731712" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="56">
+            <reading time="" id="56" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.3264486008308865" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.752071380852468" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.768768151315836" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.3264486008308865"/>
+                    <measurement sigma="0" type="zenith" value="1.752071380852468"/>
+                    <measurement sigma="0" type="distance" value="1.768768151315836"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556369963301" x="0.0001633163587742015" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.001675545266532463" k="0" i="0" id="57" sigmaY="0.04731891995663649" y="0.1874372623499523" j="0" sigmaZ="0.1311595687328635" sigmaK="0">
+        <observation z="0.001675545266532463" id="57" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.187437262349953" isSolved="1" x="0.0001633163587735353" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="58">
+            <reading time="" id="58" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.2263776638753934" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.644733115981217" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.752831887570283" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.2263776638753934"/>
+                    <measurement sigma="0" type="zenith" value="1.644733115981217"/>
+                    <measurement sigma="0" type="distance" value="1.752831887570283"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556280628136" x="-0.002038390580407334" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1152896633034256" k="0" i="0" id="59" sigmaY="0.04731842241281852" y="0.1484641363959417" j="0" sigmaZ="0.1311590138405975" sigmaK="0">
+        <observation z="0.1152896633034249" id="59" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.1484641363959424" isSolved="1" x="-0.002038390580407778" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="60">
+            <reading time="" id="60" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.2487103347115412" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.579875418671553" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.747621426071755" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.2487103347115412"/>
+                    <measurement sigma="0" type="zenith" value="1.579875418671553"/>
+                    <measurement sigma="0" type="distance" value="1.747621426071755"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556357277827" x="-0.002983105633343364" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1708435331177836" k="0" i="0" id="61" sigmaY="0.04731538554026082" y="-0.07785001957769042" j="0" sigmaZ="0.1311590662423229" sigmaK="0">
+        <observation z="0.1708435331177833" id="61" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.07785001957768953" isSolved="1" x="-0.002983105633343586" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="62">
+            <reading time="" id="62" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.37820534759644" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.548122373159808" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.750496350679467" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.37820534759644"/>
+                    <measurement sigma="0" type="zenith" value="1.548122373159808"/>
+                    <measurement sigma="0" type="distance" value="1.750496350679467"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556668436383" x="0.001649215227499168" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.08865404158366413" k="0" i="0" id="63" sigmaY="0.04731421719092412" y="-0.1649175415174386" j="0" sigmaZ="0.1311604138301763" sigmaK="0">
+        <observation z="-0.08865404158366336" id="63" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.1649175415174378" isSolved="1" x="0.001649215227498502" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="64">
+            <reading time="" id="64" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.4279320793359416" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.695478419198071" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.76754213417627" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.4279320793359416"/>
+                    <measurement sigma="0" type="zenith" value="1.695478419198071"/>
+                    <measurement sigma="0" type="distance" value="1.76754213417627"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556559689855" x="0.002384707579942358" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.1378385086715995" k="0" i="0" id="65" sigmaY="0.04731815568237965" y="0.1290642019674383" j="0" sigmaZ="0.1311609549442162" sigmaK="0">
+        <observation z="-0.1378385086715998" id="65" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.129064201967439" isSolved="1" x="0.002384707579942136" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="66">
+            <reading time="" id="66" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.2596807832674065" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.723993437844681" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.76276069889624" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.2596807832674065"/>
+                    <measurement sigma="0" type="zenith" value="1.723993437844681"/>
+                    <measurement sigma="0" type="distance" value="1.76276069889624"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556332044883" x="-0.0005405835144209892" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.04065685682823446" k="0" i="0" id="67" sigmaY="0.0473188556108354" y="0.1821925758303102" j="0" sigmaZ="0.1311592947153769" sigmaK="0">
+        <observation z="0.04065685682823372" id="67" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.1821925758303107" isSolved="1" x="-0.0005405835144207671" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="68">
+            <reading time="" id="68" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.2294001107530989" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.622513445016492" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.750672934041295" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.2294001107530989"/>
+                    <measurement sigma="0" type="zenith" value="1.622513445016492"/>
+                    <measurement sigma="0" type="distance" value="1.750672934041295"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556352303196" x="-0.003142125969716192" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1726913587860459" k="0" i="0" id="69" sigmaY="0.04731545322400588" y="-0.07288609925267034" j="0" sigmaZ="0.1311590714127586" sigmaK="0">
+        <observation z="0.1726913587860456" id="69" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.07288609925266973" isSolved="1" x="-0.003142125969717302" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="70">
+            <reading time="" id="70" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.3753693513886893" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.547064501981782" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.750349891213147" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.3753693513886893"/>
+                    <measurement sigma="0" type="zenith" value="1.547064501981782"/>
+                    <measurement sigma="0" type="distance" value="1.750349891213147"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="1.742556685053255" x="0.001690323755035861" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.1138182553071277" k="0" i="0" id="71" sigmaY="0.04731445261795752" y="-0.1477860419739418" j="0" sigmaZ="0.1311606826034113" sigmaK="0">
+        <observation z="-0.1138182553071281" id="71" sigmaJ="0" j="0" sigmaX="1.742581412686374" sigmaZ="0.1311562608156022" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.1477860419739411" isSolved="1" x="0.001690323755035195" sigmaY="0.04731749700399305">
             <station ref="5"/>
-            <reading type="polar" time="" id="72">
+            <reading time="" id="72" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0.4182272094453879" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.709737716531163" sigma="1.57e-006"/>
-                    <measurement type="distance" value="1.768835686917582" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0.4182272094453879"/>
+                    <measurement sigma="0" type="zenith" value="1.709737716531163"/>
+                    <measurement sigma="0" type="distance" value="1.768835686917582"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="0" x="1.742581412686374" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1311562608156022" k="1" i="0" id="73" sigmaY="0" y="0.04731749700399305" j="0" sigmaZ="0" sigmaK="0">
+        <observation z="0.1311562608156022" id="73" sigmaJ="0" j="0" sigmaX="0" sigmaZ="0" sigmaK="0" i="0" isValid="1" sigmaI="0" k="1" y="0.04731749700399305" isSolved="1" x="1.742581412686374" sigmaY="0">
             <station ref="5"/>
-            <reading type="level" time="2017-08-23T10:03:43" id="74">
+            <reading time="2017-08-23T10:03:43" id="74" type="level">
                 <measurements>
-                    <measurement type="i" value="0" sigma="0"/>
-                    <measurement type="j" value="0" sigma="0"/>
-                    <measurement type="k" value="1" sigma="0"/>
+                    <measurement sigma="0" type="i" value="0"/>
+                    <measurement sigma="0" type="j" value="0"/>
+                    <measurement sigma="0" type="k" value="1"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651441307126683" x="-0.5258433853326694" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3107778077605202" k="0" i="0" id="82" sigmaY="-0.04396193271441353" y="0.5551129968246277" j="0" sigmaZ="0.1340306308166342" sigmaK="0">
+        <observation z="-0.3107778077605203" id="82" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.5551129968246265" isSolved="1" x="-0.5258433853326716" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="83">
+            <reading time="" id="83" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.513701590136607" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.769550414749642" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.252771324305137" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.513701590136607"/>
+                    <measurement sigma="0" type="zenith" value="1.769550414749642"/>
+                    <measurement sigma="0" type="distance" value="2.252771324305137"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651439614039837" x="0.2777791511712056" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3116142649446462" k="0" i="0" id="84" sigmaY="-0.04396235044796704" y="0.5706480355603411" j="0" sigmaZ="0.1340305682233487" sigmaK="0">
+        <observation z="-0.3116142649446471" id="84" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.5706480355603408" isSolved="1" x="0.2777791511712033" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="85">
+            <reading time="" id="85" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.44581142313787" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.718603942836497" sigma="1.57e-006"/>
-                    <measurement type="distance" value="3.026024902090953" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.44581142313787"/>
+                    <measurement sigma="0" type="zenith" value="1.718603942836497"/>
+                    <measurement sigma="0" type="distance" value="3.026024902090953"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651430977581495" x="0.3093138888648173" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3107567821375408" k="0" i="0" id="86" sigmaY="-0.04396051618927906" y="-0.5667561224634115" j="0" sigmaZ="0.1340305708227653" sigmaK="0">
+        <observation z="-0.310756782137541" id="86" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.5667561224634126" isSolved="1" x="0.3093138888648155" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="87">
+            <reading time="" id="87" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.064218066141606" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.717670345093154" sigma="1.57e-006"/>
-                    <measurement type="distance" value="3.03931378650847" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.064218066141606"/>
+                    <measurement sigma="0" type="zenith" value="1.717670345093154"/>
+                    <measurement sigma="0" type="distance" value="3.03931378650847"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651429245195812" x="-0.5336967053417414" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.3100746064652927" k="0" i="0" id="91" sigmaY="-0.04395924462679058" y="-0.5927499525622871" j="0" sigmaZ="0.1340306429126723" sigmaK="0">
+        <observation z="-0.3100746064652939" id="91" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.5927499525622882" isSolved="1" x="-0.5336967053417436" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="92">
+            <reading time="" id="92" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="1.98542813205818" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.771075903542659" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.232344435583834" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="1.98542813205818"/>
+                    <measurement sigma="0" type="zenith" value="1.771075903542659"/>
+                    <measurement sigma="0" type="distance" value="2.232344435583834"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651435064747453" x="-0.5506246846109373" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.1800520596215535" k="0" i="0" id="95" sigmaY="-0.04396181048686549" y="-0.01267066646624182" j="0" sigmaZ="0.1340279424369782" sigmaK="0">
+        <observation z="0.1800520596215531" id="95" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.01267066646624249" isSolved="1" x="-0.5506246846109399" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="96">
+            <reading time="" id="96" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.253880121345071" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.548893993419021" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.10157435916618" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.253880121345071"/>
+                    <measurement sigma="0" type="zenith" value="1.548893993419021"/>
+                    <measurement sigma="0" type="distance" value="2.10157435916618"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651436302038927" x="-0.5451821614289036" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.1716444437498221" k="0" i="0" id="97" sigmaY="-0.043961802845619" y="0.09304146096561605" j="0" sigmaZ="0.1340294791990322" sigmaK="0">
+        <observation z="-0.1716444437498228" id="97" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.09304146096561528" isSolved="1" x="-0.5451821614289059" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="98">
+            <reading time="" id="98" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.30394199121406" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.71461547619998" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.132748277926369" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.30394199121406"/>
+                    <measurement sigma="0" type="zenith" value="1.71461547619998"/>
+                    <measurement sigma="0" type="distance" value="2.132748277926369"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-1.#IND" x="-1.#IND" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-1.#IND" k="0" i="0" id="99" sigmaY="-1.#IND" y="-1.#IND" j="0" sigmaZ="-1.#IND" sigmaK="0">
+        <observation z="0.1340245984875906" id="99" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.04393718553974424" isSolved="1" x="-2.651440467002294" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="100">
+            <reading time="" id="100" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="-1.#IND" sigma="1.57e-006"/>
-                    <measurement type="distance" value="0" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0"/>
+                    <measurement sigma="0" type="zenith" value="-1.#IND"/>
+                    <measurement sigma="0" type="distance" value="0"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.65143324087819" x="-0.5481702777344215" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.05696918266833864" k="0" i="0" id="101" sigmaY="-0.04396132878821738" y="-0.1764083402990011" j="0" sigmaZ="0.1340280311295752" sigmaK="0">
+        <observation z="0.05696918266833907" id="101" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.1764083402990019" isSolved="1" x="-0.5481702777344237" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="102">
+            <reading time="" id="102" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.176098242166036" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.607345192569028" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.108867938935831" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.176098242166036"/>
+                    <measurement sigma="0" type="zenith" value="1.607345192569028"/>
+                    <measurement sigma="0" type="distance" value="2.108867938935831"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651437370266972" x="-0.5477626720637812" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.001899974328230025" k="0" i="0" id="103" sigmaY="-0.0439621666657392" y="0.1901862606297503" j="0" sigmaZ="0.1340282687028382" sigmaK="0">
+        <observation z="0.001899974328230442" id="103" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.1901862606297507" isSolved="1" x="-0.5477626720637843" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="104">
+            <reading time="" id="104" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.349835104489815" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.633136956348815" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.120807480370698" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.349835104489815"/>
+                    <measurement sigma="0" type="zenith" value="1.633136956348815"/>
+                    <measurement sigma="0" type="distance" value="2.120807480370698"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-1.#IND" x="-1.#IND" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-1.#IND" k="0" i="0" id="105" sigmaY="-1.#IND" y="-1.#IND" j="0" sigmaZ="-1.#IND" sigmaK="0">
+        <observation z="0.1340245984875906" id="105" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.04393718553974424" isSolved="1" x="-2.651440467002294" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="106">
+            <reading time="" id="106" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="0" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="-1.#IND" sigma="1.57e-006"/>
-                    <measurement type="distance" value="0" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="0"/>
+                    <measurement sigma="0" type="zenith" value="-1.#IND"/>
+                    <measurement sigma="0" type="distance" value="0"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651436916424736" x="-0.5459312984776075" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="-0.126531689671274" k="0" i="0" id="107" sigmaY="-0.04396196890265278" y="0.1485763352969438" j="0" sigmaZ="0.1340291118039419" sigmaK="0">
+        <observation z="-0.1265316896712741" id="107" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="0.1485763352969422" isSolved="1" x="-0.5459312984776097" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="108">
+            <reading time="" id="108" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.330178896227519" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.693414349628246" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.130308459350942" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.330178896227519"/>
+                    <measurement sigma="0" type="zenith" value="1.693414349628246"/>
+                    <measurement sigma="0" type="distance" value="2.130308459350942"/>
                 </measurements>
             </reading>
         </observation>
-        <observation sigmaX="-2.651433173115405" x="-0.5483265275803322" isValid="1" sigmaJ="0" sigmaI="0" isSolved="1" z="0.04369464999509906" k="0" i="0" id="109" sigmaY="-0.04396130211446994" y="-0.182739274383976" j="0" sigmaZ="0.1340280765744265" sigmaK="0">
+        <observation z="0.04369464999509812" id="109" sigmaJ="0" j="0" sigmaX="-2.651440467002294" sigmaZ="0.1340245984875906" sigmaK="0" i="0" isValid="1" sigmaI="0" k="0" y="-0.1827392743839759" isSolved="1" x="-0.5483265275803353" sigmaY="-0.04393718553974424">
             <station ref="81"/>
-            <reading type="polar" time="" id="110">
+            <reading time="" id="110" type="polar">
                 <measurements>
-                    <measurement type="azimuth" value="2.173095827885339" sigma="1.57e-006"/>
-                    <measurement type="zenith" value="1.613629064710691" sigma="1.57e-006"/>
-                    <measurement type="distance" value="2.109645984677945" sigma="2.5e-005"/>
+                    <measurement sigma="0" type="azimuth" value="2.173095827885339"/>
+                    <measurement sigma="0" type="zenith" value="1.613629064710691"/>
+                    <measurement sigma="0" type="distance" value="2.109645984677945"/>
                 </measurements>
             </reading>
         </observation>
     </observations>
     <configs>
         <measurementConfigs>
-            <measurementConfig distanceInterval="0" name="FastPoint" measureTwoSides="0" iterations="1" timeDependent="0" isSaved="1" distanceDependent="0" count="1000" timeInterval="0" typeOfReading="2"/>
-            <measurementConfig distanceInterval="0" name="level" measureTwoSides="0" iterations="1" timeDependent="0" isSaved="1" distanceDependent="0" count="500" timeInterval="0" typeOfReading="5"/>
-            <measurementConfig distanceInterval="0" name="StdPoint" measureTwoSides="0" iterations="1" timeDependent="0" isSaved="1" distanceDependent="0" count="2000" timeInterval="0" typeOfReading="2"/>
-            <measurementConfig distanceInterval="0.001" name="StdScan" measureTwoSides="0" iterations="1400" timeDependent="0" isSaved="1" distanceDependent="1" count="1" timeInterval="0" typeOfReading="2"/>
-            <measurementConfig distanceInterval="0" name="StdTwoSide" measureTwoSides="1" iterations="1" timeDependent="0" isSaved="1" distanceDependent="0" count="2000" timeInterval="0" typeOfReading="2"/>
+            <measurementConfig iterations="1" isSaved="1" timeInterval="0" name="FastPoint" measureTwoSides="0" distanceDependent="0" timeDependent="0" count="1000" distanceInterval="0" typeOfReading="2"/>
+            <measurementConfig iterations="1" isSaved="1" timeInterval="0" name="level" measureTwoSides="0" distanceDependent="0" timeDependent="0" count="500" distanceInterval="0" typeOfReading="5"/>
+            <measurementConfig iterations="1" isSaved="1" timeInterval="0" name="StdPoint" measureTwoSides="0" distanceDependent="0" timeDependent="0" count="2000" distanceInterval="0" typeOfReading="2"/>
+            <measurementConfig iterations="1400" isSaved="1" timeInterval="0" name="StdScan" measureTwoSides="0" distanceDependent="1" timeDependent="0" count="1" distanceInterval="0.001" typeOfReading="2"/>
+            <measurementConfig iterations="1" isSaved="1" timeInterval="0" name="StdTwoSide" measureTwoSides="1" distanceDependent="0" timeDependent="0" count="2000" distanceInterval="0" typeOfReading="2"/>
         </measurementConfigs>
     </configs>
 </oiProjectData>
