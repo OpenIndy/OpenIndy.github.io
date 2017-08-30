@@ -45,6 +45,7 @@ Alternatively you can create and configure the features in the toolbar on the le
 For the other geometries you choose the corresponding menu and create them the same way. Only for them you do not have to choose common.
 The level plane is one special case. Here you chose "FitLevel" as function and "level" as measurement config.
 By measuring this plane the tracker will get his reference to the level, that is neccessary for our superordinated coordinate system.
+For all other geometries, like the points, circles etc. you should use the "fastPoint" measurement configuration.
 
 <h1>Measure geometries</h1>
 
@@ -55,14 +56,15 @@ Before you start measure you should open the "sensor control pad" and run an com
 </figure>
 
 Afterwards, measure your common points.
-To specify our coordinate system we measure a level plane to get our primary axis reference. Select the geometry from the list and press "F3" to measure. Continuing with the first circle on the tube flange.
+To specify our coordinate system we measure a level plane to get our primary axis reference. Select the geometry from the list and press "F3" to measure. Continuing with the first circle on the tube flange. You can switch the selected feature by the arrow buttons on your keyboard or by mouse click. If you do not switch the active feature, all measurements will be made in this feature.
+The current active feature is highlighted in a blue color.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/measure circle.jpg"><img src="/images/news/bundle/measure circle.jpg"></a> </p>
 	<p align="middle"><i>measure first tube flange</i></p>
 </figure>
 
-You can check all observations of the circle and of all other features by right clicking them in the table view and "show properties". In this view you can activate and deactivate single measurements to include or exclude from algorithm.
+You can check all observations of the circle and of all other features by right clicking them in the table view and "show properties". In this view you can activate and deactivate single measurements to include or exclude from algorithm. In the last columns you can see the deviations from each points in x, y and z direction to the circle and the 3D distance deviation.
 
 <figure>
 	<p align="middle"><a href="/images/news/bundle/10_check_obs.png"><img src="/images/news/bundle/10_check_obs.png"></a> </p>
@@ -71,7 +73,9 @@ You can check all observations of the circle and of all other features by right 
 
 Now we have our level plane and the first tube flange. We need to measure the flange on the other side of the tube, what is not possible from this station.
 
-It is necessary to put the tracker and tripod to the other side of the object and create an new station in OpenIndy. Activate this station in the menu and measure all common points also from this position. You will see, in the first moment the algorithm of the point will not use all observations, because their is no relation between the first and the second station observations.
+It is necessary to put the tracker and tripod to the other side of the object and create an new station in OpenIndy. Activate this station in the menu and measure all common points also from this position. To activate a station, select it in the table view and go to the menu "station -> activate". Current active stations are highlighted with a dark grey in the tableview, whereas all other stations, that are currently not active, are highlighted in a light grey.
+<br>
+ You will see, in the first moment the algorithm of the point will not use all observations, because their is no relation between the first and the second station observations.
 
 After you measured three common points, you can run the bundle for the first time.
 
@@ -84,7 +88,8 @@ For this following step, go to the tab "bundle" in the OpenIndy main view.
 	<p align="middle"><i>create bundle adjustment</i></p>
 </figure>
 
-This step is only neccessary to do once for all the job. Same for the template. This is only used for internal calculations.
+Add a bundle to the job by clicking the green "add" button. Select it from the list and press "load" next to the selected template. This template specifies the parameters, that will be calculated internally by the bundle.<br>
+This step is only neccessary to do once for all the job.
 In the tab "input geometries" you can see all stations and geometries that are used to solve the bundle between these stations.
 
 <figure>
@@ -92,9 +97,9 @@ In the tab "input geometries" you can see all stations and geometries that are u
 	<p align="middle"><i>bundle input</i></p>
 </figure>
 
-Press "run bundle" to calculate the bundle and create one superordinate coordinate system called "bundle". The output is transformation parameters from all included stations to the bundle coordinate system. Now all observations from all stations can be used to fit the geometries.
+Press "run bundle" to calculate the bundle and create one superordinate coordinate system called "bundle". The output is transformation parameters from all included stations to the bundle coordinate system. You can find all these parameters in the tab "transformation parameters". Here you see, in our example, 2 transformations. From station1 to bundle and station2 to bundle. With these parameters we can now use and transform all observations of these stations to fit our geometries.
 <br>
-Switching to the tab "transformation parameters" you can see the calculated transformations.
+Switching to the tab "transformation parameters" you can see the calculated transformations. Check that alle parameters have the "used" flag (see red box in the picture), if you want to use them for transforming observations from these stations.
 <figure>
 	<p align="middle"><a href="/images/news/bundle/18_bundle_trafos.png"><img src="/images/news/bundle/18_bundle_trafos.png"></a> </p>
 	<p align="middle"><i>bundle result</i></p>
