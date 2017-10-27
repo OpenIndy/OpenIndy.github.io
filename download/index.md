@@ -6,15 +6,17 @@ comments: true
 image:
   feature: banner/b_tracker2.jpg
 ---
-<b>Version 0.6.0-14 Posted on August 23rd, 2017</b>
-<br>With an open-source bundle adjustment, OpenIndy version 0.6.0-14 is now released and online on github.
-Now you can combine multiple tracker stations in one bundle system, just by measuring some common points and running the bundle adjustment. You will get transformation parameters for all combinations and also you can transform all your station measurements, that are bundled, in an superordinate coordinate system of your working part (e.g. a automobile - system).
+<b>Version 0.7.0-15 Posted on October 24th, 2017</b>
+<br>This version now inclues a leveled alignment, where you can choose between bestFit and the weighted alignment (select single components (x, y, z) of every alignment point). 
 
-Some more details in how to use and run the bundle adjustment, you can read our blog entry about [bundle adjustment](https://openindy.github.io/news/bundle-adjustment/).
+Transformationparameters were changed in usability. It is no more neccessary to choose the "DatumTransformation" parameter. It is handled automatically now from the software. Also there are changes with the used state, so it is easier to handle the transformations.
+
+More new features, improved usability and bugfixes you can find in the blog entry [OpenIndy v0.7-0_15](https://openindy.github.io/news/leveled-bestfit/).
+
 To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 
 <br><br>
-<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.6.0-14</a>
+<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.7.0-15</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>
