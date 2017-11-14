@@ -61,9 +61,6 @@ date: 2017-08-23T16:00:00+02:00
 
 
 To improve the usability, the transformation parameters were changed. By default a new transformation parameter is now set to "used". If the same transformation already exists, an dialog appears and notifies the user for this. The "datum transformation" attribute is now handled internal and automatically. The user does not have to set this attribute anymore.
-
 A niew function is now implemented, that makes and leveled alignment (BestFit, or single informations of the points). For this you have to measure the level with your system.
-
 All alignments and Bestfits now include a temperature compensation. Calculated by reference, current temperature and the expansion coefficient of the specified material.
-
-More changes se above in the changelog.
+More changes see above in the changelog.
