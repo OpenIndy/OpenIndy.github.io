@@ -10,7 +10,7 @@ image:
 <br>The big focus of this update was to improve the workflow of setting, changing and removing functions. The dialog is now accessible by right clicking the feature or double clicking the function column. This also had some effect on the column order of transformation parameters.
 Also now all observations have a better representation in the dialog.
 
-The RoboCalc algorithm was improved, because of the definition of ABB quaternions and all functionality got some improved stability.
+[Modul] The RoboCalc algorithm was improved, because of the definition of ABB quaternions and all functionality got some improved stability.
 In the settings you can choose to play sounds for measurement now.
 
 To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)

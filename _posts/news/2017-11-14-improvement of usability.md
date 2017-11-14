@@ -39,11 +39,11 @@ date: 2017-11-14T16:00:00+02:00
 </li>
 <li> updating bundle input-geometries for view
 </li>
-<li> Robocalc, fixed function "copy nominal to actual tool"
+<li> [Modul] Robocalc, fixed function "copy nominal to actual tool"
 </li>
 <li> "ReferencePoint" crashes, when the reference geometry is deleted
 </li>
-<li> fixed an issue calculating ABB bases
+<li> [Modul] fixed an issue calculating ABB bases
 </li>
 <li> fixed weighted alignment and weighted-leveled-alignment. Now checking number of needed geometries correct
 </li>
@@ -55,7 +55,7 @@ Another update to improve the usability. You can now also open the functions dia
 Observations are now displayed with their ID and target geometry in the functions dialog (in the corresponding feature and in the list of observations of the corresponding station).
 In the settings you can now select to play sounds for successful and unsuccesful measurements.
 
-We fixed an issue of the definition of ABB quaternions and improved the algorithm to calculate bases and tools.
+[Modul] We fixed an issue of the definition of ABB quaternions and improved the algorithm to calculate bases and tools.
 
 By these changes it is easier to set and change functions for features and transformation parameters. If you change a function you can now find the old observations in the dialog in the list of their station.
 In this version we improved the stability of weighted alignment and level-weighted alignment in connection with the changes of the function dialog and observations.
