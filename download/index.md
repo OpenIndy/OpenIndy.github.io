@@ -6,17 +6,14 @@ comments: true
 image:
   feature: banner/b_tracker2.jpg
 ---
-<b>Version 0.8.0-16 Posted on November 14th, 2017</b>
-<br>The big focus of this update was to improve the workflow of setting, changing and removing functions. The dialog is now accessible by right clicking the feature or double clicking the function column. This also had some effect on the column order of transformation parameters.
-Also now all observations have a better representation in the dialog.
-
-[Modul] The RoboCalc algorithm was improved, because of the definition of ABB quaternions and all functionality got some improved stability.
-In the settings you can choose to play sounds for measurement now.
+<b>Version 0.8.0-17 Posted on December 05th, 2017</b>
+<br>The newest version fixes two bugs that interrelate loading function parameters and aligning stations in the bundle adjustment.
+The problem to align stations in bundle adjustment was only effected in big working areas of more than 25 meters.
 
 To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 
 <br><br>
-<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.8.0-16</a>
+<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.8.0-17</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>
