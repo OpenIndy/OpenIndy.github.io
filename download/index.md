@@ -6,13 +6,13 @@ comments: true
 image:
   feature: banner/b_tracker2.jpg
 ---
-<b>Version 0.9.3-18 Posted on December 20th, 2017</b>
+<b>Version 0.10.1-19 Posted on February 05th, 2018</b>
 <br>The new version is now available to download. For details of all changes view the news area of the homepage.
 
 To get a good quick start, also you should check out the [user documentaion](/documentation/docu-usr/measurement/#common-measurement-example)
 
 <br><br>
-<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.9.3-18</a>
+<a markdown="0" href="https://github.com/OpenIndy/OpenIndy/releases" class="btn btn-success">Download Version 0.10.1-19</a>
 <h1>Sourcecode</h1>
 To join our community and support us in the ongoing development, you can also fork the repository of the project on [GitHub](https://github.com/OpenIndy/OpenIndy).
 <br><br>
