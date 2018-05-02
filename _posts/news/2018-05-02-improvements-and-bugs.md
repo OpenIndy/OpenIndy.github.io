@@ -13,8 +13,6 @@ date: 2018-05-02T16:30:00+02:00
 The following change log represent all the changes fixes and new features of the new OpenIndy version 0.13.0.
 The version is available in the download section of the homepage.
 
-This version fixed a bug in bundle adjustment and improved the calculation for special areas of measurement in bundle adjustment.
-
 
         release notes - OpenIndy - Version 0.13.0_22
         
