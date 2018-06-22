@@ -10,7 +10,7 @@ image:
 date: 2018-06-22T16:30:00+02:00
 ---
 
-The following change log represent all the changes fixes and new features of the new OpenIndy version 0.13.0.
+The following change log represent all the changes fixes and new features of the new OpenIndy version 0.14.0.
 The version is available in the download section of the homepage.
 
 
