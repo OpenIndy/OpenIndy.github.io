@@ -11,10 +11,10 @@ perhaps you  will be part of the project soon, too!
 <br><br>
 **OpenIndy Organisation**
 <br>sigma3D GmbH
-<br>Max-Hufschmidt-Str. 4a
-<br>55130 Mainz
+<br>Am Kesseltal 12
+<br>55129 Mainz
 <br>Germany
-<br>Telefon: +49 (0) 6131 – 96 257-38
+<br>Telefon: +49 (0) 6131 – 96 257-0
 <br>E-Mail: [info@openindy.de](mailto:info@openindy.de)
 
 
