@@ -14,7 +14,7 @@ perhaps you  will be part of the project soon, too!
 <br>Am Kesseltal 12
 <br>55129 Mainz
 <br>Germany
-<br>Telefon: +49 (0) 6131 – 96 257-0
+<br>Telefon: +49 (0) 6136 – 91496-0
 <br>E-Mail: [info@openindy.de](mailto:info@openindy.de)
 
 
