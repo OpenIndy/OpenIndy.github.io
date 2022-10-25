@@ -8,7 +8,7 @@ image:
   feature: banner/b_arm2.jpg
 ---
 
-OpenIndy is a metrology software solution that can be extended by [plugins](https://github.com/OpenIndy/OiPluginTemplate). The project started in 2013 as a student project in the Department of Geoinformatics and Surveying ([HS Mainz](https://www.hs-mainz.de/technology/geoinformatics-and-surveying/index.html)). Our primary goal is to attract students and to jointly develop and learn. For more information take a look at the [OpenIndy Documentation](/documentation).
+OpenIndy is a metrology software solution that can be extended by [plugins](https://github.com/OpenIndy/OiPluginTemplate). The project started in 2013 as a student project in the Department of Geoinformatics and Surveying ([HS Mainz](https://www.hs-mainz.de/studium/studiengaenge/technik/geoinformatik-bsc-kombinierter-studiengang/uebersicht/)). Our primary goal is to attract students and to jointly develop and learn. For more information take a look at the [OpenIndy Documentation](/documentation).
 
 
 #### The essence of OpenIndy
@@ -30,7 +30,7 @@ OpenIndy is a metrology software solution that can be extended by [plugins](http
 * [Download the executable program or fork the project on GitHub](/download)
 * [For users: Read the application documentation of OpenIndy](/documentation/docu-usr)
 * [For developer: Inform yourself to get to know the architecture of OpenIndy](/documentation/docu-dev)
-* [Get in touch with the OpenIndy team](https://www.sigma3d.de/leistungen/softwareentwicklung/#c1061)
+* [Get in touch with the OpenIndy team](https://www.sigma3d.de/leistungen/softwareentwicklung/)
 
 <br>
 <a markdown="0" href="https://github.com/OpenIndy/OpenIndy" class="btn">Join & Fork The Project On GitHub</a>
