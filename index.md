@@ -5,7 +5,7 @@ tags: [about, OpenIndy, industrial, measurement, surveying, metrology, laser, tr
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: banner/b_arm2.jpg
+  feature: banner/b_OI_screen_with_LT.jpg
 ---
 
 OpenIndy is a metrology software solution that can be extended by [plugins](https://github.com/OpenIndy/OiPluginTemplate). The project started in 2013 as a student project in the Department of Geoinformatics and Surveying ([HS Mainz](https://www.hs-mainz.de/studium/studiengaenge/technik/geoinformatik-bsc-kombinierter-studiengang/uebersicht/)). Our primary goal is to attract students and to jointly develop and learn.
