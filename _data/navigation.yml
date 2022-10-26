@@ -1,17 +1,5 @@
 # Site navigation links
 
-- title: About
-  url: /posts/about
-
-- title: Blog
-  url: /posts/
-
-- title: Downloads
-  url: /download/
-
-- title: Documentation
-  url: /documentation/
-
 - title: Contact
   url: /posts/contact
 
